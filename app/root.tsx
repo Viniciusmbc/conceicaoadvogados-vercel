@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import remixImageStyles from "remix-image/remix-image.css";
 import {
   Links,
   LiveReload,
@@ -13,7 +14,10 @@ import WhatsAppPopup from "./components/Popup/WhatsAppPopup";
 import styles from "./styles/app.css";
 
 export function links() {
-  return [{ rel: "stylesheet", href: styles }];
+  return [
+    { rel: "stylesheet", href: remixImageStyles },
+    { rel: "stylesheet", href: styles },
+  ];
 }
 
 export const meta: MetaFunction = () => ({

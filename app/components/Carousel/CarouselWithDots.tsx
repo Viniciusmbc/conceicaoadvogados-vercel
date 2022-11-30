@@ -1,6 +1,9 @@
 // React hooks
 import React, { useCallback, useEffect, useRef, useState } from "react";
 
+// Image
+import Image, { MimeType } from "remix-image";
+
 // Buttons
 import useEmblaCarousel from "embla-carousel-react";
 import { DotButton } from "./CarouselButtons";
@@ -69,13 +72,26 @@ const CarouselWithDots = ({ slides, escritorio }: CarouselWithButtonsProps) => {
                   className="relative -z-30 h-screen min-w-[100vw] overflow-hidden
                    "
                 >
-                  <img
+                  <Image
+                    loaderUrl="/api/image"
                     src={imagem}
-                    width={1920}
-                    height={1000}
-                    alt="Imagem de fundo"
+                    placeholder="blur"
+                    options={{
+                      contentType: MimeType.JPEG,
+                    }}
+                    responsive={[
+                      {
+                        size: {
+                          width: 1600,
+                          height: 1067,
+                        },
+                        maxWidth: 1600,
+                      },
+                    ]}
+                    dprVariants={[1, 3]}
                     className=" absolute top-0 right-0 bottom-0 left-0 -z-10 h-screen  w-screen contrast-[.35]"
                   />
+
                   <figcaption
                     className={`z-50 flex h-full w-full items-center justify-center pb-3 text-5xl font-extrabold  ${
                       escritorio ? " text-gray" : "text-[#f8f8f8]"

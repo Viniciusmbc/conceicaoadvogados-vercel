@@ -7,7 +7,7 @@ import { TituloAdv } from "../Titulo/TituloAdv";
   export const slide: { imagem: any; texto: string | any }[] = [
     {
       imagem:
-        "https://res.cloudinary.com/deaejawfj/image/upload/v1669579250/conceicaofotorecepcao_boyyos.webp",
+        "https://res.cloudinary.com/deaejawfj/image/upload/v1669579250/conceicaofotorecepcao_boyyos.jpg",
       texto: TituloAdv
     },
     {
