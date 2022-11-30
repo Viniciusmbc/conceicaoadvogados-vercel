@@ -1,3 +1,5 @@
+import os from "os";
+import path from "path";
 import type { LoaderFunction } from "@remix-run/node";
 import type { Resolver } from "remix-image/server";
 import {
@@ -6,6 +8,7 @@ import {
   fsResolver,
   fetchResolver,
 } from "remix-image/server";
+import {sharpTransformer} from "remix-image-sharp"
 
 export const fetchImage: Resolver = async (asset, url, options, basePath) => {
   if (url.startsWith("/") && (url.length === 1 || url[1] !== "/")) {
@@ -15,10 +18,22 @@ export const fetchImage: Resolver = async (asset, url, options, basePath) => {
   }
 };
 
+const vercelUrl = process.env.VERCEL_URL || "";
+const fixedVercelUrl = vercelUrl.startsWith("https")
+  ? vercelUrl
+  : `https://${vercelUrl}`;
+
 const config = {
-  selfUrl: "http://localhost:3000",
-  cache: new DiskCache(),
+  selfUrl:
+    process.env.NODE_ENV === "development"
+      ? "http://localhost:3000"
+      : fixedVercelUrl,
+  cache: new DiskCache({
+    path: path.join(os.tmpdir(), "img"),
+  }),
   resolver: fetchImage,
+  transformer: sharpTransformer,
+  basePath: process.env.NODE_ENV === "development" ? "public" : "/",
 };
 
 export const loader: LoaderFunction = ({ request }) => {

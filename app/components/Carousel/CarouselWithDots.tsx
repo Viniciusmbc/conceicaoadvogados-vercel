@@ -82,6 +82,20 @@ const CarouselWithDots = ({ slides, escritorio }: CarouselWithButtonsProps) => {
                     responsive={[
                       {
                         size: {
+                          width: 375,
+                          height: 667,
+                        },
+                        maxWidth: 375,
+                      },
+                      {
+                        size: {
+                          width: 787,
+                          height: 700,
+                        },
+                        maxWidth: 787,
+                      },
+                      {
+                        size: {
                           width: 1600,
                           height: 1067,
                         },
