@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .text_shadow {
+    text-shadow: black 0.1em 0.1em 0.2em;
+  }
+
+  .titulo {
+    margin-top: 1.25rem;
+    font-weight: 900;
+    color: #f8f8f8;
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  .titulo span {
+    color: #bd845c;
+    font-weight: 400;
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+    display: table;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    margin: 0.5rem auto auto auto;
+  }
+
+  .titulo :last-child {
+    font-weight: 900;
+    color: #bd845c;
+    font-size: 1.5rem;
+    text-align: center;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    margin: 0.5rem auto auto auto;
+  }
+
+  @media (max-width: 768px) {
+    .titulo {
+      font-size: 3rem;
+    }
+
+    .titulo span {
+      font-size: 3rem;
+    }
+  }
+}

@@ -23,7 +23,7 @@ export default function Index() {
       <Navbar navbar={true} />
 
       <section className=" h-[100vh] overflow-x-hidden overflow-y-hidden">
-        <CarouselWithDots slides={slide} texto={""} />
+        <CarouselWithDots slides={slide} texto={""} escritorio={false} />
       </section>
       <section
         style={{
@@ -98,7 +98,7 @@ export default function Index() {
           <h3 className=" mx-auto my-10 text-4xl text-brown">
             Áreas de Atuação
           </h3>
-          <div className=" mx-auto grid w-screen max-w-screen-xl grid-flow-row grid-cols-1 justify-center gap-y-8 overflow-x-hidden  py-4 sm:grid-cols-2 md:mx-0 md:grid-cols-4 md:grid-rows-3 md:gap-6">
+          <div className=" mx-auto grid grid-flow-row grid-cols-1 gap-y-6 sm:grid-cols-2 md:grid-cols-4 md:grid-rows-3 md:gap-6">
             {cards.map(
               (
                 {
@@ -182,7 +182,8 @@ export default function Index() {
         <section className=" mx-auto flex min-h-[50vh] w-screen max-w-screen-xl flex-col items-center justify-center gap-4 px-3  text-white md:p-0 ">
           <div className=" flex items-center justify-center">
             <strong className=" text-center text-4xl">
-              Fale Conosco! Estamos aqui Para te Ouvir!
+              Fale Conosco! <br className=" md:hidden"></br> Estamos aqui Para
+              te Ouvir!
             </strong>
           </div>
           <div className=" flex flex-col gap-4 text-center">
