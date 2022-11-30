@@ -1,17 +1,15 @@
 export default function Artigos() {
   return (
-    <article>
-      <h1>Benefício Cessado no INSS? O Que Fazer Para Voltar a Receber</h1>
-      <p> Ben-Hur CuestaNov 17, 2022 Aposentadoria, Benefícios do INSS</p>
-      <div>
-        Você recebe seu benefício previdenciário normalmente, até que chega a
-        notícia de que ele vai ser cessado. Com certeza, deve bater um desespero
-        neste momento, porque você fica em choque e não sabe o que fazer na
-        hora. Mas, fique tranquilo!  Através deste conteúdo, vou explicar o que
-        fazer caso seu benefício seja cessado pelo INSS. Dependendo da situação,
-        você pode conseguir reverter o jogo. Então, continua comigo aqui no
-        artigo, que você vai ficar por dentro dos seguintes pontos:
-      </div>
+    <article className=" w-screen max-w-screen-xl mx-auto">
+      <h1 className=" text-3xl font-bold">
+        Benefício Cessado no INSS? O Que Fazer Para Voltar a Receber
+      </h1>
+      <p> Matheus Conceição Nov 17, 2022 Aposentadoria, Benefícios do INSS</p>
+      <p className=" mx-auto text-gray">
+        É perfeitamente possível a partilha de imóvel financiado. Sob a luz que
+        o casal vive sob o regime de comunhão parcial de bens, que é o mais
+        comum no Brasil, se tem o seguinte solução para o conflito
+      </p>
     </article>
   );
 }

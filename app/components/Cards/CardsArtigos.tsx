@@ -45,7 +45,7 @@ export default function CardsArtigos({
         <p className=" text-lg leading-relaxed text-[#4F4F4F]">{descricao}</p>
         <Link
           className=" font-bold hover:text-gray"
-          to="/quem-pode-paga-inss-com-11"
+          to={`/${titulo.toLowerCase()}`}
         >
           Continue Lendo
         </Link>
