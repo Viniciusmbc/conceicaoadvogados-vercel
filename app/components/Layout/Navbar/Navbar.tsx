@@ -59,7 +59,7 @@ export default function Navbar({ navbar }: { navbar: boolean }) {
           </div>
         )}
       </div>
-      <nav className="  mx-auto w-[100vw] max-w-7xl py-2  px-7">
+      <nav className="  mx-auto w-[100vw] max-w-7xl pt-2  px-7">
         <ul className=" hidden md:flex md:items-center md:justify-end md:gap-x-8 md:px-5">
           {!changeNav ? (
             <li className=" mr-auto  pl-4">
@@ -150,7 +150,7 @@ export default function Navbar({ navbar }: { navbar: boolean }) {
 
         <>
           <button
-            className=" group absolute z-50 mt-2 ml-2 flex h-12 w-12 flex-col items-center justify-center rounded border-2 border-brown md:hidden "
+            className=" group absolute z-50  mt-4 flex h-12 w-12 flex-col items-center justify-center rounded border-2 border-brown md:hidden "
             aria-label="abre o menu de navegação"
             onClick={() => setIsOpen(!isOpen)}
           >

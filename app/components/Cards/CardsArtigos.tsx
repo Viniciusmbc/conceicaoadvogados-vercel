@@ -41,7 +41,7 @@ export default function CardsArtigos({
       </div>
 
       <div className=" space-y-3 p-5 text-black">
-        <h3 className=" text-lg font-bold text-brown ">{titulo}</h3>
+        <h3 className=" text-lg font-bold text-[#6E452D] ">{titulo}</h3>
         <p className=" text-lg leading-relaxed text-[#4F4F4F]">{descricao}</p>
         <Link
           className=" font-bold hover:text-gray"

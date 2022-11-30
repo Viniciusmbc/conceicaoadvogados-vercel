@@ -1,4 +1,4 @@
-import { Link } from "@remix-run/react";
+import { Link, useLoaderData } from "@remix-run/react";
 import CardsAtuacao from "~/components/Cards/CardsAtuacao";
 
 import depoimentosGoogle1 from "../../public/depoimento-2.jpg";
@@ -76,14 +76,14 @@ export default function Index() {
               />
             </p>
             <div className=" flex ">
-              <p className=" mx-auto flex w-full flex-wrap items-center justify-center text-base md:text-2xl ">
+              <p className=" my-4 mx-auto flex w-full flex-wrap items-center justify-center text-base md:text-2xl ">
                 {" "}
                 Fale com um de nossos advogados pelo nosso{" "}
                 <Link
                   to="/"
-                  className=" flex max-w-fit items-center justify-center gap-x-1 p-3  text-[#25d366]  "
+                  className=" flex max-w-fit items-center justify-center gap-x-1   text-[#1BE817] border border-black ml-2 py-2 px-4   bg-[#332015]   "
                 >
-                  <span className=" text-[#25d366]">{whatsappIcon}</span>
+                  <span className=" text-[#1BE817]">{whatsappIcon}</span>
                   WhatsApp
                 </Link>
                 !
@@ -94,7 +94,6 @@ export default function Index() {
               problema seja solucionado o mais <i>rápido</i> possível!
             </p>
           </div>
-
           <h3 className=" mx-auto my-10 text-4xl text-brown">
             Áreas de Atuação
           </h3>
@@ -179,11 +178,11 @@ export default function Index() {
       </div>
 
       <div className=" min-w-[100vw] bg-brown py-10 ">
-        <section className=" mx-auto flex min-h-[50vh] w-screen max-w-screen-xl flex-col items-center justify-center gap-4 px-3  text-white md:p-0 ">
+        <section className=" mx-auto flex min-h-[50vh] w-screen max-w-screen-xl flex-col items-center justify-center gap-4 px-3  text-[#F5F5F5] md:p-0 ">
           <div className=" flex items-center justify-center">
             <strong className=" text-center text-4xl">
-              Fale Conosco! <br className=" md:hidden"></br> Estamos aqui Para
-              te Ouvir!
+              Fale Conosco! <br className=" md:hidden"></br> Estamos aqui para
+              te ouvir!
             </strong>
           </div>
           <div className=" flex flex-col gap-4 text-center">
@@ -195,11 +194,11 @@ export default function Index() {
               Atendemos de Segunda-Feira à Sexta-feira, das 8:30 ao meio-dia e
               das 14 horas às 18 horas.
             </p>
-            <p>Telefone para Contato: (55) 3317.5978/ 3027.5978</p>
 
             <address className=" flex flex-wrap justify-around gap-y-4">
-              <div className=" flex flex-col items-center justify-center">
-                ​ Rua André Marques, 718, centro.
+              <div className=" flex flex-col  items-center justify-center my-6">
+                ​ Rua André Marques, 718, centro. <br></br> Telefone para
+                Contato: (55) 3317.5978
                 <iframe
                   title="Endereço do Conceição Advogados no Bairro Centro em Santa Maria, RS"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3466.210824773746!2d-53.806955884945836!3d-29.684666782014606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9503cbd55c0e234d%3A0xdf50d2c04d94dc0d!2zQ09OQ0VJw4fDg08gQURWT0dBRE9T!5e0!3m2!1spt-BR!2sbr!4v1669601491186!5m2!1spt-BR!2sbr"
@@ -207,22 +206,28 @@ export default function Index() {
                   height="200"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
+                  className=" mt-4"
                 ></iframe>
               </div>
-              <div className=" flex flex-col items-center justify-center">
-                Av Walter Jobim, 987, Patronato.
+              <span className=" border border-r-white hidden md:block"></span>
+              <div className=" flex flex-col items-center justify-center my-6">
+                Av Walter Jobim, 987, Patronato. <br></br> Telefone para
+                Contato: (55) 3027.5978
                 <iframe
                   title="Endereço do Conceição Advogados no Bairro Patronato em Santa Maria, RS"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3465.686150078617!2d-53.84325418494549!3d-29.699877682008903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9503cc943be6bb97%3A0x99ede35e51703b04!2zQ29uY2Vpw6fDo28gQWR2b2dhZG9z!5e0!3m2!1spt-BR!2sbr!4v1669601649376!5m2!1spt-BR!2sbr"
+                  src={
+                    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3465.686150078617!2d-53.84325418494549!3d-29.699877682008903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9503cc943be6bb97%3A0x99ede35e51703b04!2zQ29uY2Vpw6fDo28gQWR2b2dhZG9z!5e0!3m2!1spt-BR!2sbr!4v1669601649376!5m2!1spt-BR!2sbr"
+                  }
                   width="200"
                   height="200"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
+                  className=" mt-4"
                 ></iframe>
               </div>
             </address>
           </div>
-          <p className=" text-center">
+          <p className=" text-center mt-6">
             Além disso, dispomos de equipe de advogados nas diversas áreas com
             atendimento via whatsapp, telefone ou e-mail. <br></br> Basta clicar
             no botão verde ao lado que você será redirecionado para o whatsapp
