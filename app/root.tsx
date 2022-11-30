@@ -20,7 +20,6 @@ export function links() {
   return [
     { rel: "stylesheet", href: remixImageStyles },
     { rel: "stylesheet", href: styles },
-    { rel: "manifest", href: "/resources/manifest.webmanifest" },
   ];
 }
 export const meta: MetaFunction = () => ({
@@ -70,6 +69,7 @@ export default function App() {
     <html lang="pt-br">
       <head>
         <Meta /> <Links />
+        <link rel="manifest" href="/resources/manifest.webmanifest" />
       </head>
       <body className=" max-w-[100vw] overflow-x-hidden">
         <main>
