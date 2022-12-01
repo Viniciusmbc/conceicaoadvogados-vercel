@@ -1,9 +1,6 @@
 // React hooks
 import React, { useCallback, useEffect, useRef, useState } from "react";
 
-// Image
-import Image, { MimeType } from "remix-image";
-
 // Buttons
 import useEmblaCarousel from "embla-carousel-react";
 import { DotButton } from "./CarouselButtons";
@@ -13,6 +10,8 @@ import Autoplay, {
   AutoplayOptionsType,
   AutoplayType,
 } from "embla-carousel-autoplay";
+
+import { Image, Placeholder, Transformation } from "cloudinary-react";
 
 interface CarouselWithButtonsProps {
   slides: any;
@@ -73,37 +72,21 @@ const CarouselWithDots = ({ slides, escritorio }: CarouselWithButtonsProps) => {
                    "
                 >
                   <Image
-                    loaderUrl="/api/image"
-                    alt="Imagem do Escritório do Conceição Advogados"
-                    src={imagem}
-                    placeholder="blur"
-                    options={{
-                      contentType: MimeType.JPEG,
-                    }}
-                    responsive={[
-                      {
-                        size: {
-                          width: 375,
-                          height: 667,
-                        },
-                      },
-                      {
-                        size: {
-                          width: 787,
-                          height: 700,
-                        },
-                      },
-                      {
-                        size: {
-                          width: 1600,
-                          height: 1067,
-                        },
-                        maxWidth: 1600,
-                      },
-                    ]}
-                    dprVariants={[1, 3]}
-                    className=" absolute top-0 right-0 bottom-0 left-0 -z-10 h-screen  w-screen contrast-[.35]"
-                  />
+                    dpr="auto"
+                    sizes="100vw"
+                    height="auto"
+                    responsive
+                    width="auto"
+                    crop="limit"
+                    responsiveUseBreakpoints="true"
+                    cloudName="deaejawfj"
+                    publicId={`${imagem}`}
+                    className=" absolute -z-40"
+                    alt="Imagem do Escritório"
+                  >
+                    <Placeholder type="blur" />
+                    <Transformation quality="auto" fetchFormat="auto" />
+                  </Image>
 
                   <figcaption
                     className={`z-50 flex h-full w-full items-center justify-center pb-3 text-5xl font-extrabold  ${

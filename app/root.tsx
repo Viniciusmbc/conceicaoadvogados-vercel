@@ -1,7 +1,6 @@
 import React from "react";
 import { useLocation, useMatches } from "@remix-run/react";
 import type { MetaFunction } from "@remix-run/node";
-import remixImageStyles from "remix-image/remix-image.css";
 import {
   Links,
   LiveReload,
@@ -17,10 +16,7 @@ import styles from "./styles/app.css";
 let isMount = true;
 
 export function links() {
-  return [
-    { rel: "stylesheet", href: remixImageStyles },
-    { rel: "stylesheet", href: styles },
-  ];
+  return [{ rel: "stylesheet", href: styles }];
 }
 export const meta: MetaFunction = () => ({
   charset: "utf-8",

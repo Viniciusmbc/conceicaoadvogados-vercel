@@ -230,7 +230,7 @@ export default function Index() {
             <br></br> Para nos contatar mais rapidamente, clique no botão verde
             ao lado que você será redirecionado para o whatsapp do escritório.
           </p>
-        </section>
+        </section>{" "}
       </div>
     </>
   );

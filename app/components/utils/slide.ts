@@ -1,23 +1,20 @@
-import carteiradetrabalho from "../../../public/carteira-de-trabalho.jpeg";
-import consumidorImagem from "../../../public/consumidorImagem.jpeg";
-import contratosImagem from "../../../public/contratosImagem.jpeg";
-import criminalImagem from "../../../public/criminalImagem.jpeg"
+
 import { TituloAdv } from "../Titulo/TituloAdv";
 
   export const slide: { imagem: any; texto: string | any }[] = [
     {
       imagem:
-        "https://res.cloudinary.com/deaejawfj/image/upload/v1669579250/conceicaofotorecepcao_boyyos.jpg",
+        "IMG-20221201-WA0016_ud6mui",
       texto: TituloAdv
     },
     {
-      imagem: criminalImagem,
+      imagem: "criminalImagem_ktbjax",
       texto: "Direito Penal",
     },
     {
-      imagem: carteiradetrabalho,
+      imagem: "carteira-de-trabalho_gpwrie",
       texto: "Aposentadoria e Benefícios Previdenciários",
     },
-    { imagem: consumidorImagem, texto: "Relações de Consumo" },
-    {imagem: contratosImagem, texto: "Revisão de Contratos"},
+    { imagem: "consumidorImagem_z7riup", texto: "Relações de Consumo" },
+    {imagem: "contratosImagem_nenzo8", texto: "Revisão de Contratos"},
   ];
