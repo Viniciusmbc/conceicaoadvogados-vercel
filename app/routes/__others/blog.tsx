@@ -9,11 +9,11 @@ export default function Noticias() {
       <aside className=" mt-16 ml-auto mr-16 max-w-screen-xl flex-col items-center hidden md:flex  ">
         <ul className=" text-xl">
           Últimas Postagens
-          <li>assunto x</li>
-          <li>assunto x</li>
-          <li>assunto x</li>
-          <li>assunto x</li>
-          <li>assunto x</li>
+          <li>Herança</li>
+          <li>Beneficios Previdenciários</li>
+          <li>Aposentadoria</li>
+          <li>Habeas Corpus</li>
+          <li>Contratos</li>
         </ul>
       </aside>
       <section className=" mr-auto flex flex-wrap max-w-7xl flex-col gap-4">

@@ -79,13 +79,17 @@ export default function Index() {
               <p className=" my-4 mx-auto flex w-full flex-wrap items-center justify-center text-base md:text-2xl ">
                 {" "}
                 Fale com um de nossos advogados pelo nosso{" "}
-                <Link
-                  to="/"
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={
+                    "https://wa.me/5555992560707?text=Ol%C3%A1%2C+gostaria+de+falar+com+um+advogado"
+                  }
                   className=" flex max-w-fit items-center justify-center gap-x-1   text-[#1BE817] border border-black ml-2 py-2 px-4   bg-[#332015]   "
                 >
                   <span className=" text-[#1BE817]">{whatsappIcon}</span>
                   WhatsApp
-                </Link>
+                </a>
                 !
               </p>
             </div>
@@ -155,7 +159,7 @@ export default function Index() {
             Últimos de Nossos Artigos
           </strong>
 
-          <div className=" h-[90vh] flex w-screen max-w-screen-xl flex-wrap items-center justify-around gap-y-8 ">
+          <div className=" h-[100vh] flex w-screen max-w-screen-xl flex-wrap items-center justify-around gap-y-8 ">
             {artigos.map(
               (
                 { imagem, alt, autor, data, icone, titulo, descricao },
@@ -214,10 +218,9 @@ export default function Index() {
             </address>
           </div>
           <p className=" text-center mt-6">
-            Além disso, dispomos de equipe de advogados nas diversas áreas com
-            atendimento via whatsapp, telefone ou e-mail. <br></br> Basta clicar
-            no botão verde ao lado que você será redirecionado para o whatsapp
-            do escritório.
+            Nossa equipe de advogados também atende via telefone ou e-mail.{" "}
+            <br></br> Para nos contatar mais rapidamente, clique no botão verde
+            ao lado que você será redirecionado para o whatsapp do escritório.
           </p>
         </section>
       </div>
