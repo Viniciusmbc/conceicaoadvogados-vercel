@@ -12,6 +12,8 @@ import Autoplay, {
 } from "embla-carousel-autoplay";
 
 import { Image, Placeholder, Transformation } from "cloudinary-react";
+import { Cloudinary } from "@cloudinary/url-gen";
+import { AdvancedImage } from "@cloudinary/react";
 
 interface CarouselWithButtonsProps {
   slides: any;
@@ -60,6 +62,14 @@ const CarouselWithDots = ({ slides, escritorio }: CarouselWithButtonsProps) => {
     embla.on("select", onSelect);
   }, [embla, setScrollSnaps, onSelect]);
 
+  const cld = new Cloudinary({
+    cloud: {
+      cloudName: "deaejawfj",
+    },
+  });
+
+  const myImage = cld.image("front_face");
+
   return (
     <>
       <div className="relative mx-auto ">
@@ -71,23 +81,7 @@ const CarouselWithDots = ({ slides, escritorio }: CarouselWithButtonsProps) => {
                   className="relative -z-30 h-screen min-w-[100vw] overflow-hidden
                    "
                 >
-                  <Image
-                    dpr="auto"
-                    sizes="100vw"
-                    height="auto"
-                    responsive
-                    width="auto"
-                    crop="limit"
-                    responsiveUseBreakpoints="true"
-                    cloudName="deaejawfj"
-                    publicId={`${imagem}`}
-                    className=" absolute -z-40"
-                    alt="Imagem do Escritório"
-                  >
-                    <Placeholder type="blur" />
-                    <Transformation quality="auto" fetchFormat="auto" />
-                  </Image>
-
+                  <AdvancedImage cldImg={cld.image(`${imagem}`)} />
                   <figcaption
                     className={`z-50 flex h-full w-full items-center justify-center pb-3 text-5xl font-extrabold  ${
                       escritorio ? " text-gray" : "text-[#f8f8f8]"
