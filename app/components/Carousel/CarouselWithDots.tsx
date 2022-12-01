@@ -11,9 +11,13 @@ import Autoplay, {
   AutoplayType,
 } from "embla-carousel-autoplay";
 
-import { Image, Placeholder, Transformation } from "cloudinary-react";
 import { Cloudinary } from "@cloudinary/url-gen";
-import { AdvancedImage } from "@cloudinary/react";
+import { AdvancedImage, responsive, placeholder } from "@cloudinary/react";
+import { source } from "@cloudinary/url-gen/actions/overlay";
+import { text, image } from "@cloudinary/url-gen/qualifiers/source";
+import { TextStyle } from "@cloudinary/url-gen/qualifiers/textStyle";
+import { Position } from "@cloudinary/url-gen/qualifiers/position";
+import { compass } from "@cloudinary/url-gen/qualifiers/gravity";
 
 interface CarouselWithButtonsProps {
   slides: any;
@@ -68,8 +72,6 @@ const CarouselWithDots = ({ slides, escritorio }: CarouselWithButtonsProps) => {
     },
   });
 
-  const myImage = cld.image("front_face");
-
   return (
     <>
       <div className="relative mx-auto ">
@@ -78,10 +80,21 @@ const CarouselWithDots = ({ slides, escritorio }: CarouselWithButtonsProps) => {
             {slides.map(({ imagem, texto }: any, index: React.Key | number) => (
               <div className=" relative -z-40 min-w-full " key={index}>
                 <figure
-                  className="relative -z-30 h-screen min-w-[100vw] overflow-hidden
+                  className="relative -z-30 h-screen w-screen overflow-hidden
                    "
                 >
-                  <AdvancedImage cldImg={cld.image(`${imagem}`)} />
+                  <AdvancedImage
+                    style={{
+                      zIndex: 1,
+                      maxWidth: "100%",
+                      minHeight: "100%",
+                    }}
+                    cldImg={cld
+                      .image(`${imagem}`)
+                      .format("auto")
+                      .quality("auto")}
+                    plugins={[responsive(), placeholder()]}
+                  />
                   <figcaption
                     className={`z-50 flex h-full w-full items-center justify-center pb-3 text-5xl font-extrabold  ${
                       escritorio ? " text-gray" : "text-[#f8f8f8]"

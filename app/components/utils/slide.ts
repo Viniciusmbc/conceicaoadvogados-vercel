@@ -5,7 +5,7 @@ import { TituloAdv } from "../Titulo/TituloAdv";
     {
       imagem:
         "IMG-20221201-WA0016_ud6mui.jpg",
-      texto: TituloAdv
+      texto: "CONCEIÇÃO ADVOGADOS"
     },
     {
       imagem: "criminalImagem_ktbjax.jpg",
