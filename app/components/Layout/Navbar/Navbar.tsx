@@ -54,7 +54,13 @@ export default function Navbar({ navbar }: { navbar: boolean }) {
           >
             {" "}
             {phoneIcon}
-            (55) 3027 5978 | (55) 3317 5978{" "}
+            <a href="tel:+555530275978" target={"_blank"} rel="noreferrer">
+              (55) 3027 5978
+            </a>
+            |{" "}
+            <a href="tel:+555533175978" target={"_blank"} rel="noreferrer">
+              (55) 3317 5978{" "}
+            </a>{" "}
             <div className=" ml-auto flex items-center justify-center pr-4">
               <figure>{facebookIcon}</figure>
               <figure>{InstagramIcon}</figure>

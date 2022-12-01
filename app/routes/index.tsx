@@ -154,12 +154,12 @@ export default function Index() {
         >
           <path d="M350,10L340,0h20L350,10z"></path>
         </svg>
-        <section className="mx-auto flex max-w-screen-xl flex-col items-center justify-center min-h-[90vh]">
+        <section className="mx-auto flex max-w-screen-xl flex-col items-center justify-center h-auto md:min-h-[90vh]">
           <strong className="mx-auto  mt-8 flex items-center justify-center  text-center text-3xl md:text-left md:text-4xl">
             Últimos de Nossos Artigos
           </strong>
 
-          <div className=" h-[100vh] flex w-screen max-w-screen-xl flex-wrap items-center justify-around gap-y-8 ">
+          <div className=" h-auto  md:h-[100vh] flex w-screen max-w-screen-xl flex-wrap items-center justify-around gap-y-8 ">
             {artigos.map(
               (
                 { imagem, alt, autor, data, icone, titulo, descricao },
@@ -205,7 +205,11 @@ export default function Index() {
                 className=" flex flex-col  items-center justify-center my-6"
               >
                 ​ Rua André Marques, 718, centro. <br></br> Telefone para
-                Contato: (55) 3317.5978
+                Contato:{" "}
+                <a href="tel:+555533175978" target={"_blank"} rel="noreferrer">
+                  {" "}
+                  (55) 3317.5978
+                </a>
               </a>
               <span className=" border border-r-white hidden md:block"></span>
               <a
@@ -213,7 +217,11 @@ export default function Index() {
                 className=" flex flex-col items-center justify-center my-6"
               >
                 Av Walter Jobim, 987, Patronato. <br></br> Telefone para
-                Contato: (55) 3027.5978
+                Contato:{" "}
+                <a href="tel:+555530275978" target={"_blank"} rel="noreferrer">
+                  {" "}
+                  (55) 3027.5978
+                </a>{" "}
               </a>
             </address>
           </div>
