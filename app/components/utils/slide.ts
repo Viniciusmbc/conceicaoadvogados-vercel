@@ -1,10 +1,9 @@
 
-import { TituloAdv } from "../Titulo/TituloAdv";
 
   export const slide: { imagem: any; texto: string | any }[] = [
     {
       imagem:
-        "IMG-20221201-WA0016_ud6mui.jpg",
+        "IMG-20221201-WA0016_ir5ihw.webp",
       texto: "CONCEIÇÃO ADVOGADOS"
     },
     {

@@ -84,6 +84,7 @@ const CarouselWithDots = ({ slides, escritorio }: CarouselWithButtonsProps) => {
                    "
                 >
                   <AdvancedImage
+                    alt={`Imagem de ${texto}`}
                     style={{
                       zIndex: 1,
                       maxWidth: "100%",
