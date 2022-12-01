@@ -86,14 +86,12 @@ const CarouselWithDots = ({ slides, escritorio }: CarouselWithButtonsProps) => {
                           width: 375,
                           height: 667,
                         },
-                        maxWidth: 375,
                       },
                       {
                         size: {
                           width: 787,
                           height: 700,
                         },
-                        maxWidth: 787,
                       },
                       {
                         size: {
