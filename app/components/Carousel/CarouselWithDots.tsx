@@ -80,13 +80,13 @@ const CarouselWithDots = ({ slides, escritorio }: CarouselWithButtonsProps) => {
             {slides.map(({ imagem, texto }: any, index: React.Key | number) => (
               <div className=" relative -z-40 min-w-full " key={index}>
                 <figure
-                  className="relative -z-30 h-screen w-screen overflow-hidden
+                  className="relative -z-30 h-screen w-screen overflow-hidden first:-z-50
                    "
                 >
                   <AdvancedImage
+                    className="-z-50 absolute"
                     alt={`Imagem de ${texto}`}
                     style={{
-                      zIndex: 1,
                       maxWidth: "100%",
                       minHeight: "100%",
                     }}
@@ -97,7 +97,7 @@ const CarouselWithDots = ({ slides, escritorio }: CarouselWithButtonsProps) => {
                     plugins={[responsive(), placeholder()]}
                   />
                   <figcaption
-                    className={`z-50 flex h-full w-full items-center justify-center pb-3 text-5xl font-extrabold  ${
+                    className={` border  border-r-black z-50 flex h-full w-full items-center justify-center pb-3 text-5xl font-extrabold  ${
                       escritorio ? " text-gray" : "text-[#f8f8f8]"
                     } `}
                   >
