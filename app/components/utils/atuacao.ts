@@ -38,7 +38,7 @@ export const cards: { icon: any; titulo: string; descricao: any[] }[] = [
     },
     {
       icon: familyIcon,
-      titulo: "Direito de Família",
+      titulo: "Direito de Família e Sucessões",
       descricao: [
         "Ações de alimentos para obtenção de pensão alimentícia;",
         "Petição de herança;",
@@ -62,26 +62,14 @@ export const cards: { icon: any; titulo: string; descricao: any[] }[] = [
       icon: locationIcon,
       titulo: "Direito Imobiliário",
       descricao: [
-        "Horas extras e jornada excessiva de trabalho",
-        "Acúmulo e desvio de função",
-        "Falta de registro em carteira de trabalho",
-        "Danos morais",
-        "Verbas Rescisórias",
-        "Demissão indevida por Justa Causa",
-        "Insalubridade e Periculosidade",
+       "Locação;","Negociação de imóveis;","Relações condominiais;","Regularização e registro de imóveis;","Usucapião"
       ],
     },
     {
       icon: policeIcon,
       titulo: "Direito Criminal",
       descricao: [
-        "Horas extras e jornada excessiva de trabalho",
-        "Acúmulo e desvio de função",
-        "Falta de registro em carteira de trabalho",
-        "Danos morais",
-        "Verbas Rescisórias",
-        "Demissão indevida por Justa Causa",
-        "Insalubridade e Periculosidade",
+        "Diligência em termo circunstanciado de Juizados Especiais Criminais;", "Atos junto a órgãos policiais;", "Impetração de Ação autônoma de Habeas Corpuspreventivo ou liberatório;", "Atuação em processo relativo ao Estatuto da Criança e do Adolescente	"
       ],
     },
     {
@@ -101,10 +89,10 @@ export const cards: { icon: any; titulo: string; descricao: any[] }[] = [
       icon: accountBalanceIcon,
       titulo: "Direito Administrativo",
       descricao: [
-        "Contratos que envolvem Propriedades Rurais e Áreas de Proteção;",
-        "Licenciamento, Alvarás e Cadastros Legais",
-        "Falta de registro em carteira de trabalho",
-        "Ação Civil Pública",
+        "Sindicância e processo administrativo - acompanhamento/defesa;",
+        "Processo administrativo - Recurso;",
+        "Ação ou defesa - fase administrativa;",
+        "	Ação ou defesa - fase judicial;",
       ],
     },
     {
@@ -121,13 +109,7 @@ export const cards: { icon: any; titulo: string; descricao: any[] }[] = [
       icon: devicesIcon,
       titulo: "Consultoria Para Advogados",
       descricao: [
-        "Horas extras e jornada excessiva de trabalho",
-        "Acúmulo e desvio de função",
-        "Falta de registro em carteira de trabalho",
-        "Danos morais",
-        "Verbas Rescisórias",
-        "Demissão indevida por Justa Causa",
-        "Insalubridade e Periculosidade",
+       "Prestamos consultoria para Advogados"
       ],
     },
     {

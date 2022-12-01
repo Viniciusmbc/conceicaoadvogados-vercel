@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className=" min-h-[175px] w-screen bg-gray">
       <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center py-6 md:justify-around">
-        <Logo oab="OAB/RS 21.527" footer={true} />
+        <Logo footer={true} />
         <div className="  border-r-2 border-brown"></div>
         <address className="mt-5 flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-white md:mt-0 md:flex-row ">
           <div className=" w-56 text-center text-lg">
@@ -18,9 +18,6 @@ export default function Footer() {
             <div className=" flex justify-between gap-y-5 text-white md:gap-y-0 ">
               <span className=" fill-white">{phoneIcon}</span>
               (55) 3027 5978 | (55) 3317 5978
-            </div>
-            <div className=" flex justify-between ">
-              <span className=" fill-white">{mailIcon}</span>
             </div>
           </div>
         </address>

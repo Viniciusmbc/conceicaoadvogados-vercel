@@ -45,10 +45,10 @@ export default function Navbar({ navbar }: { navbar: boolean }) {
         changeNav ? "sticky bg-gray" : "absolute top-0 z-50   bg-gray/10"
       } `}
     >
-      <div className=" flex min-w-full  border-b border-white  text-sm text-black ">
+      <div className=" flex min-w-full  border-b border-white  text-sm text-white ">
         {!changeNav && (
           <div
-            className={` mx-auto flex w-full max-w-screen-xl items-center justify-center py-1 px-4 ${
+            className={` fill-white mx-auto flex w-full max-w-screen-xl items-center justify-center py-1 px-4 ${
               !navbar && "hidden"
             }`}
           >
