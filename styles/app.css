@@ -25,14 +25,7 @@
     margin: 0.5rem auto auto auto;
   }
 
-  .titulo :last-child {
-    font-weight: 900;
-    color: #bd845c;
-    font-size: 1.5rem;
-    text-align: center;
-    text-shadow: black 0.1em 0.1em 0.2em;
-    margin: 0.5rem auto auto auto;
-  }
+ 
 
   @media (max-width: 768px) {
     .titulo {

@@ -1,9 +1,8 @@
 type LogoProps = {
-  oab?: string;
   footer: boolean;
 };
 
-export default function Logo({ oab, footer }: LogoProps) {
+export default function Logo({ footer }: LogoProps) {
   return (
     <figure
       className={`flex  w-fit max-w-full  items-center justify-center ${
@@ -31,7 +30,6 @@ export default function Logo({ oab, footer }: LogoProps) {
           ADVOGADOS
         </span>{" "}
         <br></br>
-        <span className=" text-gold text-base">{oab}</span>
       </figcaption>
     </figure>
   );

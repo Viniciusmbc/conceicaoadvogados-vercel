@@ -9,6 +9,7 @@ import {
   facebookIcon,
   genericHamburgerLine,
   InstagramIcon,
+  phoneIcon,
   whatsappIcon,
 } from "~/components/common/Icons";
 import Logo from "~/components/common/Logo";
@@ -44,14 +45,16 @@ export default function Navbar({ navbar }: { navbar: boolean }) {
         changeNav ? "sticky bg-gray" : "absolute top-0 z-50   bg-gray/10"
       } `}
     >
-      <div className=" flex min-w-full  border-b  text-sm text-white ">
+      <div className=" flex min-w-full  border-b border-white  text-sm text-black ">
         {!changeNav && (
           <div
             className={` mx-auto flex w-full max-w-screen-xl items-center justify-center py-1 px-4 ${
               !navbar && "hidden"
             }`}
           >
-            conceicaoadvogados@yahoo.com.br | (55) 3027 5978 (55) 3317 5978{" "}
+            {" "}
+            {phoneIcon}
+            (55) 3027 5978 | (55) 3317 5978{" "}
             <div className=" ml-auto flex items-center justify-center pr-4">
               <figure>{facebookIcon}</figure>
               <figure>{InstagramIcon}</figure>

@@ -8,10 +8,10 @@ export default function Footer() {
         <Logo oab="OAB/RS 21.527" footer={true} />
         <div className="  border-r-2 border-brown"></div>
         <address className="mt-5 flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-white md:mt-0 md:flex-row ">
-          <div className=" w-56 text-center">
+          <div className=" w-56 text-center text-lg">
             Rua André Marques, 718, Térreo, Centro, <br></br> Santa Maria - RS
           </div>
-          <div className=" w-56 text-center">
+          <div className=" w-56 text-center text-lg">
             Av. Walter Jobim, 987, Patronato,<br></br> Santa Maria - RS
           </div>
           <div className=" flex flex-col items-center justify-center gap-x-4 ">
@@ -21,7 +21,6 @@ export default function Footer() {
             </div>
             <div className=" flex justify-between ">
               <span className=" fill-white">{mailIcon}</span>
-              conceicaoadvogados@yahoo.com.br
             </div>
           </div>
         </address>

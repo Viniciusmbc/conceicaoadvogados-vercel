@@ -10,7 +10,6 @@ export const TituloAdv = (
     <h1 className="titulo">
       CONCEIÇÃO<br></br>
       <span>ADVOGADOS</span>
-      <span className=" text-xl">OAB/RS 21.527</span>
     </h1>
   </div>
 );

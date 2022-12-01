@@ -140,7 +140,7 @@ export default function Index() {
         </div>
       </section>
 
-      <div className=" min-h-[100vh] w-screen bg-white ">
+      <div className=" h-[100vh] w-screen bg-white ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 700 10"
@@ -150,12 +150,12 @@ export default function Index() {
         >
           <path d="M350,10L340,0h20L350,10z"></path>
         </svg>
-        <section className="mx-auto flex max-w-screen-xl flex-col items-center justify-center pb-5">
-          <strong className="mx-auto my-5 text-center text-3xl md:text-left md:text-4xl">
+        <section className="mx-auto flex max-w-screen-xl flex-col items-center justify-center min-h-[90vh]">
+          <strong className="mx-auto  mt-8 flex items-center justify-center  text-center text-3xl md:text-left md:text-4xl">
             Últimos de Nossos Artigos
           </strong>
 
-          <div className=" mt-4 flex w-screen max-w-screen-xl flex-wrap items-center justify-around gap-y-8 ">
+          <div className=" h-[90vh] flex w-screen max-w-screen-xl flex-wrap items-center justify-around gap-y-8 ">
             {artigos.map(
               (
                 { imagem, alt, autor, data, icone, titulo, descricao },
@@ -196,35 +196,21 @@ export default function Index() {
             </p>
 
             <address className=" flex flex-wrap justify-around gap-y-4">
-              <div className=" flex flex-col  items-center justify-center my-6">
+              <a
+                href="https://goo.gl/maps/iW4J74Rqbn2boJC67"
+                className=" flex flex-col  items-center justify-center my-6"
+              >
                 ​ Rua André Marques, 718, centro. <br></br> Telefone para
                 Contato: (55) 3317.5978
-                <iframe
-                  title="Endereço do Conceição Advogados no Bairro Centro em Santa Maria, RS"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3466.210824773746!2d-53.806955884945836!3d-29.684666782014606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9503cbd55c0e234d%3A0xdf50d2c04d94dc0d!2zQ09OQ0VJw4fDg08gQURWT0dBRE9T!5e0!3m2!1spt-BR!2sbr!4v1669601491186!5m2!1spt-BR!2sbr"
-                  width="200"
-                  height="200"
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  className=" mt-4"
-                ></iframe>
-              </div>
+              </a>
               <span className=" border border-r-white hidden md:block"></span>
-              <div className=" flex flex-col items-center justify-center my-6">
+              <a
+                href="https://goo.gl/maps/KhwPt2e9uodKqoNN8"
+                className=" flex flex-col items-center justify-center my-6"
+              >
                 Av Walter Jobim, 987, Patronato. <br></br> Telefone para
                 Contato: (55) 3027.5978
-                <iframe
-                  title="Endereço do Conceição Advogados no Bairro Patronato em Santa Maria, RS"
-                  src={
-                    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3465.686150078617!2d-53.84325418494549!3d-29.699877682008903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9503cc943be6bb97%3A0x99ede35e51703b04!2zQ29uY2Vpw6fDo28gQWR2b2dhZG9z!5e0!3m2!1spt-BR!2sbr!4v1669601649376!5m2!1spt-BR!2sbr"
-                  }
-                  width="200"
-                  height="200"
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  className=" mt-4"
-                ></iframe>
-              </div>
+              </a>
             </address>
           </div>
           <p className=" text-center mt-6">
