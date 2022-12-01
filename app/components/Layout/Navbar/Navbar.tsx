@@ -62,8 +62,20 @@ export default function Navbar({ navbar }: { navbar: boolean }) {
               (55) 3317 5978{" "}
             </a>{" "}
             <div className=" ml-auto flex items-center justify-center pr-4">
-              <figure>{facebookIcon}</figure>
-              <figure>{InstagramIcon}</figure>
+              <a
+                href="https://www.facebook.com/conceicaoadvogadossm/"
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                {facebookIcon}
+              </a>
+              <a
+                href="https://www.instagram.com/conceicaoadvogadossm/"
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                {InstagramIcon}
+              </a>
             </div>
           </div>
         )}
