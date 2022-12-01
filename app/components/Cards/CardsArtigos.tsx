@@ -44,7 +44,7 @@ export default function CardsArtigos({
         <h3 className=" text-lg font-bold text-[#6E452D] ">{titulo}</h3>
         <p className=" text-lg leading-relaxed text-[#4F4F4F]">{descricao}</p>
         <Link
-          className=" font-bold hover:text-gray"
+          className=" text-[#22140B] font-bold hover:text-gray"
           to={`/${titulo.toLowerCase()}`}
         >
           Continue Lendo

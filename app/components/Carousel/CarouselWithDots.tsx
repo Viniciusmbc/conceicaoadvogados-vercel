@@ -74,6 +74,7 @@ const CarouselWithDots = ({ slides, escritorio }: CarouselWithButtonsProps) => {
                 >
                   <Image
                     loaderUrl="/api/image"
+                    alt="Imagem do Escritório do Conceição Advogados"
                     src={imagem}
                     placeholder="blur"
                     options={{

@@ -13,6 +13,7 @@ interface ArrowButtonProps {
 
 export const DotButton = ({ selected, onClick }: DotButtonProps) => (
   <button
+    aria-label="Muda a foto"
     className={`  relative mx-2 flex h-3 w-3 cursor-pointer items-center rounded-full p-0 ${
       selected ? " bg-brown" : " bg-white"
     }`}
@@ -23,6 +24,7 @@ export const DotButton = ({ selected, onClick }: DotButtonProps) => (
 
 export const PrevButton = ({ enabled, onClick, thumb }: ArrowButtonProps) => (
   <button
+    aria-label="Muda a foto"
     className={`absolute top-2/4 ${
       thumb ? "-left-[25px]" : "-left-[35px]"
     } -left-[25px] right-full h-5 w-5  `}
