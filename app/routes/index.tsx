@@ -37,54 +37,53 @@ export default function Index() {
           backgroundImage:
             'url("https://res.cloudinary.com/deaejawfj/image/upload/v1669419285/AdobeStock_298230770_Preview_gndmje.jpg")',
         }}
-        className="m-auto flex min-h-screen items-center justify-center bg-cover bg-fixed bg-center"
+        className="m-auto  min-h-screen items-center justify-center bg-cover bg-fixed bg-center"
       >
-        <article className=" bg-white/70  p-3">
-          <div className=" mx-auto  w-full max-w-5xl text-justify text-lg">
-            <h2 className=" mx-auto px-12 pt-12 text-center font-extrabold text-brown md:text-left md:text-4xl ">
-              QUEM SOMOS
-            </h2>
-            <p className=" px-12 pt-5 leading-loose">
+        <h2 className=" mx-auto py-12 text-center font-extrabold text-brown md:text-center md:text-4xl ">
+          QUEM SOMOS
+        </h2>
+
+        <div className=" grid grid-cols-2  justify-items-center">
+          <AdvancedImage
+            alt={`Foto do sócio fundador Dr. José Inácio Conceição`}
+            style={{
+              maxWidth: "85%",
+              maxHeight: "80%",
+            }}
+            cldImg={cld
+              .image(`IMG-20221201-WA0037_qmehg7`)
+              .format("auto")
+              .quality("auto")}
+            plugins={[responsive(), placeholder()]}
+          />
+          <div className=" pr-5 text-lg">
+            <p className="  pt-5 leading-loose text-white">
               <strong>CONCEIÇÃO ADVOGADOS</strong> é um escritório moderno,
               versátil e dinâmico, cujo objetivo é levar soluções criativas e
               eficazes aos clientes, tendo como sócio fundador{" "}
               <b>Dr. José Inácio Conceição</b>, profissional com sólida formação
               e vasta experiência em questões de grande complexidade.
             </p>
-            <picture className=" mx-auto max-w-fit">
-              <AdvancedImage
-                alt={`Foto do sócio fundador Dr. José Inácio Conceição`}
-                style={{
-                  maxWidth: "40%",
-                  maxHeight: "30%",
-                }}
-                cldImg={cld
-                  .image(`IMG-20221201-WA0037_qmehg7`)
-                  .format("auto")
-                  .quality("auto")}
-                plugins={[responsive(), placeholder()]}
-              />
-            </picture>
 
-            <p className=" px-12 leading-loose">
+            <p className="  leading-loose text-white">
               De fato, nossa atuação abarca a experiência adquirida em mais de
               30 anos de advocacia, estando em total sinergia com a
               proatividade, resultando em um serviço diferenciado e
               personalizado ao cliente.
             </p>
-            <p className=" px-12 leading-loose">
+            <p className=" leading-loose text-white">
               Somos mais que prestadores de serviços, estamos comprometidos em
               buscar sempre a solução ideal para nosso cliente, trazendo
               resultados objetivos quanto à estratégia traçada.
             </p>
 
-            <p className=" px-12 leading-loose">
+            <p className=" leading-loose text-white">
               Sendo assim, disponibilizamos aos nossos clientes uma assessoria
               jurídica focada nos principais objetivos estratégicos projetados,
               tanto na área consultiva quanto na área contenciosa.
             </p>
           </div>
-        </article>
+        </div>
       </section>
 
       <div className=" w-screen overflow-x-hidden bg-gray/10">
