@@ -11,8 +11,8 @@ import Autoplay, {
   AutoplayType,
 } from "embla-carousel-autoplay";
 
+import { AdvancedImage, placeholder, responsive } from "@cloudinary/react";
 import { Cloudinary } from "@cloudinary/url-gen";
-import { AdvancedImage, responsive, placeholder } from "@cloudinary/react";
 
 interface CarouselWithButtonsProps {
   slides: any;
@@ -75,7 +75,7 @@ const CarouselWithDots = ({ slides, escritorio }: CarouselWithButtonsProps) => {
             {slides.map(({ imagem, texto }: any, index: React.Key | number) => (
               <div className=" relative -z-40 min-w-full " key={index}>
                 <figure
-                  className="relative -z-30 h-screen w-screen overflow-hidden first:-z-50
+                  className="relative -z-30 h-screen w-screen min-w-[100vw] overflow-hidden first:-z-50
                    "
                 >
                   <AdvancedImage
@@ -89,7 +89,7 @@ const CarouselWithDots = ({ slides, escritorio }: CarouselWithButtonsProps) => {
                       .image(`${imagem}`)
                       .format("auto")
                       .quality("auto")}
-                    plugins={[responsive(), placeholder()]}
+                    plugins={[responsive(), placeholder("blur")]}
                   />
                   <figcaption
                     className={` border  border-r-black z-50 flex h-full w-full items-center justify-center pb-3 text-5xl font-extrabold  ${
