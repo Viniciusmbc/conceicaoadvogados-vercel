@@ -1,4 +1,3 @@
-import { Link, useLoaderData } from "@remix-run/react";
 import CardsAtuacao from "~/components/Cards/CardsAtuacao";
 
 import depoimentosGoogle1 from "../../public/depoimento-2.jpg";
@@ -16,8 +15,16 @@ import { artigos } from "~/components/utils/artigos";
 
 import { cards } from "~/components/utils/atuacao";
 import { slide } from "~/components/utils/slide";
+import { AdvancedImage, responsive, placeholder } from "@cloudinary/react";
+import { Cloudinary } from "@cloudinary/url-gen";
 
 export default function Index() {
+  const cld = new Cloudinary({
+    cloud: {
+      cloudName: "deaejawfj",
+    },
+  });
+
   return (
     <>
       <Navbar navbar={true} />
@@ -34,24 +41,47 @@ export default function Index() {
       >
         <article className=" bg-white/70  p-3">
           <div className=" mx-auto  w-full max-w-5xl text-justify text-lg">
-            <h2 className=" mx-auto px-12 pt-12 text-center font-extrabold text-gray md:text-left md:text-4xl ">
+            <h2 className=" mx-auto px-12 pt-12 text-center font-extrabold text-brown md:text-left md:text-4xl ">
               QUEM SOMOS
             </h2>
             <p className=" px-12 pt-5 leading-loose">
-              Conceição Advogados foi fundado em 1980 por Manoel Rodrigues
-              Conceição (Nelinho). Conta com uma equipe especializada para
-              atender, orientar e representar pessoas físicas e jurídicas, em
-              várias áreas do direito, nas esferas extrajudicial e judicial.
+              <strong>CONCEIÇÃO ADVOGADOS</strong> é um escritório moderno,
+              versátil e dinâmico, cujo objetivo é levar soluções criativas e
+              eficazes aos clientes, tendo como sócio fundador{" "}
+              <b>Dr. José Inácio Conceição</b>, profissional com sólida formação
+              e vasta experiência em questões de grande complexidade.
+            </p>
+            <picture className=" mx-auto max-w-fit">
+              <AdvancedImage
+                alt={`Foto do sócio fundador Dr. José Inácio Conceição`}
+                style={{
+                  maxWidth: "40%",
+                  maxHeight: "30%",
+                }}
+                cldImg={cld
+                  .image(`IMG-20221201-WA0037_qmehg7`)
+                  .format("auto")
+                  .quality("auto")}
+                plugins={[responsive(), placeholder()]}
+              />
+            </picture>
+
+            <p className=" px-12 leading-loose">
+              De fato, nossa atuação abarca a experiência adquirida em mais de
+              30 anos de advocacia, estando em total sinergia com a
+              proatividade, resultando em um serviço diferenciado e
+              personalizado ao cliente.
             </p>
             <p className=" px-12 leading-loose">
-              Adota como princípios de sua atuação profissional o atendimento
-              personalizado; a agilidade na tomada de decisões; a independência;
-              a honestidade; a lealdade; a dignidade; a boa-fé; e, o
-              aperfeiçoamento técnico e pessoal da equipe de profissionais.
+              Somos mais que prestadores de serviços, estamos comprometidos em
+              buscar sempre a solução ideal para nosso cliente, trazendo
+              resultados objetivos quanto à estratégia traçada.
             </p>
-            <p className=" px-12 pb-12 leading-loose">
-              Para empresas prestamos serviços de assessoria jurídica preventiva
-              e contenciosa.
+
+            <p className=" px-12 leading-loose">
+              Sendo assim, disponibilizamos aos nossos clientes uma assessoria
+              jurídica focada nos principais objetivos estratégicos projetados,
+              tanto na área consultiva quanto na área contenciosa.
             </p>
           </div>
         </article>
@@ -88,9 +118,8 @@ export default function Index() {
                   className=" flex max-w-fit items-center justify-center gap-x-1   text-[#1BE817] border border-black ml-2 py-2 px-4   bg-[#332015]   "
                 >
                   <span className=" text-[#1BE817]">{whatsappIcon}</span>
-                  WhatsApp
+                  WhatsApp !
                 </a>
-                !
               </p>
             </div>
             <p className=" px-4 md:px-0">
@@ -206,10 +235,10 @@ export default function Index() {
               >
                 ​ Rua André Marques, 718, centro. <br></br> Telefone para
                 Contato:{" "}
-                <a href="tel:+555533175978" target={"_blank"} rel="noreferrer">
-                  {" "}
-                  (55) 3317.5978
-                </a>
+              </a>
+              <a href="tel:+555533175978" target={"_blank"} rel="noreferrer">
+                {" "}
+                (55) 3317.5978
               </a>
               <span className=" border border-r-white hidden md:block"></span>
               <a
@@ -218,11 +247,11 @@ export default function Index() {
               >
                 Av Walter Jobim, 987, Patronato. <br></br> Telefone para
                 Contato:{" "}
-                <a href="tel:+555530275978" target={"_blank"} rel="noreferrer">
-                  {" "}
-                  (55) 3027.5978
-                </a>{" "}
               </a>
+              <a href="tel:+555530275978" target={"_blank"} rel="noreferrer">
+                {" "}
+                (55) 3027.5978
+              </a>{" "}
             </address>
           </div>
           <p className=" text-center mt-6">

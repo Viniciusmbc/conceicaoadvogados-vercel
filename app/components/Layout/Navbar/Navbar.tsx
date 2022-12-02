@@ -63,9 +63,10 @@ export default function Navbar({ navbar }: { navbar: boolean }) {
             </a>{" "}
             <div className=" ml-auto flex items-center justify-center pr-4">
               <a
-                href="https://www.facebook.com/conceicaoadvogadossm/"
+                href="https://www.facebook.com/profile.php?id=773922122693598"
                 target={"_blank"}
                 rel="noreferrer"
+                aria-label="clique para entrar no facebok do Escritório Conceição Advogados"
               >
                 {facebookIcon}
               </a>
@@ -73,6 +74,7 @@ export default function Navbar({ navbar }: { navbar: boolean }) {
                 href="https://www.instagram.com/conceicaoadvogadossm/"
                 target={"_blank"}
                 rel="noreferrer"
+                aria-label="clique para entrar no instagram do Escritório Conceição Advogados"
               >
                 {InstagramIcon}
               </a>
@@ -175,19 +177,19 @@ export default function Navbar({ navbar }: { navbar: boolean }) {
             aria-label="abre o menu de navegação"
             onClick={() => setIsOpen(!isOpen)}
           >
-            <div
+            <span
               className={`${genericHamburgerLine} ${
                 isOpen
                   ? "translate-y-3 rotate-45 opacity-50 group-hover:opacity-100"
                   : "opacity-50 group-hover:opacity-100"
               }`}
             />
-            <div
+            <span
               className={`${genericHamburgerLine} ${
                 isOpen ? "opacity-0" : "opacity-50 group-hover:opacity-100"
               }`}
             />
-            <div
+            <span
               className={`${genericHamburgerLine} ${
                 isOpen
                   ? "-translate-y-3 -rotate-45 opacity-50 group-hover:opacity-100"

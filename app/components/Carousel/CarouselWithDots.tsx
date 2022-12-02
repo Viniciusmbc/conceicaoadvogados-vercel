@@ -13,11 +13,6 @@ import Autoplay, {
 
 import { Cloudinary } from "@cloudinary/url-gen";
 import { AdvancedImage, responsive, placeholder } from "@cloudinary/react";
-import { source } from "@cloudinary/url-gen/actions/overlay";
-import { text, image } from "@cloudinary/url-gen/qualifiers/source";
-import { TextStyle } from "@cloudinary/url-gen/qualifiers/textStyle";
-import { Position } from "@cloudinary/url-gen/qualifiers/position";
-import { compass } from "@cloudinary/url-gen/qualifiers/gravity";
 
 interface CarouselWithButtonsProps {
   slides: any;
