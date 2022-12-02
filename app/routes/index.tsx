@@ -89,8 +89,8 @@ export default function Index() {
       <div className=" w-screen overflow-x-hidden bg-gray/10">
         <section className="mx-auto flex w-screen max-w-screen-xl  flex-col py-7">
           <div className=" flex w-full flex-col  text-center">
-            <p className=" flex  justify-center gap-x-2 text-center text-base md:text-2xl ">
-              Problemas com  
+            <div className=" flex  justify-center gap-x-2 text-center text-base md:text-2xl ">
+              <p> Problemas com </p>
               <Typewriter
                 options={{
                   strings: [
@@ -103,7 +103,8 @@ export default function Index() {
                   loop: true,
                 }}
               />
-            </p>
+            </div>
+
             <div className=" flex ">
               <p className=" my-4 mx-auto flex w-full flex-wrap items-center justify-center text-base md:text-2xl ">
                 {" "}
@@ -154,22 +155,8 @@ export default function Index() {
       <section className="mx-auto max-w-screen-xl py-16 ">
         <h4 className=" mx-auto w-full text-center text-4xl">
           Veja as <span className=" text-brown"> Avaliações</span> de Nossos
-          Clientes nas Redes Sociais
+          Clientes no Google
         </h4>
-        <div className=" flex flex-wrap ">
-          <img
-            src={depoimentosGoogle1}
-            alt="Depoimento de um cliente satisfeito"
-          />
-          <img
-            src={depoimentosGoogle1}
-            alt="Depoimento de um cliente satisfeito"
-          />
-          <img
-            src={depoimentosGoogle1}
-            alt="Depoimento de um cliente satisfeito"
-          />
-        </div>
       </section>
 
       <div className=" h-[100vh] w-screen bg-white ">
@@ -228,29 +215,33 @@ export default function Index() {
             </p>
 
             <address className=" flex flex-wrap justify-around gap-y-4">
-              <a
-                href="https://goo.gl/maps/iW4J74Rqbn2boJC67"
-                className=" flex flex-col  items-center justify-center my-6"
-              >
-                ​ Rua André Marques, 718, centro. <br></br> Telefone para
-                Contato:{" "}
-              </a>
-              <a href="tel:+555533175978" target={"_blank"} rel="noreferrer">
-                {" "}
-                (55) 3317.5978
-              </a>
+              <div>
+                <a
+                  href="https://goo.gl/maps/iW4J74Rqbn2boJC67"
+                  className=" flex flex-col  items-center justify-center"
+                >
+                  ​ Rua André Marques, 718, centro. <br></br> Telefone para
+                  Contato:{" "}
+                </a>
+                <a href="tel:+555533175978" target={"_blank"} rel="noreferrer">
+                  {" "}
+                  (55) 3317.5978
+                </a>
+              </div>
               <span className=" border border-r-white hidden md:block"></span>
-              <a
-                href="https://goo.gl/maps/KhwPt2e9uodKqoNN8"
-                className=" flex flex-col items-center justify-center my-6"
-              >
-                Av Walter Jobim, 987, Patronato. <br></br> Telefone para
-                Contato:{" "}
-              </a>
-              <a href="tel:+555530275978" target={"_blank"} rel="noreferrer">
-                {" "}
-                (55) 3027.5978
-              </a>{" "}
+              <div>
+                <a
+                  href="https://goo.gl/maps/KhwPt2e9uodKqoNN8"
+                  className=" flex flex-col items-center justify-center"
+                >
+                  Av Walter Jobim, 987, Patronato. <br></br> Telefone para
+                  Contato:{" "}
+                </a>
+                <a href="tel:+555530275978" target={"_blank"} rel="noreferrer">
+                  {" "}
+                  (55) 3027.5978
+                </a>{" "}
+              </div>
             </address>
           </div>
           <p className=" text-center mt-6">
