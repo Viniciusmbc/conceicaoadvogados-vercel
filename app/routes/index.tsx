@@ -15,16 +15,8 @@ import { artigos } from "~/components/utils/artigos";
 
 import { cards } from "~/components/utils/atuacao";
 import { slide } from "~/components/utils/slide";
-import { AdvancedImage, responsive, placeholder } from "@cloudinary/react";
-import { Cloudinary } from "@cloudinary/url-gen";
 
 export default function Index() {
-  const cld = new Cloudinary({
-    cloud: {
-      cloudName: "deaejawfj",
-    },
-  });
-
   return (
     <>
       <Navbar navbar={true} />
@@ -32,32 +24,20 @@ export default function Index() {
       <section className=" h-[100vh] overflow-x-hidden overflow-y-hidden">
         <CarouselWithDots slides={slide} texto={""} escritorio={false} />
       </section>
-      <section
-        style={{
-          backgroundImage:
-            'url("https://res.cloudinary.com/deaejawfj/image/upload/v1669419285/AdobeStock_298230770_Preview_gndmje.jpg")',
-        }}
-        className="m-auto  min-h-screen items-center justify-center bg-cover bg-fixed bg-center"
-      >
-        <h2 className=" mx-auto py-12 text-center font-extrabold text-brown md:text-center md:text-4xl ">
+      <section className="backgroundImage m-auto min-h-screen items-center justify-center bg-cover bg-fixed bg-center">
+        <h2 className=" mx-auto py-12 text-xl text-center font-extrabold text-white md:text-center md:text-4xl ">
           QUEM SOMOS
         </h2>
 
-        <div className=" grid grid-cols-2  justify-items-center">
-          <AdvancedImage
-            alt={`Foto do sócio fundador Dr. José Inácio Conceição`}
-            style={{
-              maxWidth: "85%",
-              maxHeight: "80%",
-            }}
-            cldImg={cld
-              .image(`IMG-20221201-WA0037_qmehg7`)
-              .format("auto")
-              .quality("auto")}
-            plugins={[responsive(), placeholder()]}
+        <div className=" grid grid-rows-2 md:grid-cols-2    justify-items-center">
+          <img
+            className=" h-[344px] w-80"
+            src="https://res.cloudinary.com/deaejawfj/image/upload/v1670108037/imagem-socio-fundador-conceica-advogados.webp"
+            alt="Imagem do Sócio Fundador do Conceiçaao Advogados"
+            srcSet="https://res.cloudinary.com/deaejawfj/image/upload/v1670108037/imagem-socio-fundador-conceica-advogados.webp 1x"
           />
-          <div className=" pr-5 text-lg">
-            <p className="  pt-5 leading-loose text-white">
+          <div className=" mx-auto px-5 text-lg">
+            <p className="  md:pt-5 leading-loose text-white">
               <strong>CONCEIÇÃO ADVOGADOS</strong> é um escritório moderno,
               versátil e dinâmico, cujo objetivo é levar soluções criativas e
               eficazes aos clientes, tendo como sócio fundador{" "}
@@ -169,12 +149,12 @@ export default function Index() {
         >
           <path d="M350,10L340,0h20L350,10z"></path>
         </svg>
-        <section className="mx-auto flex max-w-screen-xl flex-col items-center justify-center h-auto md:min-h-[90vh]">
+        <section className="mx-auto overflow-y-scroll flex max-w-screen-xl flex-col items-center justify-center  pb-32 h-screen md:min-h-[90vh]">
           <strong className="mx-auto  mt-8 flex items-center justify-center  text-center text-3xl md:text-left md:text-4xl">
             Últimos de Nossos Artigos
           </strong>
 
-          <div className=" h-auto  md:h-[100vh] flex w-screen max-w-screen-xl flex-wrap items-center justify-around gap-y-8 ">
+          <div className=" overflow-y-scroll min-h-screen  md:h-[100vh] flex w-screen max-w-screen-xl flex-wrap items-center justify-around gap-y-8 ">
             {artigos.map(
               (
                 { imagem, alt, autor, data, icone, titulo, descricao },

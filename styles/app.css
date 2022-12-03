@@ -25,7 +25,9 @@
     margin: 0.5rem auto auto auto;
   }
 
- 
+  .backgroundImage {
+    background-image: url("https://res.cloudinary.com/deaejawfj/image/upload/e_art:incognito/v1670108387/backgroundImageQuemSomos-1_yzow57.webp");
+  }
 
   @media (max-width: 768px) {
     .titulo {

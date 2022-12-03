@@ -11,8 +11,8 @@ import Autoplay, {
   AutoplayType,
 } from "embla-carousel-autoplay";
 
-import { AdvancedImage, placeholder, responsive } from "@cloudinary/react";
-import { Cloudinary } from "@cloudinary/url-gen";
+import { BlurrableImage } from "../Image/blurrable.image";
+import { getImageBuilder, getImgProps } from "../Image/ImgProps";
 
 interface CarouselWithButtonsProps {
   slides: any;
@@ -61,46 +61,37 @@ const CarouselWithDots = ({ slides, escritorio }: CarouselWithButtonsProps) => {
     embla.on("select", onSelect);
   }, [embla, setScrollSnaps, onSelect]);
 
-  const cld = new Cloudinary({
-    cloud: {
-      cloudName: "deaejawfj",
-    },
-  });
-
   return (
     <>
       <div className="relative mx-auto ">
         <div className=" w-full overflow-hidden" ref={viewportRef}>
           <div className=" flex">
-            {slides.map(({ imagem, texto }: any, index: React.Key | number) => (
-              <div className=" relative -z-40 min-w-full " key={index}>
-                <figure
-                  className="relative -z-30 h-screen w-screen min-w-[100vw] overflow-hidden first:-z-50
-                   "
-                >
-                  <AdvancedImage
-                    className="-z-50 absolute"
-                    alt={`Imagem de ${texto}`}
-                    style={{
-                      maxWidth: "100%",
-                      minHeight: "100%",
-                    }}
-                    cldImg={cld
-                      .image(`${imagem}`)
-                      .format("auto")
-                      .quality("auto")}
-                    plugins={[responsive(), placeholder("blur")]}
-                  />
-                  <figcaption
-                    className={` border  border-r-black z-50 flex h-full w-full items-center justify-center pb-3 text-5xl font-extrabold  ${
-                      escritorio ? " text-gray" : "text-[#f8f8f8]"
-                    } `}
-                  >
-                    {texto}
-                  </figcaption>
-                </figure>
-              </div>
-            ))}
+            {slides.map(
+              ({ src, srcset, texto }: any, index: React.Key | number) => (
+                <div className=" relative -z-40 min-w-full " key={index}>
+                  <figure className="relative -z-30 h-screen">
+                    <img
+                      width="1920"
+                      height="1080"
+                      className=" w-full min-w-screen h-screen absolute -z-50"
+                      src={`${src}`}
+                      srcSet={srcset.map((src: string) => `${src}`)}
+                      sizes="((min-width: 50em) and (max-width: 60em)) 50em,
+                      ((min-width: 30em) and (max-width: 50em)) 30em,
+                      (max-width: 30em) 20em"
+                      alt={`Imagem de ${texto}`}
+                    />
+                    <figcaption
+                      className={` border  border-r-black z-50 flex h-full w-full items-center justify-center pb-3 text-5xl font-extrabold  ${
+                        escritorio ? " text-gray" : "text-[#f8f8f8]"
+                      } `}
+                    >
+                      {texto}
+                    </figcaption>
+                  </figure>
+                </div>
+              )
+            )}
           </div>
         </div>
       </div>
