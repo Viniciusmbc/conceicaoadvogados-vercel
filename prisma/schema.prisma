@@ -6,12 +6,12 @@ generator client {
 }
 
 datasource db {
-  provider = "cockroachdb"
-  url      = env("DATABASE_URL")
+  provider = "postgresql"
+  url      = env("postgresql://viniciuscaceres:olgaolga@localhost:5432/dev.db")
 }
 
 model User {
-  id   Int    @id @default(sequence())
+  id   Int    @id
   name String
 }
 

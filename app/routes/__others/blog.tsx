@@ -1,30 +1,20 @@
-import type { Post } from "@prisma/client";
 import type { LoaderFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { db } from "~/components/utils/db.server";
-
-type LoaderData = {
-  postListItems: Array<Post>;
-};
+import { supabase } from "~/components/utils/supabaseClient";
 
 export const loader: LoaderFunction = async () => {
-  const data = {
-    postListItems: await db.post.findMany({
-      take: 5,
-      select: { id: true, name: true },
-      orderBy: { createdAt: "desc" },
-    }),
-  };
-  return json(data);
+  let { data: post, error } = await supabase.from("post").select("*");
+
+  return { post, error };
 };
 
 export default function Blog() {
   const [isOpen, setIsOpen] = useState(false);
   const [menu, setMenu] = useState("inicio");
-  const data = useLoaderData<LoaderData>();
+  const data = useLoaderData();
   console.log(data);
 
   return (
@@ -32,19 +22,6 @@ export default function Blog() {
       <aside className=" mt-16 ml-auto mr-16 max-w-screen-xl flex-col items-center hidden md:flex  ">
         <ul className=" mx-auto flex-col flex justify-center">
           <li className=" mx-auto">Últimas Postagens</li>
-          {data.postListItems.map((post) => (
-            <li key={post.id}>
-              <Link
-                to={`/${post.name
-                  .replace(/( )+/g, "-")
-                  .normalize("NFD")
-                  .replace(/[\u0300-\u036f]/g, "")
-                  .toLowerCase()}`}
-              >
-                {post.name}
-              </Link>
-            </li>
-          ))}
         </ul>
       </aside>
       <section className=" mr-auto flex flex-wrap max-w-7xl flex-col gap-4">
