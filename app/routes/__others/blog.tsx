@@ -18,11 +18,6 @@ export const loader: LoaderFunction = async () => {
       orderBy: { createdAt: "desc" },
     }),
   };
-  const posts = {
-    postListItems: await db.post.findMany({
-      select: { id: true, name: true },
-    }),
-  };
   return json(data);
 };
 
