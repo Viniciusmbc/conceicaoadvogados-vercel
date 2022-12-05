@@ -7,9 +7,12 @@ async function seed() {
       return db.post.create({ data: post });
     })
   );
+
 }
 
 seed();
+
+
 
 function getPost() {
   return [
