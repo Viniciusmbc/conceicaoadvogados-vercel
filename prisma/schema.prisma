@@ -6,12 +6,12 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
-  url      = env("file:./dev.db")
+  provider = "cockroachdb"
+  url      = env("DATABASE_URL")
 }
 
 model User {
-  id   Int    @id @default(autoincrement())
+  id   Int    @id @default(sequence())
   name String
 }
 
