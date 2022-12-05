@@ -1,19 +1,55 @@
+import type { Post } from "@prisma/client";
+import type { LoaderFunction } from "@remix-run/node";
+import { json } from "@remix-run/node";
+import { useLoaderData } from "@remix-run/react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { genericHamburgerLine } from "~/components/common/Icons";
+import { db } from "~/components/utils/db.server";
 
-export default function Noticias() {
+type LoaderData = {
+  postListItems: Array<Post>;
+};
+
+export const loader: LoaderFunction = async () => {
+  const data = {
+    postListItems: await db.post.findMany({
+      take: 5,
+      select: { id: true, name: true },
+      orderBy: { createdAt: "desc" },
+    }),
+  };
+  const posts = {
+    postListItems: await db.post.findMany({
+      select: { id: true, name: true },
+    }),
+  };
+  return json(data);
+};
+
+export default function Blog() {
   const [isOpen, setIsOpen] = useState(false);
+  const [menu, setMenu] = useState("inicio");
+  const data = useLoaderData<LoaderData>();
+  console.log(data);
+
   return (
     <div className="mx-auto flex w-screen gap-x-7 bg-white">
       <aside className=" mt-16 ml-auto mr-16 max-w-screen-xl flex-col items-center hidden md:flex  ">
-        <ul className=" text-xl">
-          Últimas Postagens
-          <li>Herança</li>
-          <li>Beneficios Previdenciários</li>
-          <li>Aposentadoria</li>
-          <li>Habeas Corpus</li>
-          <li>Contratos</li>
+        <ul className=" mx-auto flex-col flex justify-center">
+          <li className=" mx-auto">Últimas Postagens</li>
+          {data.postListItems.map((post) => (
+            <li key={post.id}>
+              <Link
+                to={`/${post.name
+                  .replace(/( )+/g, "-")
+                  .normalize("NFD")
+                  .replace(/[\u0300-\u036f]/g, "")
+                  .toLowerCase()}`}
+              >
+                {post.name}
+              </Link>
+            </li>
+          ))}
         </ul>
       </aside>
       <section className=" mr-auto flex flex-wrap max-w-7xl flex-col gap-4">
@@ -25,6 +61,7 @@ export default function Noticias() {
           <ul className=" mb-7 flex-wrap text-lg   justify-center gap-x-10 hidden md:flex">
             <li>
               <button
+                onClick={() => setMenu("Direito Penal")}
                 className="hover:underline hover:underline-offset-2 hover:text-brown hover:bg-gray/10"
                 aria-label="clique para ver assuntos sobre Direito Penal"
               >
@@ -33,6 +70,7 @@ export default function Noticias() {
             </li>
             <li>
               <button
+                onClick={() => setMenu("Direito de Familía")}
                 className="hover:underline hover:underline-offset-2 hover:text-brown hover:bg-gray/10"
                 aria-label="clique para ver assuntos sobre Direito de Familia"
               >
@@ -41,6 +79,7 @@ export default function Noticias() {
             </li>
             <li>
               <button
+                onClick={() => setMenu("Direito do Consumidor")}
                 className="hover:underline hover:underline-offset-2 hover:text-brown hover:bg-gray/10"
                 aria-label="clique para ver assuntos sobre Direito Consumidor"
               >
@@ -49,6 +88,7 @@ export default function Noticias() {
             </li>
             <li>
               <button
+                onClick={() => setMenu("Direito Previdenciário")}
                 className="hover:underline hover:underline-offset-2 hover:text-brown hover:bg-gray/10"
                 aria-label="clique para ver assuntos sobre Direito Previdenciario"
               >
@@ -121,116 +161,120 @@ export default function Noticias() {
           </div>
 
           <section className=" flex flex-col justify-center items-center mx-auto">
-            <article>
-              <div className=" mb-10 flex flex-wrap gap-x-10 justify-center px-10 md:px-0">
-                <img
-                  src="https://cdn-bnaga.nitrocdn.com/RLRDfsIUASREgxlKxwrcfDLjYLvppeZR/assets/static/optimized/rev-cd6c4c6/app/uploads/2022/09/When-Is-Guardianship-or-Conservatorship-Needed.jpg"
-                  width={250}
-                  height={180}
-                  alt="Familiar"
-                />
-                <div>
-                  <h2 className=" text-lg font-bold">
-                    <Link
-                      className=" text-lg font-bold mt-2"
-                      to="/quem-tem-direito-a-herança"
-                    >
-                      Quem tem direito a herança?
-                    </Link>
-                  </h2>
-                  <p className=" text-sm mb-2 text-grulo">
-                    Postado em 10/10/10
-                  </p>
-                  <p className=" max-w-lg">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Doloribus velit fugiat quod nam aperiam quam excepturi qui
-                    itaque nesciunt? Suscipit, quis atque ab dolorum amet
-                    veritatis possimus nemo reprehenderit ipsam!
-                  </p>
-                </div>
-              </div>
-            </article>
-            <article>
-              <div className=" mb-10 flex flex-wrap  gap-x-10 justify-center px-10 md:px-0 ">
-                <img
-                  src="https://cdn-bnaga.nitrocdn.com/RLRDfsIUASREgxlKxwrcfDLjYLvppeZR/assets/static/optimized/rev-cd6c4c6/app/uploads/2022/09/When-Is-Guardianship-or-Conservatorship-Needed.jpg"
-                  width={250}
-                  height={180}
-                  alt="Familiar"
-                />
-                <div>
-                  <h2 className=" text-lg font-bold">
-                    <Link
-                      className=" text-lg font-bold my-2"
-                      to="/quem-tem-direito-a-herança"
-                    >
-                      Quem tem direito a herança?
-                    </Link>
-                  </h2>
-                  <p className=" text-sm mb-2">Postado em 10/10/10</p>
-                  <p className=" max-w-lg">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Doloribus velit fugiat quod nam aperiam quam excepturi qui
-                    itaque nesciunt? Suscipit, quis atque ab dolorum amet
-                    veritatis possimus nemo reprehenderit ipsam!
-                  </p>
-                </div>
-              </div>
-            </article>
-            <article>
-              <div className=" mb-10 flex flex-wrap  gap-x-10 justify-center px-10 md:px-0 ">
-                <img
-                  src="https://cdn-bnaga.nitrocdn.com/RLRDfsIUASREgxlKxwrcfDLjYLvppeZR/assets/static/optimized/rev-cd6c4c6/app/uploads/2022/09/When-Is-Guardianship-or-Conservatorship-Needed.jpg"
-                  width={250}
-                  height={180}
-                  alt="Familiar"
-                />
-                <div>
-                  <h2 className=" text-lg font-bold">
-                    <Link
-                      className=" text-lg font-bold my-2"
-                      to="/quem-tem-direito-a-herança"
-                    >
-                      Quem tem direito a herança?
-                    </Link>
-                  </h2>
-                  <p className=" text-sm mb-2">Postado em 10/10/10</p>
-                  <p className=" max-w-lg">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Doloribus velit fugiat quod nam aperiam quam excepturi qui
-                    itaque nesciunt? Suscipit, quis atque ab dolorum amet
-                    veritatis possimus nemo reprehenderit ipsam!
-                  </p>
-                </div>
-              </div>
-            </article>
-            <article>
-              <div className=" mb-10 flex flex-wrap  gap-x-10 justify-center px-10 md:px-0">
-                <img
-                  src="https://cdn-bnaga.nitrocdn.com/RLRDfsIUASREgxlKxwrcfDLjYLvppeZR/assets/static/optimized/rev-cd6c4c6/app/uploads/2022/09/When-Is-Guardianship-or-Conservatorship-Needed.jpg"
-                  width={250}
-                  height={180}
-                  alt="Familiar"
-                />
-                <div>
-                  <h2 className=" text-lg font-bold">
-                    <Link
-                      className=" text-lg font-bold my-2"
-                      to="/quem-tem-direito-a-herança"
-                    >
-                      Quem tem direito a herança?
-                    </Link>
-                  </h2>
-                  <p className=" text-sm mb-2">Postado em 10/10/10</p>
-                  <p className=" max-w-lg">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Doloribus velit fugiat quod nam aperiam quam excepturi qui
-                    itaque nesciunt? Suscipit, quis atque ab dolorum amet
-                    veritatis possimus nemo reprehenderit ipsam!
-                  </p>
-                </div>
-              </div>
-            </article>
+            {menu === "Direito de Familía" && (
+              <>
+                <article>
+                  <div className=" mb-10 flex flex-wrap gap-x-10 justify-center px-10 md:px-0">
+                    <img
+                      src="https://cdn-bnaga.nitrocdn.com/RLRDfsIUASREgxlKxwrcfDLjYLvppeZR/assets/static/optimized/rev-cd6c4c6/app/uploads/2022/09/When-Is-Guardianship-or-Conservatorship-Needed.jpg"
+                      width={250}
+                      height={180}
+                      alt="Familiar"
+                    />
+                    <div>
+                      <h2 className=" text-lg font-bold">
+                        <Link
+                          className=" text-lg font-bold mt-2"
+                          to="/quem-tem-direito-a-herança"
+                        >
+                          Quem tem direito a herança?
+                        </Link>
+                      </h2>
+                      <p className=" text-sm mb-2 text-grulo">
+                        Postado em 10/10/10
+                      </p>
+                      <p className=" max-w-lg">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Doloribus velit fugiat quod nam aperiam quam excepturi
+                        qui itaque nesciunt? Suscipit, quis atque ab dolorum
+                        amet veritatis possimus nemo reprehenderit ipsam!
+                      </p>
+                    </div>
+                  </div>
+                </article>
+                <article>
+                  <div className=" mb-10 flex flex-wrap  gap-x-10 justify-center px-10 md:px-0 ">
+                    <img
+                      src="https://cdn-bnaga.nitrocdn.com/RLRDfsIUASREgxlKxwrcfDLjYLvppeZR/assets/static/optimized/rev-cd6c4c6/app/uploads/2022/09/When-Is-Guardianship-or-Conservatorship-Needed.jpg"
+                      width={250}
+                      height={180}
+                      alt="Familiar"
+                    />
+                    <div>
+                      <h2 className=" text-lg font-bold">
+                        <Link
+                          className=" text-lg font-bold my-2"
+                          to="/quem-tem-direito-a-herança"
+                        >
+                          Quem tem direito a herança?
+                        </Link>
+                      </h2>
+                      <p className=" text-sm mb-2">Postado em 10/10/10</p>
+                      <p className=" max-w-lg">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Doloribus velit fugiat quod nam aperiam quam excepturi
+                        qui itaque nesciunt? Suscipit, quis atque ab dolorum
+                        amet veritatis possimus nemo reprehenderit ipsam!
+                      </p>
+                    </div>
+                  </div>
+                </article>
+                <article>
+                  <div className=" mb-10 flex flex-wrap  gap-x-10 justify-center px-10 md:px-0 ">
+                    <img
+                      src="https://cdn-bnaga.nitrocdn.com/RLRDfsIUASREgxlKxwrcfDLjYLvppeZR/assets/static/optimized/rev-cd6c4c6/app/uploads/2022/09/When-Is-Guardianship-or-Conservatorship-Needed.jpg"
+                      width={250}
+                      height={180}
+                      alt="Familiar"
+                    />
+                    <div>
+                      <h2 className=" text-lg font-bold">
+                        <Link
+                          className=" text-lg font-bold my-2"
+                          to="/quem-tem-direito-a-herança"
+                        >
+                          Quem tem direito a herança?
+                        </Link>
+                      </h2>
+                      <p className=" text-sm mb-2">Postado em 10/10/10</p>
+                      <p className=" max-w-lg">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Doloribus velit fugiat quod nam aperiam quam excepturi
+                        qui itaque nesciunt? Suscipit, quis atque ab dolorum
+                        amet veritatis possimus nemo reprehenderit ipsam!
+                      </p>
+                    </div>
+                  </div>
+                </article>
+                <article>
+                  <div className=" mb-10 flex flex-wrap  gap-x-10 justify-center px-10 md:px-0">
+                    <img
+                      src="https://cdn-bnaga.nitrocdn.com/RLRDfsIUASREgxlKxwrcfDLjYLvppeZR/assets/static/optimized/rev-cd6c4c6/app/uploads/2022/09/When-Is-Guardianship-or-Conservatorship-Needed.jpg"
+                      width={250}
+                      height={180}
+                      alt="Familiar"
+                    />
+                    <div>
+                      <h2 className=" text-lg font-bold">
+                        <Link
+                          className=" text-lg font-bold my-2"
+                          to="/quem-tem-direito-a-herança"
+                        >
+                          Quem tem direito a herança?
+                        </Link>
+                      </h2>
+                      <p className=" text-sm mb-2">Postado em 10/10/10</p>
+                      <p className=" max-w-lg">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Doloribus velit fugiat quod nam aperiam quam excepturi
+                        qui itaque nesciunt? Suscipit, quis atque ab dolorum
+                        amet veritatis possimus nemo reprehenderit ipsam!
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </>
+            )}
           </section>
         </div>
       </section>

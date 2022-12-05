@@ -83,7 +83,9 @@ const CarouselWithDots = ({ slides, escritorio }: CarouselWithButtonsProps) => {
                     />
                     <figcaption
                       className={` border  border-r-black z-50 flex h-full w-full items-center justify-center pb-3 text-5xl font-extrabold  ${
-                        escritorio ? " text-gray" : "text-[#f8f8f8]"
+                        escritorio
+                          ? " text-white text-center w-[40vw] border-none mx-auto leading-relaxed"
+                          : "text-[#f8f8f8]"
                       } `}
                     >
                       {texto}

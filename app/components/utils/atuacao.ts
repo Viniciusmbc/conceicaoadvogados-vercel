@@ -87,12 +87,12 @@ export const cards: { icon: any; titulo: string; descricao: any[] }[] = [
     },
     {
       icon: accountBalanceIcon,
-      titulo: "Direito Administrativo",
+      titulo: "Direito Empresarial",
       descricao: [
-        "Sindicância e processo administrativo - acompanhamento/defesa;",
-        "Processo administrativo - Recurso;",
-        "Ação ou defesa - fase administrativa;",
-        "	Ação ou defesa - fase judicial;",
+        "Pedido de falência e acompanhamento até a decretação",
+        "Ação de Restituição e Ação Reivindicatória",
+        "Pedido de Recuperação de Empresa ",
+        "Habilitação Tempestiva ou Retardatária e Divergência de Crédito"
       ],
     },
     {

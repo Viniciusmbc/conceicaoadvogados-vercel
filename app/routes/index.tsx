@@ -1,7 +1,5 @@
 import CardsAtuacao from "~/components/Cards/CardsAtuacao";
 
-import depoimentosGoogle1 from "../../public/depoimento-2.jpg";
-
 // Components
 import CardsArtigos from "~/components/Cards/CardsArtigos";
 import CarouselWithDots from "~/components/Carousel/CarouselWithDots";
@@ -24,18 +22,12 @@ export default function Index() {
       <section className=" h-[100vh] overflow-x-hidden overflow-y-hidden">
         <CarouselWithDots slides={slide} texto={""} escritorio={false} />
       </section>
-      <section className="backgroundImage m-auto min-h-screen items-center justify-center bg-cover bg-fixed bg-center">
-        <h2 className=" mx-auto py-12 text-xl text-center font-extrabold text-white md:text-center md:text-4xl ">
+      <section className="backgroundImage m-auto min-h-screen items-center justify-center bg-cover bg-fixed bg-center py-10">
+        <h2 className=" mx-auto py-12 text-2xl text-center font-extrabold text-white md:text-center md:text-4xl ">
           QUEM SOMOS
         </h2>
 
-        <div className=" grid grid-rows-2 md:grid-cols-2    justify-items-center">
-          <img
-            className=" h-[344px] w-80"
-            src="https://res.cloudinary.com/deaejawfj/image/upload/v1670108037/imagem-socio-fundador-conceica-advogados.webp"
-            alt="Imagem do Sócio Fundador do Conceiçaao Advogados"
-            srcSet="https://res.cloudinary.com/deaejawfj/image/upload/v1670108037/imagem-socio-fundador-conceica-advogados.webp 1x"
-          />
+        <div className=" grid grid-flow-row auto-rows-max items-center    justify-items-center max-w-screen-xl justify-center mx-auto ">
           <div className=" mx-auto px-5 text-lg">
             <p className="  md:pt-5 leading-loose text-white">
               <strong>CONCEIÇÃO ADVOGADOS</strong> é um escritório moderno,
@@ -44,6 +36,12 @@ export default function Index() {
               <b>Dr. José Inácio Conceição</b>, profissional com sólida formação
               e vasta experiência em questões de grande complexidade.
             </p>
+            <img
+              className=" h-[344px] w-80 mx-auto my-5"
+              src="https://res.cloudinary.com/deaejawfj/image/upload/v1670108037/imagem-socio-fundador-conceica-advogados.webp"
+              alt="Imagem do Sócio Fundador do Conceiçaao Advogados"
+              srcSet="https://res.cloudinary.com/deaejawfj/image/upload/v1670108037/imagem-socio-fundador-conceica-advogados.webp 1x"
+            />
 
             <p className="  leading-loose text-white">
               De fato, nossa atuação abarca a experiência adquirida em mais de
@@ -65,6 +63,47 @@ export default function Index() {
           </div>
         </div>
       </section>
+
+      <div className=" w-screen overflow-x-hidden bg-brown">
+        <section className="mx-auto flex w-screen max-w-screen-xl  flex-col py-7">
+          <strong className=" mx-auto my-10 text-4xl text-white">Equipe</strong>
+          <p className="  leading-loose text-white px-5">
+            Nossa equipe é formada por profissionais experientes,
+            especializados, com formação solida e em constante aperfeiçoamento,
+            capaz de proporcionar todo suporte para o desenvolvimento dos
+            trabalhos, com eficácia e qualidade.
+          </p>
+          <div className=" grid grid-rows-3 px-5 md:px-0 md:grid-flow-col gap-4 md:grid-cols-3 md:grid-rows-1  mt-10 ">
+            <article className=" h-48 flex flex-col justify-center border border-white">
+              <strong className=" mt-6 mx-auto text-center text-2xl">
+                MISSÃO
+              </strong>
+              <p className="  text-center leading-loose text-white ">
+                Promover um serviço personalizado, de qualidade, humanizado para
+                levar, aos nossos clientes, as melhores soluções aos seus
+                conflitos e para que alcancem os seus objetivos.
+              </p>
+            </article>
+            <article className=" h-48 flex flex-col justify-center border border-white">
+              <strong className=" pb-2 mx-auto text-center text-2xl">
+                VALORES
+              </strong>
+              <p className=" pb-2 px-6 text-center  leading-loose text-white">
+                Transparência, respeito, ética, honestidade, sigilo de
+                informações e lealdade.
+              </p>
+            </article>
+            <article className=" h-48 flex flex-col justify-center border border-white">
+              <strong className=" mx-auto text-center text-2xl">VISÃO</strong>
+              <p className=" text-center  leading-loose text-white ">
+                Manter-se como um escritório de advocacia de referência nas
+                esferas em que atuamos, proporcionando constantemente
+                atendimento eficaz aos clientes.
+              </p>
+            </article>
+          </div>
+        </section>
+      </div>
 
       <div className=" w-screen overflow-x-hidden bg-gray/10">
         <section className="mx-auto flex w-screen max-w-screen-xl  flex-col py-7">
@@ -110,7 +149,7 @@ export default function Index() {
           <h3 className=" mx-auto my-10 text-4xl text-brown">
             Áreas de Atuação
           </h3>
-          <div className=" mx-auto grid grid-flow-row grid-cols-1 gap-y-6 sm:grid-cols-2 md:grid-cols-4 md:grid-rows-3 md:gap-6">
+          <div className="mx-auto grid grid-flow-row grid-cols-1 gap-y-6 sm:grid-cols-2 md:grid-cols-4 md:grid-rows-3 md:gap-6">
             {cards.map(
               (
                 {
@@ -132,14 +171,7 @@ export default function Index() {
         </section>
       </div>
 
-      <section className="mx-auto max-w-screen-xl py-16 ">
-        <h4 className=" mx-auto w-full text-center text-4xl">
-          Veja as <span className=" text-brown"> Avaliações</span> de Nossos
-          Clientes no Google
-        </h4>
-      </section>
-
-      <div className=" h-[100vh] w-screen bg-white ">
+      <div className="w-screen bg-white ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 700 10"
@@ -149,12 +181,12 @@ export default function Index() {
         >
           <path d="M350,10L340,0h20L350,10z"></path>
         </svg>
-        <section className="mx-auto overflow-y-scroll flex max-w-screen-xl flex-col items-center justify-center  pb-32 h-screen md:min-h-[90vh]">
+        <section className="mx-auto flex max-w-screen-xl flex-col items-center justify-center  md:min-h-[90vh]">
           <strong className="mx-auto  mt-8 flex items-center justify-center  text-center text-3xl md:text-left md:text-4xl">
             Últimos de Nossos Artigos
           </strong>
 
-          <div className=" overflow-y-scroll min-h-screen  md:h-[100vh] flex w-screen max-w-screen-xl flex-wrap items-center justify-around gap-y-8 ">
+          <div className=" overflow-y-scroll min-h-screen py-12  md:h-[100vh] flex w-screen max-w-screen-xl flex-wrap items-center justify-around gap-y-8 ">
             {artigos.map(
               (
                 { imagem, alt, autor, data, icone, titulo, descricao },
@@ -226,8 +258,9 @@ export default function Index() {
           </div>
           <p className=" text-center mt-6">
             Nossa equipe de advogados também atende via telefone ou e-mail.{" "}
-            <br></br> Para nos contatar mais rapidamente, clique no botão verde
-            ao lado que você será redirecionado para o whatsapp do escritório.
+            <br></br> Para nos contatar mais rapidamente, clique no{" "}
+            <span className="text-[#25d366] mx-1">botão verde</span>
+            ao que você será redirecionado para o whatsapp do escritório.
           </p>
         </section>{" "}
       </div>
