@@ -4,9 +4,9 @@ import { TituloAdv } from "../Titulo/TituloAdv";
   export const slide: { src: string; srcset: string[]; texto: string | any; }[] = [
     {
       src:
-        "https://res.cloudinary.com/deaejawfj/image/upload/v1669924534/IMG-20221201-WA0016_ir5ihw.webp",
-        srcset:["https://res.cloudinary.com/deaejawfj/image/upload/c_scale,w_280/v1669924534/IMG-20221201-WA0016_ir5ihw.webp 1x", "https://res.cloudinary.com/deaejawfj/image/upload/c_scale,w_560/v1669924534/IMG-20221201-WA0016_ir5ihw.webp 2x",
-      "https://res.cloudinary.com/deaejawfj/image/upload/c_scale,w_840/v1669924534/IMG-20221201-WA0016_ir5ihw.webp 3x","https://res.cloudinary.com/deaejawfj/image/upload/c_scale,w_1100w/v1669924534/IMG-20221201-WA0016_ir5ihw.webp 4x"],
+        "https://res.cloudinary.com/deaejawfj/image/upload/v1670351734/imagemPrincipalConceicao.jpg",
+        srcset:["https://res.cloudinary.com/deaejawfj/image/upload/v1670351734/imagemPrincipalConceicao.jpg 2x",
+      "https://res.cloudinary.com/deaejawfj/image/upload/v1670351734/imagemPrincipalConceicao.jpg 3x","https://res.cloudinary.com/deaejawfj/image/upload/v1670351734/imagemPrincipalConceicao.jpg 4x"],
       texto: TituloAdv,
     },
     {
