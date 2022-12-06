@@ -66,8 +66,8 @@ export default function Index() {
 
       <div className=" w-screen overflow-x-hidden bg-brown">
         <section className="mx-auto flex w-screen max-w-screen-xl  flex-col py-7">
-          <strong className=" mx-auto my-10 text-4xl text-white">Equipe</strong>
-          <p className="  leading-loose text-white px-5">
+          <strong className=" mx-auto my-5 text-4xl text-white">Equipe</strong>
+          <p className="  leading-loose text-white px-5 text-center">
             Nossa equipe é formada por profissionais experientes,
             especializados, com formação solida e em constante aperfeiçoamento,
             capaz de proporcionar todo suporte para o desenvolvimento dos
@@ -105,7 +105,7 @@ export default function Index() {
         </section>
       </div>
 
-      <div className=" w-screen overflow-x-hidden bg-gray/10">
+      <div className=" w-screen overflow-x-hidden bg-gray/25">
         <section className="mx-auto flex w-screen max-w-screen-xl  flex-col py-7">
           <div className=" flex w-full flex-col  text-center">
             <div className=" flex  justify-center gap-x-2 text-center text-base md:text-2xl ">
@@ -181,12 +181,12 @@ export default function Index() {
         >
           <path d="M350,10L340,0h20L350,10z"></path>
         </svg>
-        <section className="mx-auto flex max-w-screen-xl flex-col items-center justify-center  md:min-h-[90vh]">
+        <section className="mx-auto flex max-w-screen-xl flex-col items-center justify-center  md:h-auto">
           <strong className="mx-auto  mt-8 flex items-center justify-center  text-center text-3xl md:text-left md:text-4xl">
             Últimos de Nossos Artigos
           </strong>
 
-          <div className=" overflow-y-scroll min-h-screen py-12  md:h-[100vh] flex w-screen max-w-screen-xl flex-wrap items-center justify-around gap-y-8 ">
+          <div className=" overflow-y-scroll min-h-screen md:py-10  md:h-auto flex w-screen max-w-screen-xl flex-wrap items-center justify-around gap-y-8 ">
             {artigos.map(
               (
                 { imagem, alt, autor, data, icone, titulo, descricao },
@@ -209,17 +209,17 @@ export default function Index() {
       </div>
 
       <div className=" min-w-[100vw] bg-brown py-10 ">
-        <section className=" mx-auto flex min-h-[50vh] w-screen max-w-screen-xl flex-col items-center justify-center gap-4 px-3  text-[#F5F5F5] md:p-0 ">
+        <section className=" mx-auto flex h-auto  w-screen max-w-screen-xl flex-col items-center justify-center gap-4 px-3  text-[#F5F5F5] md:p-0 ">
           <div className=" flex items-center justify-center">
-            <strong className=" text-center text-4xl">
+            <strong className=" text-center text-4xl mb-5">
               Fale Conosco! <br className=" md:hidden"></br> Estamos aqui para
               te ouvir!
             </strong>
           </div>
           <div className=" flex flex-col gap-4 text-center">
             <p>
-              Estamos localizados em dois endereços na cidade de Santa Maria,
-              Rio Grande do Sul.
+              Estamos localizados em <b>dois endereços</b> na cidade de{" "}
+              <u>Santa Maria</u>, Rio Grande do Sul.
             </p>
             <p>
               Atendemos de Segunda-Feira à Sexta-feira, das 8:30 ao meio-dia e
@@ -259,7 +259,7 @@ export default function Index() {
           <p className=" text-center mt-6">
             Nossa equipe de advogados também atende via telefone ou e-mail.{" "}
             <br></br> Para nos contatar mais rapidamente, clique no{" "}
-            <span className="text-[#25d366] mx-1">botão verde</span>
+            <span className="text-[#25d366] mr-1">botão verde</span>
             ao que você será redirecionado para o whatsapp do escritório.
           </p>
         </section>{" "}
