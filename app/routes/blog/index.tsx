@@ -5,17 +5,9 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { supabase } from "~/components/utils/supabaseClient";
 
-export const loader: LoaderFunction = async () => {
-  let { data: post, error } = await supabase.from("post").select("*");
-
-  return { post, error };
-};
-
 export default function Blog() {
   const [isOpen, setIsOpen] = useState(false);
   const [menu, setMenu] = useState("inicio");
-  const data = useLoaderData();
-  console.log(data);
 
   return (
     <div className="mx-auto flex w-screen gap-x-7 bg-white">
