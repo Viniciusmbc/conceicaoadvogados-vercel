@@ -15,8 +15,8 @@ import { TituloAdv } from "../Titulo/TituloAdv";
       texto: "Direito Penal",
     },
     {
-      src: "https://res.cloudinary.com/deaejawfj/image/upload/v1669422395/carteira-de-trabalho_gpwrie.jpg",
-      srcset: [""],
+      src: "https://res.cloudinary.com/deaejawfj/image/upload/v1670334654/inss-1_zntb10.webp",
+      srcset: ["https://res.cloudinary.com/deaejawfj/image/upload/v1670334654/inss-1_zntb10.webp 1x", "https://res.cloudinary.com/deaejawfj/image/upload/v1670334654/inss-1_zntb10.webp 2x", "https://res.cloudinary.com/deaejawfj/image/upload/v1670334654/inss-1_zntb10.webp 3x"],
       texto: "Aposentadoria e Benefícios Previdenciários",
     
     },
