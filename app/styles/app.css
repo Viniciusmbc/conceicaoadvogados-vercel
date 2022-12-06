@@ -755,10 +755,6 @@ video {
   margin-bottom: 1rem;
 }
 
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
 .mt-16 {
   margin-top: 4rem;
 }
@@ -781,6 +777,10 @@ video {
 
 .mr-8 {
   margin-right: 2rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .mb-2 {
@@ -1398,14 +1398,14 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.py-11 {
-  padding-top: 2.75rem;
-  padding-bottom: 2.75rem;
-}
-
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.py-11 {
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
 }
 
 .py-6 {

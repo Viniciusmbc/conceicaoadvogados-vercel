@@ -22,9 +22,10 @@ export const meta: MetaFunction = () => ({
   charset: "utf-8",
   title: "Conceição Advogados",
   description:
-    "Conceição Advogados é um escritório especializado em Direito do Trabalho, Direito Previdênciário, Direito Penal e Direito Civil. Nosso objetivo é levar soluções criativas e eficazes aos clientes",
+    "Conceição Advogados é um escritório de advocacia especializado em Direito do Trabalho, Direito Previdênciário, Direito Penal e Direito Civil. Nosso objetivo é levar soluções criativas e eficazes aos clientes",
   viewport: "width=device-width,initial-scale=1",
 });
+
 export default function App() {
   let location = useLocation();
   let matches = useMatches();
