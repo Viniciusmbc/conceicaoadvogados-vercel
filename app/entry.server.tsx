@@ -1,18 +1,17 @@
 import type { EntryContext } from "@remix-run/node";
 import { RemixServer } from "@remix-run/react";
 import { renderToString } from "react-dom/server";
-import { sitemapXml } from "./components/utils/sitemap.server";
-
+import { otherRootRouteHandlers } from "./routes/otherRootRoutes.server";
 export default async function handleRequest(
   request: Request,
   responseStatusCode: number,
   responseHeaders: Headers,
   remixContext: EntryContext
 ) {
-  if (new URL(request.url).pathname === "/sitemap.xml") {
-    return await sitemapXml(request, remixContext);
+  for (const handler of otherRootRouteHandlers) {
+    const otherRouteResponse = await handler(request, remixContext);
+    if (otherRouteResponse) return otherRouteResponse;
   }
-
   let markup = renderToString(
     <RemixServer context={remixContext} url={request.url} />
   );

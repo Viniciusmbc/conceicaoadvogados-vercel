@@ -73,8 +73,8 @@ export default function Index() {
             capaz de proporcionar todo suporte para o desenvolvimento dos
             trabalhos, com eficácia e qualidade.
           </p>
-          <div className=" grid grid-rows-3 px-5 md:px-0 md:grid-flow-col gap-4 md:grid-cols-3 md:grid-rows-1  mt-10 ">
-            <article className=" h-48 flex flex-col justify-center border border-white">
+          <div className=" grid grid-rows-3 mx-auto px-5 md:grid-flow-col  gap-8 md:grid-cols-3 md:grid-rows-1  mt-10 ">
+            <article className=" h-auto w-80 flex flex-col justify-center border border-white">
               <strong className=" mt-6 mx-auto text-center text-2xl">
                 MISSÃO
               </strong>
@@ -84,7 +84,7 @@ export default function Index() {
                 conflitos e para que alcancem os seus objetivos.
               </p>
             </article>
-            <article className=" h-48 flex flex-col justify-center border border-white">
+            <article className="h-auto w-80  flex flex-col justify-center border border-white">
               <strong className=" pb-2 mx-auto text-center text-2xl">
                 VALORES
               </strong>
@@ -93,7 +93,7 @@ export default function Index() {
                 informações e lealdade.
               </p>
             </article>
-            <article className=" h-48 flex flex-col justify-center border border-white">
+            <article className="h-auto w-80 flex flex-col justify-center border border-white">
               <strong className=" mx-auto text-center text-2xl">VISÃO</strong>
               <p className=" text-center  leading-loose text-white ">
                 Manter-se como um escritório de advocacia de referência nas

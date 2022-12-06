@@ -15,6 +15,7 @@
     "seed": "node --require esbuild-register prisma/seed.ts"
   },
   "dependencies": {
+    "@balavishnuvj/remix-seo": "^1.0.2",
     "@cloudinary/react": "^1.6.0",
     "@cloudinary/url-gen": "^1.8.6",
     "@prisma/client": "^4.7.1",
