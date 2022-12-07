@@ -1,5 +1,3 @@
-import React from "react";
-import { useLocation, useMatches } from "@remix-run/react";
 import type { MetaFunction } from "@remix-run/node";
 import {
   Links,
@@ -8,7 +6,10 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  useLocation,
+  useMatches,
 } from "@remix-run/react";
+import React from "react";
 import Footer from "./components/Layout/Footer/Footer";
 import WhatsAppPopup from "./components/Popup/WhatsAppPopup";
 import styles from "./styles/app.css";
@@ -68,6 +69,10 @@ export default function App() {
     <html lang="pt-br">
       <head>
         <Meta /> <Links />
+        <meta
+          name="google-site-verification"
+          content="pUSLGqgWaqw8Ri8ubovOVgqFDsA9zFijsuvBDSHJlto"
+        />
         <link rel="manifest" href="/resources/manifest.webmanifest" />
       </head>
       <body className=" max-w-[100vw] overflow-x-hidden">

@@ -11,9 +11,6 @@ async function seed() {
 }
 
 seed();
-
-
-
 function getPost() {
   return [
     {
