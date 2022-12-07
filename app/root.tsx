@@ -1,5 +1,4 @@
 import type { MetaFunction } from "@remix-run/node";
-import { json } from "@remix-run/node";
 import {
   Links,
   LiveReload,
@@ -7,7 +6,6 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
-  useLoaderData,
   useLocation,
   useMatches,
 } from "@remix-run/react";
@@ -15,15 +13,19 @@ import React from "react";
 import Footer from "./components/Layout/Footer/Footer";
 import WhatsAppPopup from "./components/Popup/WhatsAppPopup";
 import styles from "./styles/app.css";
-import { LoaderFunction } from "@remix-run/node";
-import { createClient } from "@supabase/supabase-js";
 
 let isMount = true;
 
 export const handle = { hydrate: true };
 
 export function links() {
-  return [{ rel: "stylesheet", href: styles }];
+  return [
+    { rel: "stylesheet", href: styles },
+    {
+      rel: "canonical",
+      href: "https://conceicaoadvogados.com.br",
+    },
+  ];
 }
 
 export const meta: MetaFunction = () => ({
