@@ -10,7 +10,7 @@ type Handler = (
 export const otherRootRoutes: Record<string, Handler> = {
   "/sitemap.xml": async (request, remixContext) => {
     return generateSitemap(request, remixContext, {
-      siteUrl: "https://conceicaoadvogados.com",
+      siteUrl: "https://conceicaoadvogados.com.br",
       headers: {
         "Cache-Control": `public, max-age=${60 * 5}`,
       },
@@ -18,7 +18,7 @@ export const otherRootRoutes: Record<string, Handler> = {
   },
   "/robots.txt": async () => {
     return generateRobotsTxt([
-      { type: "sitemap", value: "https://conceicaoadvogados.com/sitemap.xml" },
+      { type: "sitemap", value: "https://conceicaoadvogados.com.br/sitemap.xml" },
     ]);
   },
 };
