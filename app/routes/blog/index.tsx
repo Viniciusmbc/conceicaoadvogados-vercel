@@ -3,7 +3,6 @@ import { json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { supabase } from "~/components/utils/supabaseClient";
 
 export default function Blog() {
   const [isOpen, setIsOpen] = useState(false);
