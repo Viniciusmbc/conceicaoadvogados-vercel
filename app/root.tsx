@@ -78,10 +78,6 @@ export default function App() {
     <html lang="pt-br">
       <head>
         <Meta /> <Links />
-        <meta
-          name="google-site-verification"
-          content="pUSLGqgWaqw8Ri8ubovOVgqFDsA9zFijsuvBDSHJlto"
-        />
         <link rel="manifest" href="/resources/manifest.webmanifest" />
       </head>
       <body className=" max-w-[100vw] overflow-x-hidden">

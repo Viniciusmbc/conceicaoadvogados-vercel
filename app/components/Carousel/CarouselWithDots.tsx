@@ -82,9 +82,9 @@ const CarouselWithDots = ({ slides, escritorio }: CarouselWithButtonsProps) => {
                       alt={`Imagem de ${texto}`}
                     />
                     <figcaption
-                      className={` border  border-r-black z-50 flex h-full w-full items-center justify-center pb-3 text-5xl font-extrabold  ${
+                      className={` border  border-r-black z-50 flex h-full w-full items-center justify-center pb-3 text-3xl md:text-5xl font-extrabold  ${
                         escritorio
-                          ? " text-white text-center w-[40vw] border-none mx-auto leading-relaxed"
+                          ? " text-white text-center max-w-[60vw] border-none mx-auto leading-relaxed"
                           : "text-[#f8f8f8]"
                       } `}
                     >

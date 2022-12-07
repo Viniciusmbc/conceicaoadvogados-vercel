@@ -1,7 +1,7 @@
 export default function ConsulteSeuProcesso() {
   return (
-    <section className="mx-auto flex h-screen  max-w-screen-xl  flex-col items-center">
-      <h1 className=" flex mt-24 text-xl ">
+    <section className="mx-auto flex h-screen py-6 px-6  max-w-screen-xl  flex-col items-center">
+      <h1 className=" flex mt-24 text-xl md:text-center ">
         {" "}
         Para consultar seu processo, basta copiar e colar o número do processo
         que seu advogado forneceu em um dos links abaixo!
@@ -11,7 +11,7 @@ export default function ConsulteSeuProcesso() {
         <p className=" my-5 text-lg">
           Acesso ao sites dos Principais Tribunais do Rio Grande do Sul:
         </p>
-        <ul className=" list-item list-disc space-y-4 text-brown underline underline-offset-1">
+        <ul className=" px-3 list-item list-disc space-y-4 text-brown underline underline-offset-1">
           <li className=" hover:text-gray">
             <a href="https://www.tjrs.jus.br/novo/busca/?return=proc&client=wp_index">
               Tribunal de Justiça do Rio Grande do Sul (tjrs) (Justiça Estadual)

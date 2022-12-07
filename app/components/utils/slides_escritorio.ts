@@ -1,9 +1,9 @@
 export const slideEscritório: { src: string; srcset: string[]; texto: string | any; }[] = [
     {
         src:
-          "https://res.cloudinary.com/deaejawfj/image/upload/v1670195135/IMG-conceicao2_x3fnfv.webp",
-          srcset:["https://res.cloudinary.com/deaejawfj/image/upload/v1670195135/IMG-conceicao2_x3fnfv.webp 1x", "https://res.cloudinary.com/deaejawfj/image/upload/b_rgb:625e5e,o_48,q_auto/v1670195135/imagemPrincipalEscritorio.webp 2x",
-        "https://res.cloudinary.com/deaejawfj/image/upload/v1670195135/IMG-conceicao2_x3fnfv.webp 4x"],
+          "https://res.cloudinary.com/deaejawfj/image/upload/b_rgb:6d6767,o_51/v1670195395/IMG-conceicao2_x3fnfv.webp",
+          srcset:["https://res.cloudinary.com/deaejawfj/image/upload/b_rgb:6d6767,o_51/v1670195395/IMG-conceicao2_x3fnfv.webp 1x", "https://res.cloudinary.com/deaejawfj/image/upload/b_rgb:6d6767,o_51/v1670195395/IMG-conceicao2_x3fnfv.webp 2x",
+        "https://res.cloudinary.com/deaejawfj/image/upload/b_rgb:6d6767,o_51/v1670195395/IMG-conceicao2_x3fnfv.webp 4x"],
         texto: "Nossos escritórios estão localizados em dois endereços em Santa Maria, Rio Grande do SUl",
       },
       {
