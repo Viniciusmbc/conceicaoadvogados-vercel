@@ -940,6 +940,10 @@ video {
   width: 14rem;
 }
 
+.w-10 {
+  width: 2.5rem;
+}
+
 .w-\[100vw\] {
   width: 100vw;
 }
@@ -1774,6 +1778,10 @@ video {
 
   .md\:w-96 {
     width: 24rem;
+  }
+
+  .md\:w-auto {
+    width: auto;
   }
 
   .md\:grid-flow-col {
