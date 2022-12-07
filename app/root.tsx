@@ -18,14 +18,6 @@ import styles from "./styles/app.css";
 import { LoaderFunction } from "@remix-run/node";
 import { createClient } from "@supabase/supabase-js";
 
-export async function loader() {
-  const supabaseKey = process.env.SUPABASE_KEY;
-  const supabaseUrl = "https://iwthwcncuzjcyhgczulu.supabase.co";
-  const supabase = createClient(supabaseUrl, supabaseKey);
-  let data = await supabase.from("Categoria").select("id");
-  return json(data);
-}
-
 let isMount = true;
 
 export const handle = { hydrate: true };
@@ -33,6 +25,7 @@ export const handle = { hydrate: true };
 export function links() {
   return [{ rel: "stylesheet", href: styles }];
 }
+
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
   title: "Conceição Advogados",
@@ -42,8 +35,6 @@ export const meta: MetaFunction = () => ({
 });
 
 export default function App() {
-  const { error, data } = useLoaderData();
-  console.log(data);
   let location = useLocation();
   let matches = useMatches();
 
