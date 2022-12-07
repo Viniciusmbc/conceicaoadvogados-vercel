@@ -1,7 +1,7 @@
 import type { EntryContext } from "@remix-run/node";
 import { RemixServer } from "@remix-run/react";
 import { renderToString } from "react-dom/server";
-import { otherRootRouteHandlers } from "./routes/otherRootRoutes.server";
+import { routes as otherRoutes } from "./routes/otherRootRoutes.server";
 
 export default async function handleRequest(
   request: Request,
@@ -9,7 +9,7 @@ export default async function handleRequest(
   responseHeaders: Headers,
   remixContext: EntryContext
 ) {
-  for (const handler of otherRootRouteHandlers) {
+  for (const handler of otherRoutes) {
     const otherRouteResponse = await handler(request, remixContext);
     if (otherRouteResponse) return otherRouteResponse;
   }

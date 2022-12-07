@@ -1,29 +1,23 @@
 import type {EntryContext} from '@remix-run/node'
-import { generateRobotsTxt, generateSitemap } from "@balavishnuvj/remix-seo";
+import { generateRobotsTxt } from "@balavishnuvj/remix-seo";
+import {getSitemapXml} from "../components/utils/sitemap.server"
 
-type Handler = (
-  request: Request,
-  remixContext: EntryContext
-) => Promise<Response | null> | null;
+type Handler = (request: Request, remixContext: EntryContext) => Promise<Response | null> | null;
 
-export const otherRootRoutes: Record<string, Handler> = {
+const pathedRoutes: Record<string, Handler> = {
   "/sitemap.xml": async (request, remixContext) => {
-    return generateSitemap(request, remixContext, {
-      siteUrl: "https://conceicaoadvogados.com.br",
+    const sitemap = await getSitemapXml(request, remixContext);
+    return new Response(sitemap, {
       headers: {
-        "Cache-Control": `public, max-age=${60 * 5}`,
+        "Content-Type": "application/xml",
+        "Content-Length": String(Buffer.byteLength(sitemap)),
       },
     });
   },
-  "/robots.txt": async () => {
-    return generateRobotsTxt([
-      { type: "sitemap", value: "https://conceicaoadvogados.com.br/sitemap.xml" },
-    ]);
-  },
 };
 
-export const otherRootRouteHandlers: Array<Handler> = [
-  ...Object.entries(otherRootRoutes).map(([path, handler]) => {
+const routes: Array<Handler> = [
+  ...Object.entries(pathedRoutes).map(([path, handler]) => {
     return (request: Request, remixContext: EntryContext) => {
       if (new URL(request.url).pathname !== path) return null;
 
@@ -31,3 +25,17 @@ export const otherRootRouteHandlers: Array<Handler> = [
     };
   }),
 ];
+
+export const otherRootRoutes: Record<string, Handler> = {
+  "/robots.txt": async () => {
+    return generateRobotsTxt([
+      { type: "sitemap", value: "https://conceicaoadvogados.com.br/sitemap.xml" },
+    ]);
+  },
+};
+
+
+export { routes, pathedRoutes };
+
+
+
