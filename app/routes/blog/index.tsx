@@ -168,7 +168,7 @@ export default function Blog() {
                       <h2 className=" text-lg font-bold">
                         <Link
                           className=" text-lg font-bold my-2"
-                          to="/quem-tem-direito-a-herança"
+                          to="/blog/quem-tem-direito-a-herança"
                         >
                           Quem tem direito a herança?
                         </Link>
@@ -195,7 +195,7 @@ export default function Blog() {
                       <h2 className=" text-lg font-bold">
                         <Link
                           className=" text-lg font-bold my-2"
-                          to="/quem-tem-direito-a-herança"
+                          to="/blog/quem-tem-direito-a-herança"
                         >
                           Quem tem direito a herança?
                         </Link>
@@ -222,7 +222,7 @@ export default function Blog() {
                       <h2 className=" text-lg font-bold">
                         <Link
                           className=" text-lg font-bold my-2"
-                          to="/quem-tem-direito-a-herança"
+                          to="/blog/quem-tem-direito-a-herança"
                         >
                           Quem tem direito a herança?
                         </Link>

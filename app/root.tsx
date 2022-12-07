@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import { json } from "@remix-run/node";
 import {
   Links,
   LiveReload,
@@ -6,6 +7,7 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  useLoaderData,
   useLocation,
   useMatches,
 } from "@remix-run/react";
@@ -13,6 +15,16 @@ import React from "react";
 import Footer from "./components/Layout/Footer/Footer";
 import WhatsAppPopup from "./components/Popup/WhatsAppPopup";
 import styles from "./styles/app.css";
+import { LoaderFunction } from "@remix-run/node";
+import { createClient } from "@supabase/supabase-js";
+
+export async function loader() {
+  const supabaseKey = process.env.SUPABASE_KEY;
+  const supabaseUrl = "https://iwthwcncuzjcyhgczulu.supabase.co";
+  const supabase = createClient(supabaseUrl, supabaseKey);
+  let data = await supabase.from("Categoria").select("id");
+  return json(data);
+}
 
 let isMount = true;
 
@@ -30,6 +42,8 @@ export const meta: MetaFunction = () => ({
 });
 
 export default function App() {
+  const { error, data } = useLoaderData();
+  console.log(data);
   let location = useLocation();
   let matches = useMatches();
 
