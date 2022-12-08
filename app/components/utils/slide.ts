@@ -5,8 +5,8 @@ import { TituloAdv } from "../Titulo/TituloAdv";
     {
       src:
         "https://res.cloudinary.com/deaejawfj/image/upload/e_auto_contrast,q_auto/v1670351734/imagemPrincipalConceicao.webp",
-        srcset:["https://res.cloudinary.com/deaejawfj/image/upload/e_auto_contrast,q_auto/v1670351734/imagemPrincipalConceicao.webp 2x",
-      "https://res.cloudinary.com/deaejawfj/image/upload/e_auto_contrast,q_auto/v1670351734/imagemPrincipalConceicao.webp 3x","https://res.cloudinary.com/deaejawfj/image/upload/e_auto_contrast,q_auto/v1670351734/imagemPrincipalConceicao.webp 4x"],
+        srcset:["https://res.cloudinary.com/deaejawfj/image/upload/e_auto_contrast,q_auto/v1670351734/imagemPrincipalConceicao.webp 1024w",
+      "https://res.cloudinary.com/deaejawfj/image/upload/e_auto_contrast,q_auto/v1670351734/imagemPrincipalConceicao.webp 640w","https://res.cloudinary.com/deaejawfj/image/upload/e_auto_contrast,q_auto_c_scale,w_370/v1670533444/imagemPrincipalConceicaoVertical.webp 370w"],
       texto: TituloAdv,
     },
     {
