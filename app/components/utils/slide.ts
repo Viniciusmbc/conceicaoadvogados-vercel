@@ -18,7 +18,7 @@ import { TituloAdv } from "../Titulo/TituloAdv";
     },
     {
       src: "https://res.cloudinary.com/deaejawfj/image/upload/e_contrast:-100,q_auto:eco/v1670334654/inss-1_zntb10.webp",
-      srcset: ["https://res.cloudinary.com/deaejawfj/image/upload/e_contrast:-100,q_auto:eco/v1670334654/inss-1_zntb10.webp 1x", "https://res.cloudinary.com/deaejawfj/image/upload/e_contrast:-100,q_auto:eco/v1670334654/inss-1_zntb10.webp 2x", "https://res.cloudinary.com/deaejawfj/image/upload/e_contrast:-100,q_auto:eco/v1670334654/inss-1_zntb10.webp 3x"],
+      srcset: ["https://res.cloudinary.com/deaejawfj/image/upload/e_contrast:-100,q_auto_c_scale,w_840/v1670334654/inss-1_zntb10.webp 840w", "https://res.cloudinary.com/deaejawfj/image/upload/e_contrast:-100,q_auto_c_scale,w_640/v1670334654/inss-1_zntb10.webp 604w", "https://res.cloudinary.com/deaejawfj/image/upload/e_contrast:-100,q_auto_c_scale,w_340/v1670334654/inss-1_zntb10.webp 340w"],
       alt: "Imagem de benefício Previdenciários",
       texto: "Aposentadoria e Benefícios Previdenciários",
     
