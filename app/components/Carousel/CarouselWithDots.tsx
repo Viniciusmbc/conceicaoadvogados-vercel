@@ -67,17 +67,17 @@ const CarouselWithDots = ({ slides, escritorio }: CarouselWithButtonsProps) => {
         <div className=" w-full overflow-hidden" ref={viewportRef}>
           <div className=" flex">
             {slides.map(
-              ({ src, srcset, texto }: any, index: React.Key | number) => (
+              ({ src, srcset, texto, alt }: any, index: React.Key | number) => (
                 <div className=" relative -z-40 min-w-full " key={index}>
                   <figure className="relative -z-30 h-screen">
                     <img
                       width="1920"
                       height="1080"
-                      className=" w-full min-w-screen h-screen absolute -z-50"
+                      className=" w-full min-w-screen h-screen max-h-screen absolute -z-50"
                       src={`${src}`}
                       srcSet={srcset.map((src: string) => `${src}`)}
                       sizes="100vw"
-                      alt={`Imagem de ${texto}`}
+                      alt={`Imagem de ${alt}`}
                     />
                     <figcaption
                       className={` border  border-r-black z-50 flex h-full w-full items-center justify-center pb-3 text-3xl md:text-5xl font-extrabold  ${
