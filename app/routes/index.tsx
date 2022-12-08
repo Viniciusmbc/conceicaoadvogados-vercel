@@ -74,18 +74,18 @@ export default function Index() {
             trabalhos, com eficácia e qualidade.
           </p>
           <div className=" grid grid-rows-3 mx-auto px-5 md:grid-flow-col  gap-8 md:grid-cols-3 md:grid-rows-1  mt-10 ">
-            <article className=" h-auto w-80 flex flex-col justify-center border border-white">
-              <strong className=" mt-6 mx-auto text-center text-2xl">
+            <article className=" h-auto w-80 p-6 flex flex-col justify-center border border-white">
+              <strong className=" mt-1 mx-auto text-center text-2xl text-[#D6D6D6]">
                 MISSÃO
               </strong>
-              <p className="  text-center leading-loose text-white ">
+              <p className="  text-center leading-loose text-[#D6D6D6] ">
                 Promover um serviço personalizado, de qualidade, humanizado para
                 levar, aos nossos clientes, as melhores soluções aos seus
                 conflitos e para que alcancem os seus objetivos.
               </p>
             </article>
-            <article className="h-auto w-80  flex flex-col justify-center border border-white">
-              <strong className=" pb-2 mx-auto text-center text-2xl">
+            <article className="h-auto w-80 p-6 flex flex-col justify-center border border-white">
+              <strong className=" pb-4 mx-auto text-center text-2xl text-[#D6D6D6]">
                 VALORES
               </strong>
               <p className=" pb-2 px-6 text-center  leading-loose text-white">
@@ -93,8 +93,10 @@ export default function Index() {
                 informações e lealdade.
               </p>
             </article>
-            <article className="h-auto w-80 flex flex-col justify-center border border-white">
-              <strong className=" mx-auto text-center text-2xl">VISÃO</strong>
+            <article className="h-auto w-80 p-6 flex flex-col justify-center border border-white">
+              <strong className=" mx-auto text-center text-2xl text-[#D6D6D6]">
+                VISÃO
+              </strong>
               <p className=" text-center  leading-loose text-white ">
                 Manter-se como um escritório de advocacia de referência nas
                 esferas em que atuamos, proporcionando constantemente

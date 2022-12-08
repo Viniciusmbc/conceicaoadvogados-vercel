@@ -25,6 +25,10 @@
     margin: 0.5rem auto auto auto;
   }
 
+  .textShadow {
+    text-shadow: black 0.1em 0.1em 0.2em;
+  }
+
   .backgroundImage {
     background-image: url("https://res.cloudinary.com/deaejawfj/image/upload/e_art:incognito/v1670108387/backgroundImageQuemSomos-1_yzow57.webp");
   }

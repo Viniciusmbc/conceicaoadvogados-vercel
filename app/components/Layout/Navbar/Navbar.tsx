@@ -54,12 +54,22 @@ export default function Navbar({ navbar }: { navbar: boolean }) {
           >
             {" "}
             {phoneIcon}
-            <a href="tel:+555530275978" target={"_blank"} rel="noreferrer">
+            <a
+              href="tel:+555530275978"
+              target={"_blank"}
+              rel="noreferrer"
+              className=" mr-2"
+            >
               (55) 3027 5978
             </a>
             |{" "}
-            <a href="tel:+555533175978" target={"_blank"} rel="noreferrer">
-              (55) 3317 5978{" "}
+            <a
+              href="tel:+555533175978"
+              target={"_blank"}
+              rel="noreferrer"
+              className="ml-2"
+            >
+              (55) 3317 5978
             </a>{" "}
             <div className=" ml-auto flex items-center justify-center pr-4">
               <a

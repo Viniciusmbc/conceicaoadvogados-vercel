@@ -12,7 +12,7 @@ import { TituloAdv } from "../Titulo/TituloAdv";
     },
     {
       src: "https://res.cloudinary.com/deaejawfj/image/upload/v1670106155/DireitoPenalImage_wr5ckr.webp",   
-      srcset: ["https://res.cloudinary.com/deaejawfj/image/upload/v1670106155/DireitoPenalImage_wr5ckr.webp 1024w","https://res.cloudinary.com/deaejawfj/image/upload/e_auto_contrast,q_auto_c_scale,w_640/v1670106155/DireitoPenalImage_wr5ckr.webp 640w","https://res.cloudinary.com/deaejawfj/image/upload/e_auto_contrast,q_auto_c_scale,w_370/v1670106155/DireitoPenalImage_wr5ckr.webp 370w"  ],
+      srcset: ["https://res.cloudinary.com/deaejawfj/image/upload/c_scale,e_auto_color,h_1280,q_auto,w_1440/v1670106155/DireitoPenalImage_wr5ckr.webp 1440w","https://res.cloudinary.com/deaejawfj/image/upload/c_scale,e_auto_color,h_1080,q_auto,w_1024/v1670106155/DireitoPenalImage_wr5ckr.webp 1024w" ,"https://res.cloudinary.com/deaejawfj/image/upload/c_scale,e_auto_color,h_800,q_auto,w_640/v1670106155/DireitoPenalImage_wr5ckr.webp 640w","https://res.cloudinary.com/deaejawfj/image/upload/c_scale,e_auto_color,h_800,q_auto,w_380/v1670106155/DireitoPenalImage_wr5ckr.webp 380w"],
       alt: "Imagem de algemas",
       texto: "Direito Penal",
     },

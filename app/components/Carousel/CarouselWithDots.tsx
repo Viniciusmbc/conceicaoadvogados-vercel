@@ -11,9 +11,6 @@ import Autoplay, {
   AutoplayType,
 } from "embla-carousel-autoplay";
 
-import { BlurrableImage } from "../Image/blurrable.image";
-import { getImageBuilder, getImgProps } from "../Image/ImgProps";
-
 interface CarouselWithButtonsProps {
   slides: any;
   texto: string | React.ReactElement;
@@ -80,10 +77,10 @@ const CarouselWithDots = ({ slides, escritorio }: CarouselWithButtonsProps) => {
                       alt={`${alt}`}
                     />
                     <figcaption
-                      className={` border  border-r-black z-50 flex h-full w-full items-center justify-center pb-3 text-3xl md:text-5xl font-extrabold  ${
+                      className={` border  border-r-black z-50 flex h-full w-full items-center justify-center pb-3 text-4xl md:text-6xl font-extrabold  ${
                         escritorio
-                          ? " text-white text-center max-w-[60vw] border-none mx-auto leading-relaxed"
-                          : "text-[#f8f8f8]"
+                          ? " text-white  text-center max-w-[60vw] border-none mx-auto leading-relaxed"
+                          : "text-white textShadow text-center"
                       } `}
                     >
                       {texto}
