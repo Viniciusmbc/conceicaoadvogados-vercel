@@ -77,7 +77,7 @@ const CarouselWithDots = ({ slides, escritorio }: CarouselWithButtonsProps) => {
                       src={`${src}`}
                       srcSet={srcset.map((src: string) => `${src}`)}
                       sizes="100vw"
-                      alt={`Imagem de ${alt}`}
+                      alt={`${alt}`}
                     />
                     <figcaption
                       className={` border  border-r-black z-50 flex h-full w-full items-center justify-center pb-3 text-3xl md:text-5xl font-extrabold  ${

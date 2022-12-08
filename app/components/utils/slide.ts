@@ -17,8 +17,8 @@ import { TituloAdv } from "../Titulo/TituloAdv";
       texto: "Direito Penal",
     },
     {
-      src: "https://res.cloudinary.com/deaejawfj/image/upload/e_contrast:-100,q_auto:eco/v1670334654/inss-1_zntb10.webp",
-      srcset: ["https://res.cloudinary.com/deaejawfj/image/upload/e_contrast:-100,q_auto_c_scale,w_840/v1670334654/inss-1_zntb10.webp 840w", "https://res.cloudinary.com/deaejawfj/image/upload/e_contrast:-100,q_auto_c_scale,w_640/v1670334654/inss-1_zntb10.webp 604w", "https://res.cloudinary.com/deaejawfj/image/upload/e_contrast:-100,q_auto_c_scale,w_340/v1670334654/inss-1_zntb10.webp 340w"],
+      src: "https://res.cloudinary.com/deaejawfj/image/upload/e_contrast:-100,q_auto/v1670334654/inss-1_zntb10.webp",
+      srcset: ["https://res.cloudinary.com/deaejawfj/image/upload/c_scale,e_contrast:-100,q_auto,w_1366/v1670334654/inss-1_zntb10.webp 1024w", "https://res.cloudinary.com/deaejawfj/image/upload/c_scale,e_contrast:-100,q_auto,w_750/v1670334654/inss-1_zntb10.webp 750w", "https://res.cloudinary.com/deaejawfj/image/upload/c_scale,e_contrast:-100,h_768,q_auto,w_626/v1670334654/inss-1_zntb10.webp 340w"],
       alt: "Imagem de benefício Previdenciários",
       texto: "Aposentadoria e Benefícios Previdenciários",
     
