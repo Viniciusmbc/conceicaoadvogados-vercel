@@ -10,17 +10,17 @@ export const cards: { icon: any; titulo: string; descricao: any[] }[] = [
         "Falta de registro em carteira de trabalho;",
         "Verbas Rescisórias;",
         "Demissão indevida por Justa Causa;",
-        "Insalubridade e Periculosidade;",
+        "Insalubridade e Periculosidade.",
       ],
     },
     {
       icon: bagIcon,
       titulo: "Direito do Consumidor",
       descricao: [
-        "Contencioso em Geral",
-        "Revisional Contratual (juros, taxas, comissões, parcelas etc.)",
-        "Defesas junto ao Procon",
-        "Negociação de Dívidas",
+        "Contencioso em Geral;",
+        "Revisional Contratual (juros, taxas, comissões, parcelas etc.);",
+        "Defesas junto ao Procon;",
+        "Negociação de Dívidas.",
          ],
     },
     {
@@ -33,7 +33,7 @@ export const cards: { icon: any; titulo: string; descricao: any[] }[] = [
         "Revisão de Toda Vida;",
         "Salário Maternidade;",
         "Servidores Públicos;",
-        "Benefício Assistencial;",
+        "Benefício Assistencial.",
       ],
     },
     {
@@ -45,54 +45,54 @@ export const cards: { icon: any; titulo: string; descricao: any[] }[] = [
         "Divórcio consensual e litigiosa;",
         "Reconhecimento e dissolução de União Estável;",
         "Inventários;",
-        "Partilhas"
+        "Partilhas."
       ],
     },
     {
       icon: carIcon,
       titulo: "Direito de Trânsito",
       descricao: [
-        "Defesas e Recursos Administrativos",
-        "Acidentes de Trânsito",
-        "DPVAT e seguros privados",
-        "Danos morais",
+        "Defesas e Recursos Administrativos;",
+        "Acidentes de Trânsito;",
+        "DPVAT e seguros privados;",
+        "Danos morais.",
       ],
     },
     {
       icon: locationIcon,
       titulo: "Direito Imobiliário",
       descricao: [
-       "Locação;","Negociação de imóveis;","Relações condominiais;","Regularização e registro de imóveis;","Usucapião"
+       "Locação;","Negociação de imóveis;","Relações condominiais;","Regularização e registro de imóveis;","Usucapião."
       ],
     },
     {
       icon: policeIcon,
       titulo: "Direito Criminal",
       descricao: [
-        "Diligência em termo circunstanciado de Juizados Especiais Criminais;", "Atos junto a órgãos policiais;", "Impetração de Ação autônoma de Habeas Corpuspreventivo ou liberatório;", "Atuação em processo relativo ao Estatuto da Criança e do Adolescente	"
+        "Diligência em termo circunstanciado de Juizados Especiais Criminais;", "Atos junto a órgãos policiais;", "Impetração de Ação autônoma de Habeas Corpuspreventivo ou liberatório;", "Atuação em processo relativo ao Estatuto da Criança e do Adolescente."
       ],
     },
     {
       icon: articleIcon,
       titulo: "Direito Civil (Contratos)",
       descricao: [
-        "Horas extras e jornada excessiva de trabalho",
-        "Acúmulo e desvio de função",
-        "Falta de registro em carteira de trabalho",
-        "Danos morais",
-        "Verbas Rescisórias",
-        "Demissão indevida por Justa Causa",
-        "Insalubridade e Periculosidade",
+        "Horas extras e jornada excessiva de trabalho;",
+        "Acúmulo e desvio de função;",
+        "Falta de registro em carteira de trabalho;",
+        "Danos morais;",
+        "Verbas Rescisórias;",
+        "Demissão indevida por Justa Causa;",
+        "Insalubridade e Periculosidade.",
       ],
     },
     {
       icon: accountBalanceIcon,
       titulo: "Direito Empresarial",
       descricao: [
-        "Pedido de falência e acompanhamento até a decretação",
-        "Ação de Restituição e Ação Reivindicatória",
-        "Pedido de Recuperação de Empresa ",
-        "Habilitação Tempestiva ou Retardatária e Divergência de Crédito"
+        "Pedido de falência e acompanhamento até a decretação;",
+        "Ação de Restituição e Ação Reivindicatória;",
+        "Pedido de Recuperação de Empresa;",
+        "Habilitação Tempestiva ou Retardatária e Divergência de Crédito."
       ],
     },
     {
@@ -100,23 +100,23 @@ export const cards: { icon: any; titulo: string; descricao: any[] }[] = [
       titulo: "Direito Ambiental",
       descricao: [
       "Contratos que envolvem Propriedades Rurais e Áreas de Proteção;",
-        "Licenciamento, Alvarás e Cadastros Legais",
-        "Falta de registro em carteira de trabalho",
-        "Ação Civil Pública",
+        "Licenciamento, Alvarás e Cadastros Legais;",
+        "Falta de registro em carteira de trabalho;",
+        "Ação Civil Pública.",
       ],
     },
     {
       icon: devicesIcon,
       titulo: "Consultoria Para Advogados",
       descricao: [
-       "Prestamos consultoria para Advogados"
+       "Prestamos consultoria para Advogados."
       ],
     },
     {
       icon: balanceIcon,
       titulo: "Atuação em Segundo Grau",
       descricao: [
-        "Recursos para os Tribunais Superiores",
+        "Recursos para os Tribunais Superiores.",
       
       ],
     },

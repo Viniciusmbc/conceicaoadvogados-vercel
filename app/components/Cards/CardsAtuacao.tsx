@@ -24,7 +24,7 @@ export default function CardsAtuacao({
           {descricao.map((descricao, index) => (
             <li
               key={index}
-              className=" w-fit list-inside list-disc  items-center  justify-center text-ellipsis text-justify text-base text-white"
+              className=" mx-auto w-fit list-inside list-item  items-center  justify-center text-center text-base text-white"
             >
               {descricao}
             </li>

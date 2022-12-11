@@ -4,7 +4,7 @@ export default function ConsulteSeuProcesso() {
       <h1 className=" flex mt-24 text-xl md:text-center ">
         {" "}
         Para consultar seu processo, basta copiar e colar o número do processo
-        que seu advogado forneceu em um dos links abaixo!
+        fornecido pelo seu advogado em um dos links abaixo!
       </h1>
 
       <div className=" my-6 ">

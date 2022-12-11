@@ -23,16 +23,16 @@ export default function Index() {
         <CarouselWithDots slides={slide} texto={""} escritorio={false} />
       </section>
       <section className="backgroundImage m-auto min-h-screen items-center justify-center bg-cover bg-fixed bg-center py-10">
-        <strong className=" mx-auto py-12 text-2xl text-center font-extrabold text-white md:text-center md:text-4xl ">
+        <strong className=" mx-auto py-12 text-2xl text-center font-extrabold text-white md:text-center md:text-4xl justify-center items-center ">
           QUEM SOMOS
         </strong>
 
         <article className=" grid grid-flow-row auto-rows-max items-center    justify-items-center max-w-screen-xl justify-center mx-auto ">
           <div className=" mx-auto px-5 text-lg">
-            <p className="  md:pt-5 leading-loose text-white">
-              <h1>CONCEIÇÃO ADVOGADOS</h1> é um escritório moderno, versátil e
-              dinâmico, cujo objetivo é levar soluções criativas e eficazes aos
-              clientes, tendo como sócio fundador{" "}
+            <p className=" text-justify  md:pt-5 leading-loose text-white">
+              <strong>CONCEIÇÃO ADVOGADOS</strong> é um escritório moderno,
+              versátil e dinâmico, cujo objetivo é levar soluções criativas e
+              eficazes aos clientes, tendo como sócio fundador{" "}
               <b>Dr. José Inácio Conceição</b>, profissional com sólida formação
               e vasta experiência em questões de grande complexidade.
             </p>
@@ -43,19 +43,19 @@ export default function Index() {
               srcSet="https://res.cloudinary.com/deaejawfj/image/upload/v1670108037/imagem-socio-fundador-conceica-advogados.webp 1x"
             />
 
-            <p className="  leading-loose text-white">
+            <p className=" text-justify  leading-loose text-white">
               De fato, nossa atuação abarca a experiência adquirida em mais de
               30 anos de advocacia, estando em total sinergia com a
               proatividade, resultando em um serviço diferenciado e
               personalizado ao cliente.
             </p>
-            <p className=" leading-loose text-white">
+            <p className=" text-justify leading-loose text-white">
               Somos mais que prestadores de serviços, estamos comprometidos em
               buscar sempre a solução ideal para nosso cliente, trazendo
               resultados objetivos quanto à estratégia traçada.
             </p>
 
-            <p className=" leading-loose text-white">
+            <p className=" text-justify leading-loose text-white">
               Sendo assim, disponibilizamos aos nossos clientes uma assessoria
               jurídica focada nos principais objetivos estratégicos projetados,
               tanto na área consultiva quanto na área contenciosa.
@@ -69,7 +69,7 @@ export default function Index() {
           <strong className=" mx-auto my-5 text-4xl text-white">Equipe</strong>
           <p className="  leading-loose text-white px-5 text-center">
             Nossa equipe é formada por profissionais experientes,
-            especializados, com formação solida e em constante aperfeiçoamento,
+            especializados, com formação sólida e em constante aperfeiçoamento,
             capaz de proporcionar todo suporte para o desenvolvimento dos
             trabalhos, com eficácia e qualidade.
           </p>
@@ -79,8 +79,8 @@ export default function Index() {
                 MISSÃO
               </h2>
               <p className="  text-center leading-loose text-[#D6D6D6] ">
-                Promover um serviço personalizado, de qualidade, humanizado para
-                levar, aos nossos clientes, as melhores soluções aos seus
+                Promover um serviço personalizado, de qualidade e humanizado
+                para levar, aos nossos clientes, as melhores soluções aos seus
                 conflitos e para que alcancem os seus objetivos.
               </p>
             </article>
@@ -261,8 +261,8 @@ export default function Index() {
           <p className=" text-center mt-6">
             Nossa equipe de advogados também atende via telefone ou e-mail.{" "}
             <br></br> Para nos contatar mais rapidamente, clique no{" "}
-            <span className="text-[#25d366] mr-1">botão verde</span>
-            ao que você será redirecionado para o whatsapp do escritório.
+            <span className="text-[#25d366] mr-1">botão verde</span>e você será
+            redirecionado para o whatsapp do escritório.
           </p>
         </section>{" "}
       </div>
