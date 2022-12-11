@@ -19,13 +19,7 @@ let isMount = true;
 export const handle = { hydrate: true };
 
 export function links() {
-  return [
-    { rel: "stylesheet", href: styles },
-    {
-      rel: "canonical",
-      href: "https://conceicaoadvogados.com.br",
-    },
-  ];
+  return [{ rel: "stylesheet", href: styles }];
 }
 
 export const meta: MetaFunction = () => ({
