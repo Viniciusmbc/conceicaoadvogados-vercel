@@ -21,7 +21,11 @@ export const handle = { hydrate: true };
 export function links() {
   return [
     { rel: "stylesheet", href: styles },
-    { rel: "canonical", href: "https://www.conceicaoadvogados.com.br/" },
+    {
+      rel: "canonical",
+      href: "https://www.conceicaoadvogados.com.br/",
+      hreflang: "pt-br",
+    },
     { rel: "manifest", href: "/resources/manifest.webmanifest" },
   ];
 }
@@ -30,7 +34,7 @@ export const meta: MetaFunction = () => ({
   charset: "utf-8",
   title: "Conceição Advogados",
   description:
-    "Conceição Advogados é um escritório de advocacia especializado em Direito do Trabalho, Direito Previdênciário, Direito Penal e Direito Civil.",
+    "Somos um escritório de advocacia especializado em Direito do Trabalho, Direito Previdênciário, Direito Penal e Direito Civil.",
   viewport: "width=device-width,initial-scale=1",
 });
 
