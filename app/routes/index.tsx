@@ -75,9 +75,9 @@ export default function Index() {
           </p>
           <div className=" grid grid-rows-3 mx-auto px-5 md:grid-flow-col  gap-8 md:grid-cols-3 md:grid-rows-1  mt-10 ">
             <article className=" h-auto w-80 p-6 flex flex-col justify-center border border-white">
-              <h3 className=" mt-1 mx-auto text-center text-2xl text-[#D6D6D6]">
+              <h2 className=" mt-1 mx-auto text-center text-2xl text-[#D6D6D6]">
                 MISSÃO
-              </h3>
+              </h2>
               <p className="  text-center leading-loose text-[#D6D6D6] ">
                 Promover um serviço personalizado, de qualidade, humanizado para
                 levar, aos nossos clientes, as melhores soluções aos seus
@@ -85,18 +85,18 @@ export default function Index() {
               </p>
             </article>
             <article className="h-auto w-80 p-6 flex flex-col justify-center border border-white">
-              <h3 className=" pb-4 mx-auto text-center text-2xl text-[#D6D6D6]">
+              <h2 className=" pb-4 mx-auto text-center text-2xl text-[#D6D6D6]">
                 VALORES
-              </h3>
+              </h2>
               <p className=" pb-2 px-6 text-center  leading-loose text-white">
                 Transparência, respeito, ética, honestidade, sigilo de
                 informações e lealdade.
               </p>
             </article>
             <article className="h-auto w-80 p-6 flex flex-col justify-center border border-white">
-              <h3 className=" mx-auto text-center text-2xl text-[#D6D6D6]">
+              <h2 className=" mx-auto text-center text-2xl text-[#D6D6D6]">
                 VISÃO
-              </h3>
+              </h2>
               <p className=" text-center  leading-loose text-white ">
                 Manter-se como um escritório de advocacia de referência nas
                 esferas em que atuamos, proporcionando constantemente
