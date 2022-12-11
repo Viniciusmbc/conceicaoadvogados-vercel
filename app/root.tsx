@@ -19,7 +19,11 @@ let isMount = true;
 export const handle = { hydrate: true };
 
 export function links() {
-  return [{ rel: "stylesheet", href: styles }];
+  return [
+    { rel: "stylesheet", href: styles },
+    { rel: "canonical", href: "https://www.conceicaoadvogados.com.br/" },
+    { rel: "manifest", href: "/resources/manifest.webmanifest" },
+  ];
 }
 
 export const meta: MetaFunction = () => ({
@@ -72,7 +76,6 @@ export default function App() {
     <html lang="pt-br">
       <head>
         <Meta /> <Links />
-        <link rel="manifest" href="/resources/manifest.webmanifest" />
       </head>
       <body className=" max-w-[100vw] overflow-x-hidden">
         <main>
