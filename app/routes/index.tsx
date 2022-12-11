@@ -23,16 +23,16 @@ export default function Index() {
         <CarouselWithDots slides={slide} texto={""} escritorio={false} />
       </section>
       <section className="backgroundImage m-auto min-h-screen items-center justify-center bg-cover bg-fixed bg-center py-10">
-        <h2 className=" mx-auto py-12 text-2xl text-center font-extrabold text-white md:text-center md:text-4xl ">
+        <strong className=" mx-auto py-12 text-2xl text-center font-extrabold text-white md:text-center md:text-4xl ">
           QUEM SOMOS
-        </h2>
+        </strong>
 
-        <div className=" grid grid-flow-row auto-rows-max items-center    justify-items-center max-w-screen-xl justify-center mx-auto ">
+        <article className=" grid grid-flow-row auto-rows-max items-center    justify-items-center max-w-screen-xl justify-center mx-auto ">
           <div className=" mx-auto px-5 text-lg">
             <p className="  md:pt-5 leading-loose text-white">
-              <strong>CONCEIÇÃO ADVOGADOS</strong> é um escritório moderno,
-              versátil e dinâmico, cujo objetivo é levar soluções criativas e
-              eficazes aos clientes, tendo como sócio fundador{" "}
+              <h1>CONCEIÇÃO ADVOGADOS</h1> é um escritório moderno, versátil e
+              dinâmico, cujo objetivo é levar soluções criativas e eficazes aos
+              clientes, tendo como sócio fundador{" "}
               <b>Dr. José Inácio Conceição</b>, profissional com sólida formação
               e vasta experiência em questões de grande complexidade.
             </p>
@@ -61,7 +61,7 @@ export default function Index() {
               tanto na área consultiva quanto na área contenciosa.
             </p>
           </div>
-        </div>
+        </article>
       </section>
 
       <div className=" w-screen overflow-x-hidden bg-brown">
@@ -75,9 +75,9 @@ export default function Index() {
           </p>
           <div className=" grid grid-rows-3 mx-auto px-5 md:grid-flow-col  gap-8 md:grid-cols-3 md:grid-rows-1  mt-10 ">
             <article className=" h-auto w-80 p-6 flex flex-col justify-center border border-white">
-              <strong className=" mt-1 mx-auto text-center text-2xl text-[#D6D6D6]">
+              <h3 className=" mt-1 mx-auto text-center text-2xl text-[#D6D6D6]">
                 MISSÃO
-              </strong>
+              </h3>
               <p className="  text-center leading-loose text-[#D6D6D6] ">
                 Promover um serviço personalizado, de qualidade, humanizado para
                 levar, aos nossos clientes, as melhores soluções aos seus
@@ -85,18 +85,18 @@ export default function Index() {
               </p>
             </article>
             <article className="h-auto w-80 p-6 flex flex-col justify-center border border-white">
-              <strong className=" pb-4 mx-auto text-center text-2xl text-[#D6D6D6]">
+              <h3 className=" pb-4 mx-auto text-center text-2xl text-[#D6D6D6]">
                 VALORES
-              </strong>
+              </h3>
               <p className=" pb-2 px-6 text-center  leading-loose text-white">
                 Transparência, respeito, ética, honestidade, sigilo de
                 informações e lealdade.
               </p>
             </article>
             <article className="h-auto w-80 p-6 flex flex-col justify-center border border-white">
-              <strong className=" mx-auto text-center text-2xl text-[#D6D6D6]">
+              <h3 className=" mx-auto text-center text-2xl text-[#D6D6D6]">
                 VISÃO
-              </strong>
+              </h3>
               <p className=" text-center  leading-loose text-white ">
                 Manter-se como um escritório de advocacia de referência nas
                 esferas em que atuamos, proporcionando constantemente
