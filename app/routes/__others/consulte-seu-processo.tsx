@@ -1,4 +1,10 @@
+import { useState } from "react";
+import { expandMoreIcon } from "~/components/common/Icons";
+
 export default function ConsulteSeuProcesso() {
+  const [isOpenTj, setIsOpenTj] = useState(false);
+  const [isOpenTRT, setIsOpenTRT] = useState(false);
+
   return (
     <section className="mx-auto flex h-screen py-6 px-6  max-w-screen-xl  flex-col items-center">
       <h1 className=" flex mt-24 text-xl md:text-center ">
@@ -13,31 +19,52 @@ export default function ConsulteSeuProcesso() {
         </p>
         <ul className=" px-3  space-y-4 text-brown underline underline-offset-1">
           <li className=" hover:text-gray">
-            <button>
-              Tribunal de Justiça do Rio Grande do Sul (tjrs) (Justiça Estadual)
-            </button>
-            <iframe
-              title="Site para Consulta Processual do Tribunal de Justiça do Estado do Rio Grande do Sul"
-              src="https://www.tjrs.jus.br/novo/busca/?return=proc&client=wp_index"
-              width={400}
-              height={400}
+            <button
+              aria-label="Clicar para abrir o site do Tribunal de Justiça do Estado do Rio Grande do Sul"
+              className=" flex justify-center items-center"
+              onClick={() => setIsOpenTj(!isOpenTj)}
             >
-              Tribunal de Justiça do Rio Grande do Sul (tjrs) (Justiça Estadual)
-            </iframe>
+              Tribunal de Justiça do Rio Grande do Sul (tjrs) (Justiça Estadual){" "}
+              <span>{expandMoreIcon}</span>
+            </button>
+            {isOpenTj && (
+              <iframe
+                title="Site para Consulta Processual do Tribunal de Justiça do Estado do Rio Grande do Sul"
+                src="https://www.tjrs.jus.br/novo/busca/?return=proc&client=wp_index"
+                width={500}
+                height={400}
+              >
+                Tribunal de Justiça do Rio Grande do Sul (tjrs) (Justiça
+                Estadual)
+              </iframe>
+            )}
           </li>
           <li className=" hover:text-gray">
-            <button>TRT 4 (Justiça do Trabalho)</button>
-            <iframe
-              title="Site para Consulta Processual do TRT 4 do Estado do Rio Grande do Sul"
-              width={400}
-              height={400}
-              src="https://www.trt4.jus.br/portais/trt4/consulta-rapida"
+            <button
+              aria-label="Clicar para abrir o site do Tribunal de Justiça do Estado do Rio Grande do Sul"
+              className=" flex justify-center items-center"
+              onClick={() => setIsOpenTRT(!isOpenTRT)}
             >
               TRT 4 (Justiça do Trabalho)
-            </iframe>
+              <span>{expandMoreIcon}</span>
+            </button>
+            {isOpenTRT && (
+              <iframe
+                title="Site para Consulta Processual do TRT 4 do Estado do Rio Grande do Sul"
+                width={500}
+                height={400}
+                src="https://www.trt4.jus.br/portais/trt4/consulta-rapida"
+              >
+                TRT 4 (Justiça do Trabalho)
+              </iframe>
+            )}
           </li>
           <li className=" hover:text-gray">
-            <a href="https://consulta.trf4.jus.br/trf4/controlador.php?acao=consulta_processual_pesquisa">
+            <a
+              target={"_blank"}
+              rel="noreferrer"
+              href="https://consulta.trf4.jus.br/trf4/controlador.php?acao=consulta_processual_pesquisa"
+            >
               TRF 4 (Justiça Federal)
             </a>
           </li>
@@ -45,7 +72,7 @@ export default function ConsulteSeuProcesso() {
       </div>
       <p className=" mb-3 text-lg">Ficou com alguma dúvida? </p>
       <p className=" mb-3 text-lg">
-        Entre em contato com um de nossos advogados!{" "}
+        Entre em contato com um de nossos advogados pelo nosso Whatsapp!{" "}
       </p>
       <p className=" text-lg">
         Eles irão te <span className=" text-brown my-1">auxiliar</span> e{" "}

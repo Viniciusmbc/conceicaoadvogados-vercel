@@ -150,7 +150,10 @@ export default function Index() {
               problema seja solucionado o mais <i>rápido</i> possível!
             </p>
           </div>
-          <h3 className=" mx-auto my-10 text-4xl text-brown">
+          <h3
+            id="areas-de-atuacao"
+            className=" mx-auto my-10 text-4xl text-brown"
+          >
             Áreas de Atuação
           </h3>
           <div className="mx-auto grid grid-flow-row grid-cols-1 gap-y-6 sm:grid-cols-2 md:grid-cols-4 md:grid-rows-3 md:gap-6">

@@ -815,6 +815,18 @@ video {
   margin-right: 0.5rem;
 }
 
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
 .flex {
   display: flex;
 }
@@ -887,10 +899,6 @@ video {
   height: 2.75rem;
 }
 
-.max-h-\[540px\] {
-  max-height: 540px;
-}
-
 .max-h-full {
   max-height: 100%;
 }
@@ -905,11 +913,6 @@ video {
 
 .min-h-\[175px\] {
   min-height: 175px;
-}
-
-.min-h-max {
-  min-height: -moz-max-content;
-  min-height: max-content;
 }
 
 .w-80 {
@@ -1334,6 +1337,11 @@ video {
   background-color: rgb(38 34 35 / var(--tw-bg-opacity));
 }
 
+.bg-deer {
+  --tw-bg-opacity: 1;
+  background-color: rgb(191 127 90 / var(--tw-bg-opacity));
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -1451,6 +1459,16 @@ video {
   padding-right: 1.75rem;
 }
 
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.px-28 {
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -1481,6 +1499,26 @@ video {
 
 .pl-1 {
   padding-left: 0.25rem;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
+.pl-9 {
+  padding-left: 2.25rem;
+}
+
+.pl-20 {
+  padding-left: 5rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
 }
 
 .text-center {
@@ -1543,8 +1581,16 @@ video {
   font-weight: 300;
 }
 
+.font-semibold {
+  font-weight: 600;
+}
+
 .uppercase {
   text-transform: uppercase;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .leading-loose {
@@ -1638,12 +1684,35 @@ video {
   color: rgb(18 140 126 / var(--tw-text-opacity));
 }
 
+.text-gray {
+  --tw-text-opacity: 1;
+  color: rgb(38 34 35 / var(--tw-text-opacity));
+}
+
+.text-\[\#008207\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 130 7 / var(--tw-text-opacity));
+}
+
+.text-\[\#006804\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 104 4 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
 
 .underline-offset-1 {
   text-underline-offset: 1px;
+}
+
+.underline-offset-0 {
+  text-underline-offset: 0px;
+}
+
+.underline-offset-2 {
+  text-underline-offset: 2px;
 }
 
 .opacity-0 {
@@ -1754,6 +1823,11 @@ video {
 
 .hover\:underline-offset-1:hover {
   text-underline-offset: 1px;
+}
+
+.active\:text-gray:active {
+  --tw-text-opacity: 1;
+  color: rgb(38 34 35 / var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:opacity-100 {

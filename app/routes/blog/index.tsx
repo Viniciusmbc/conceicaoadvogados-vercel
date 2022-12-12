@@ -1,6 +1,3 @@
-import type { LoaderFunction } from "@remix-run/node";
-import { json } from "@remix-run/node";
-import { useLoaderData } from "@remix-run/react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -13,6 +10,7 @@ export default function Blog() {
       <aside className=" mt-16 ml-auto mr-16 max-w-screen-xl flex-col items-center hidden md:flex  ">
         <ul className=" mx-auto flex-col flex justify-center">
           <li className=" mx-auto">Últimas Postagens</li>
+          <li> </li>
         </ul>
       </aside>
       <section className=" mr-auto flex flex-wrap max-w-7xl flex-col gap-4">
@@ -52,7 +50,10 @@ export default function Blog() {
             <li>
               <button
                 onClick={() => setMenu("Direito Previdenciário")}
-                className="hover:underline hover:underline-offset-2 hover:text-brown hover:bg-gray/10"
+                className={` hover:underline hover:underline-offset-2 hover:text-brown hover:bg-gray/10 ${
+                  menu === "Direito Previdenciário" &&
+                  " text-gray underline underline-offset-2 bg-deer"
+                }`}
                 aria-label="clique para ver assuntos sobre Direito Previdenciario"
               >
                 Direito Previdenciário
@@ -61,7 +62,10 @@ export default function Blog() {
             <li>
               <button
                 onClick={() => setMenu("Direito Civil")}
-                className="hover:underline hover:underline-offset-2 hover:text-brown hover:bg-gray/10"
+                className={` hover:underline hover:underline-offset-2 hover:text-brown hover:bg-gray/10 ${
+                  menu === "Direito Civil" &&
+                  " text-gray underline underline-offset-2 bg-deer"
+                }`}
                 aria-label="clique para ver assuntos sobre Direito Previdenciario"
               >
                 Direito Civil

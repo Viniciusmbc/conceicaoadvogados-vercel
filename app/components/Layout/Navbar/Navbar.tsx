@@ -241,13 +241,17 @@ export default function Navbar({ navbar }: { navbar: boolean }) {
                 <Link to="/oescritorio">O Escritório</Link>
               </li>
               <li>
-                <Link
-                  to="/"
+                <a
+                  href={
+                    "https://wa.me/5555992560707?text=Ol%C3%A1%2C+gostaria+de+falar+com+um+advogado"
+                  }
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className=" border-green hover:border-gold flex items-center justify-center gap-x-1 border p-3 text-xl text-[#128c7e] hover:text-white "
                 >
                   <span className=" text-[#128c7e]">{whatsappIcon}</span>
                   WhatsApp
-                </Link>
+                </a>
               </li>
             </ul>
           </nav>
