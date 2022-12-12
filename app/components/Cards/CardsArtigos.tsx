@@ -20,7 +20,7 @@ export default function CardsArtigos({
   descricao,
 }: CardsArtigosProps) {
   return (
-    <article className=" max-h-[540px] w-80 max-w-full bg-white text-black shadow-lg ">
+    <article className="w-80 max-w-full bg-white text-black shadow-lg h-auto ">
       <div className=" relative text-black">
         <img
           src={imagem}

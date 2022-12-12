@@ -190,7 +190,7 @@ export default function Index() {
             Últimos de Nossos Artigos
           </strong>
 
-          <div className=" overflow-y-scroll min-h-screen md:py-6 md:h-auto flex w-screen max-w-screen-xl flex-wrap items-center justify-around gap-y-8 ">
+          <div className=" overflow-y-scroll  md:py-6 md:h-auto flex w-screen max-w-screen-xl flex-wrap items-center justify-around gap-y-8 ">
             {artigos.map(
               (
                 { imagem, alt, autor, data, icone, titulo, descricao },

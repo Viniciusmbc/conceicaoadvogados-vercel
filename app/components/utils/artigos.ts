@@ -20,6 +20,6 @@ export const artigos: {
     icone: articleIcon,
     titulo: "Revisional de Juros Abusivos",
     descricao:
-      "Você está financiando um imóvel ou um veículo e percebeu que o valor dos juros cobrados nas prestações são muito altos? O banco esta cobrando juros abusivos nas faturas atrasadas do seu cartão de crédito? Você sabia que é direito seu pedir revisão dos juros e, também, o ressarcimento por cobranças indevidas? Nesse artigo, você vai entender o que é a ação revisional, em quais casos ela se aplica e como solicitar. Confira!",
+      "Você está financiando um imóvel ou um veículo e percebeu que o valor dos juros cobrados nas prestações são muito altos? O banco esta cobrando juros abusivos nas faturas atrasadas do seu cartão de crédito? Você sabia que é direito seu pedir revisão dos juros e, também, o ressarcimento por cobranças indevidas? Leia nosso artigo e retire sua dúvidas!",
   },
 ];
