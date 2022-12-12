@@ -709,19 +709,14 @@ video {
   margin-bottom: 2px;
 }
 
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+.my-7 {
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
 }
 
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-}
-
-.my-7 {
-  margin-top: 1.75rem;
-  margin-bottom: 1.75rem;
 }
 
 .mt-10 {
@@ -760,10 +755,6 @@ video {
   margin-top: 0.5rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
 .mt-16 {
   margin-top: 4rem;
 }
@@ -796,6 +787,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mt-24 {
   margin-top: 6rem;
 }
@@ -810,6 +805,14 @@ video {
 
 .mr-2 {
   margin-right: 0.5rem;
+}
+
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .flex {
@@ -969,6 +972,10 @@ video {
   width: 80%;
 }
 
+.w-96 {
+  width: 24rem;
+}
+
 .min-w-\[100vw\] {
   min-width: 100vw;
 }
@@ -1002,10 +1009,6 @@ video {
   max-width: 64rem;
 }
 
-.max-w-screen-sm {
-  max-width: 640px;
-}
-
 .max-w-7xl {
   max-width: 80rem;
 }
@@ -1014,12 +1017,20 @@ video {
   max-width: 32rem;
 }
 
+.max-w-screen-lg {
+  max-width: 1024px;
+}
+
 .max-w-sm {
   max-width: 24rem;
 }
 
-.max-w-screen-lg {
-  max-width: 1024px;
+.max-w-md {
+  max-width: 28rem;
+}
+
+.max-w-screen-md {
+  max-width: 768px;
 }
 
 .translate-y-3 {
@@ -1378,14 +1389,13 @@ video {
   padding: 0.75rem;
 }
 
+.p-7 {
+  padding: 1.75rem;
+}
+
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
-}
-
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 
 .px-5 {
@@ -1610,14 +1620,19 @@ video {
   color: rgb(34 20 11 / var(--tw-text-opacity));
 }
 
-.text-gray {
-  --tw-text-opacity: 1;
-  color: rgb(38 34 35 / var(--tw-text-opacity));
-}
-
 .text-grulo {
   --tw-text-opacity: 1;
   color: rgb(166 138 128 / var(--tw-text-opacity));
+}
+
+.text-\[\#4A5659\] {
+  --tw-text-opacity: 1;
+  color: rgb(74 86 89 / var(--tw-text-opacity));
+}
+
+.text-\[\#556367\] {
+  --tw-text-opacity: 1;
+  color: rgb(85 99 103 / var(--tw-text-opacity));
 }
 
 .text-\[\#EB9C6E\] {
@@ -1630,14 +1645,9 @@ video {
   color: rgb(18 140 126 / var(--tw-text-opacity));
 }
 
-.text-\[\#556367\] {
+.text-deer {
   --tw-text-opacity: 1;
-  color: rgb(85 99 103 / var(--tw-text-opacity));
-}
-
-.text-\[\#4A5659\] {
-  --tw-text-opacity: 1;
-  color: rgb(74 86 89 / var(--tw-text-opacity));
+  color: rgb(191 127 90 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1876,9 +1886,9 @@ video {
     padding-right: 0px;
   }
 
-  .md\:py-10 {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+  .md\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .md\:px-5 {

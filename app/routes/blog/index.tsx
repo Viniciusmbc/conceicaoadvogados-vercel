@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export default function Blog() {
   const [isOpen, setIsOpen] = useState(false);
-  const [menu, setMenu] = useState("inicio");
+  const [menu, setMenu] = useState("Direito Civil");
 
   return (
     <div className="mx-auto flex w-screen gap-x-7 bg-white">

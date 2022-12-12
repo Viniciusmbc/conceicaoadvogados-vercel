@@ -1,10 +1,10 @@
 export default function Artigos() {
   return (
-    <article className="w-full max-w-screen-lg mx-auto">
-      <h1 className="  text-center text-4xl font-bold text-brown">
+    <article className="w-full  max-w-screen-md mx-auto mt-14">
+      <h1 className="  text-center text-4xl font-bold text-brown mb-3">
         Revisional de Juros Abusivos
       </h1>
-      <p className=" text-black">
+      <p className=" text-black mb-4 ">
         {" "}
         Guilherme Batú, Dez 12, 2022 Direito Civil (Contratos)
       </p>
@@ -17,26 +17,40 @@ export default function Artigos() {
         que é a ação revisional, em quais casos ela se aplica e como solicitar.
         Confira!
       </p>
-      <div>
+      <div className=" max-w-fit p-7 h-auto border border-brown">
         <nav>
-          Indice
           <ul>
-            <li>1. O que é uma ação revisional de juros?</li>
-            <li>
+            <li className=" text-brown">
+              1. O que é uma ação revisional de juros?
+            </li>
+            <li className=" text-brown">
               2. O que são e como saber se estou sofrendo com juros abusivos?
             </li>
-            <li>3. O que acontece se forem identificados juros abusivos?</li>
-            <li>4. Ação revisional em financiamento de imóveis</li>
-            <li> 5. Ação revisional em financiamento de veículos</li>
-            <li> 6. Ação revisional dos juros no cartão de crédito</li>
-            <li> 7. Assinei o contrato, ainda posso pedir ação revisional?</li>
-            <li>
+            <li className=" text-brown">
+              3. O que acontece se forem identificados juros abusivos?
+            </li>
+            <li className=" text-brown">
+              4. Ação revisional em financiamento de imóveis
+            </li>
+            <li className=" text-brown">
+              {" "}
+              5. Ação revisional em financiamento de veículos
+            </li>
+            <li className=" text-brown">
+              {" "}
+              6. Ação revisional dos juros no cartão de crédito
+            </li>
+            <li className=" text-brown">
+              {" "}
+              7. Assinei o contrato, ainda posso pedir ação revisional?
+            </li>
+            <li className=" text-brown">
               8. Posso parar de pagar as parcelas quando entrar com a ação?
             </li>
-            <li>
+            <li className=" text-brown">
               9. O que preciso para solicitar uma ação revisional de juros?
             </li>
-            <li>Conclusão</li>
+            <li className=" text-brown">Conclusão</li>
           </ul>
         </nav>
       </div>
@@ -216,10 +230,13 @@ export default function Artigos() {
         Portanto, se você desconfia de cobranças abusivas, procure um
         profissional!
       </p>
-      <p className=" mb-4 mx-auto text-black  leading-relaxed text-center">
+      <p className=" mb-8 mx-auto text-black  leading-relaxed text-center text-xl">
         <br></br> Ficou com dúvidas? <br></br>Entre em contato com a nossa
-        equipe! <br></br> <a href="/"> Clique aqui</a> para nos enviar uma
-        mensagem no WhatsApp.
+        equipe! <br></br>{" "}
+        <a className=" text-[#25d366] ml-2" href="/">
+          Clique aqui
+        </a>
+        para nos enviar uma mensagem no WhatsApp.
       </p>
     </article>
   );
