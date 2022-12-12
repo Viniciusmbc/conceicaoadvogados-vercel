@@ -46,7 +46,7 @@ export default function CardsArtigos({
         <Link
           className=" text-[#22140B] font-bold hover:text-gray"
           to={`blog/${titulo
-            .replace(/( )+/g, "")
+            .replace(/( )+/g, "-")
             .normalize("NFD")
             .replace(/[\u0300-\u036f]/g, "")
             .toLowerCase()}`}

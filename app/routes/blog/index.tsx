@@ -58,6 +58,15 @@ export default function Blog() {
                 Direito Previdenciário
               </button>
             </li>
+            <li>
+              <button
+                onClick={() => setMenu("Direito Civil")}
+                className="hover:underline hover:underline-offset-2 hover:text-brown hover:bg-gray/10"
+                aria-label="clique para ver assuntos sobre Direito Previdenciario"
+              >
+                Direito Civil
+              </button>
+            </li>
           </ul>
           <div className=" bg-gray/10 my-4 h-12 flex  justify-center items-center md:hidden">
             <button
@@ -119,124 +128,53 @@ export default function Blog() {
                     Direito Previdenciário
                   </button>
                 </li>
+                <li className=" py-2">
+                  <button
+                    className="hover:underline hover:underline-offset-2 hover:text-brown hover:bg-gray/10"
+                    aria-label="clique para ver assuntos sobre Direito Previdenciario"
+                  >
+                    Direito Civil
+                  </button>
+                </li>
               </ul>
             ) : null}
           </div>
 
           <section className=" flex flex-col justify-center items-center mx-auto">
-            {menu === "Direito de Familía" && (
-              <>
-                <article>
-                  <div className=" mb-10 flex flex-wrap gap-x-10 justify-center px-10 md:px-0">
-                    <img
-                      src="https://cdn-bnaga.nitrocdn.com/RLRDfsIUASREgxlKxwrcfDLjYLvppeZR/assets/static/optimized/rev-cd6c4c6/app/uploads/2022/09/When-Is-Guardianship-or-Conservatorship-Needed.jpg"
-                      width={250}
-                      height={180}
-                      alt="Familiar"
-                    />
-                    <div>
-                      <h2 className=" text-lg font-bold">
-                        <Link
-                          className=" text-lg font-bold mt-2"
-                          to="/quem-tem-direito-a-herança"
-                        >
-                          Quem tem direito a herança?
-                        </Link>
-                      </h2>
-                      <p className=" text-sm mb-2 text-grulo">
-                        Postado em 10/10/10
-                      </p>
-                      <p className=" max-w-lg">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Doloribus velit fugiat quod nam aperiam quam excepturi
-                        qui itaque nesciunt? Suscipit, quis atque ab dolorum
-                        amet veritatis possimus nemo reprehenderit ipsam!
-                      </p>
-                    </div>
+            {menu === "Direito Civil" && (
+              <article>
+                <div className=" mb-10 flex flex-wrap gap-x-10 justify-center px-10 md:px-0">
+                  <img
+                    src="https://res.cloudinary.com/deaejawfj/image/upload/c_scale,w_440/v1670850655/revisionalCapa.webp"
+                    width={300}
+                    height={300}
+                    alt="Imagem de Revisional de Juros Abusivos"
+                  />
+                  <div>
+                    <h1 className=" text-lg font-bold">
+                      <Link
+                        className=" text-lg font-bold mt-2"
+                        to="/blog/revisional-de-juros-abusivos"
+                      >
+                        Revisional de Juros Abusivos
+                      </Link>
+                    </h1>
+                    <p className=" text-sm mb-2 text-grulo">
+                      Postado em 12/12/22
+                    </p>
+                    <p className=" max-w-lg">
+                      Você esta financiando um imóvel ou um veículo e percebeu
+                      que o valor dos juros cobrados nas prestações são muito
+                      altos? O banco esta cobrando juros abusivos nas faturas
+                      atrasadas do seu cartão de crédito? Você sabia que é
+                      direito seu pedir revisão dos juros e, também, o
+                      ressarcimento por cobranças indevidas? Nesse artigo, você
+                      vai entender o que é a ação revisional, em quais casos ela
+                      se aplica e como solicitar. Confira!
+                    </p>
                   </div>
-                </article>
-                <article>
-                  <div className=" mb-10 flex flex-wrap  gap-x-10 justify-center px-10 md:px-0 ">
-                    <img
-                      src="https://cdn-bnaga.nitrocdn.com/RLRDfsIUASREgxlKxwrcfDLjYLvppeZR/assets/static/optimized/rev-cd6c4c6/app/uploads/2022/09/When-Is-Guardianship-or-Conservatorship-Needed.jpg"
-                      width={250}
-                      height={180}
-                      alt="Familiar"
-                    />
-                    <div>
-                      <h2 className=" text-lg font-bold">
-                        <Link
-                          className=" text-lg font-bold my-2"
-                          to="/blog/quem-tem-direito-a-herança"
-                        >
-                          Quem tem direito a herança?
-                        </Link>
-                      </h2>
-                      <p className=" text-sm mb-2">Postado em 10/10/10</p>
-                      <p className=" max-w-lg">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Doloribus velit fugiat quod nam aperiam quam excepturi
-                        qui itaque nesciunt? Suscipit, quis atque ab dolorum
-                        amet veritatis possimus nemo reprehenderit ipsam!
-                      </p>
-                    </div>
-                  </div>
-                </article>
-                <article>
-                  <div className=" mb-10 flex flex-wrap  gap-x-10 justify-center px-10 md:px-0 ">
-                    <img
-                      src="https://cdn-bnaga.nitrocdn.com/RLRDfsIUASREgxlKxwrcfDLjYLvppeZR/assets/static/optimized/rev-cd6c4c6/app/uploads/2022/09/When-Is-Guardianship-or-Conservatorship-Needed.jpg"
-                      width={250}
-                      height={180}
-                      alt="Familiar"
-                    />
-                    <div>
-                      <h2 className=" text-lg font-bold">
-                        <Link
-                          className=" text-lg font-bold my-2"
-                          to="/blog/quem-tem-direito-a-herança"
-                        >
-                          Quem tem direito a herança?
-                        </Link>
-                      </h2>
-                      <p className=" text-sm mb-2">Postado em 10/10/10</p>
-                      <p className=" max-w-lg">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Doloribus velit fugiat quod nam aperiam quam excepturi
-                        qui itaque nesciunt? Suscipit, quis atque ab dolorum
-                        amet veritatis possimus nemo reprehenderit ipsam!
-                      </p>
-                    </div>
-                  </div>
-                </article>
-                <article>
-                  <div className=" mb-10 flex flex-wrap  gap-x-10 justify-center px-10 md:px-0">
-                    <img
-                      src="https://cdn-bnaga.nitrocdn.com/RLRDfsIUASREgxlKxwrcfDLjYLvppeZR/assets/static/optimized/rev-cd6c4c6/app/uploads/2022/09/When-Is-Guardianship-or-Conservatorship-Needed.jpg"
-                      width={250}
-                      height={180}
-                      alt="Familiar"
-                    />
-                    <div>
-                      <h2 className=" text-lg font-bold">
-                        <Link
-                          className=" text-lg font-bold my-2"
-                          to="/blog/quem-tem-direito-a-herança"
-                        >
-                          Quem tem direito a herança?
-                        </Link>
-                      </h2>
-                      <p className=" text-sm mb-2">Postado em 10/10/10</p>
-                      <p className=" max-w-lg">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Doloribus velit fugiat quod nam aperiam quam excepturi
-                        qui itaque nesciunt? Suscipit, quis atque ab dolorum
-                        amet veritatis possimus nemo reprehenderit ipsam!
-                      </p>
-                    </div>
-                  </div>
-                </article>
-              </>
+                </div>
+              </article>
             )}
           </section>
         </div>

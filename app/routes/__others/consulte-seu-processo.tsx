@@ -11,16 +11,30 @@ export default function ConsulteSeuProcesso() {
         <p className=" my-5 text-lg">
           Acesso ao sites dos Principais Tribunais do Rio Grande do Sul:
         </p>
-        <ul className=" px-3 list-item list-disc space-y-4 text-brown underline underline-offset-1">
+        <ul className=" px-3  space-y-4 text-brown underline underline-offset-1">
           <li className=" hover:text-gray">
-            <a href="https://www.tjrs.jus.br/novo/busca/?return=proc&client=wp_index">
+            <button>
               Tribunal de Justiça do Rio Grande do Sul (tjrs) (Justiça Estadual)
-            </a>
+            </button>
+            <iframe
+              title="Site para Consulta Processual do Tribunal de Justiça do Estado do Rio Grande do Sul"
+              src="https://www.tjrs.jus.br/novo/busca/?return=proc&client=wp_index"
+              width={400}
+              height={400}
+            >
+              Tribunal de Justiça do Rio Grande do Sul (tjrs) (Justiça Estadual)
+            </iframe>
           </li>
           <li className=" hover:text-gray">
-            <a href="https://www.trt4.jus.br/portais/trt4/consulta-rapida">
+            <button>TRT 4 (Justiça do Trabalho)</button>
+            <iframe
+              title="Site para Consulta Processual do TRT 4 do Estado do Rio Grande do Sul"
+              width={400}
+              height={400}
+              src="https://www.trt4.jus.br/portais/trt4/consulta-rapida"
+            >
               TRT 4 (Justiça do Trabalho)
-            </a>
+            </iframe>
           </li>
           <li className=" hover:text-gray">
             <a href="https://consulta.trf4.jus.br/trf4/controlador.php?acao=consulta_processual_pesquisa">

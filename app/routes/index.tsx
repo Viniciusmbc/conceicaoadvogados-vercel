@@ -23,7 +23,7 @@ export default function Index() {
         <CarouselWithDots slides={slide} texto={""} escritorio={false} />
       </section>
       <section className="backgroundImage m-auto min-h-screen items-center justify-center bg-cover bg-fixed bg-center py-10">
-        <strong className=" mx-auto py-12 text-2xl text-center font-extrabold text-white md:text-center md:text-4xl justify-center items-center ">
+        <strong className=" flex mx-auto py-10 text-2xl text-center font-extrabold text-white md:text-center md:text-4xl justify-center items-center ">
           QUEM SOMOS
         </strong>
 
@@ -66,7 +66,9 @@ export default function Index() {
 
       <div className=" w-screen overflow-x-hidden bg-brown">
         <section className="mx-auto flex w-screen max-w-screen-xl  flex-col py-7">
-          <strong className=" mx-auto my-5 text-4xl text-white">Equipe</strong>
+          <strong className=" flex mx-auto my-5 text-4xl text-white">
+            Equipe
+          </strong>
           <p className="  leading-loose text-white px-5 text-center">
             Nossa equipe é formada por profissionais experientes,
             especializados, com formação sólida e em constante aperfeiçoamento,

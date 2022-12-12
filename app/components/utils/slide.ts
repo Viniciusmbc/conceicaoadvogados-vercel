@@ -5,7 +5,7 @@ import { TituloAdv } from "../Titulo/TituloAdv";
     {
       src:
         "https://res.cloudinary.com/deaejawfj/image/upload/e_auto_contrast,q_auto/v1670351734/imagemPrincipalConceicao.webp",
-        srcset:["https://res.cloudinary.com/deaejawfj/image/upload/e_auto_contrast,q_auto/v1670351734/imagemPrincipalConceicao.webp 1024w",
+        srcset:["https://res.cloudinary.com/deaejawfj/image/upload/e_auto_contrast,q_auto/v1670351734/imagemPrincipalConceicao.webp 1440w",
       "https://res.cloudinary.com/deaejawfj/image/upload/e_auto_contrast,q_auto/v1670351734/imagemPrincipalConceicao.webp 640w","https://res.cloudinary.com/deaejawfj/image/upload/e_auto_contrast,q_auto_c_scale,w_370/v1670533444/imagemPrincipalConceicaoVertical.webp 370w"],
       alt: "Imagem interna do Escritório do Conceição Advogados",
       texto: TituloAdv,
@@ -18,7 +18,7 @@ import { TituloAdv } from "../Titulo/TituloAdv";
     },
     {
       src: "https://res.cloudinary.com/deaejawfj/image/upload/e_contrast:-100,q_auto/v1670334654/inss-1_zntb10.webp",
-      srcset: ["https://res.cloudinary.com/deaejawfj/image/upload/c_scale,e_contrast:-100,q_auto,w_1366/v1670334654/inss-1_zntb10.webp 1024w", "https://res.cloudinary.com/deaejawfj/image/upload/c_scale,e_contrast:-100,q_auto,w_750/v1670334654/inss-1_zntb10.webp 750w", "https://res.cloudinary.com/deaejawfj/image/upload/c_scale,e_contrast:-100,h_768,q_auto,w_626/v1670334654/inss-1_zntb10.webp 340w"],
+      srcset: ["https://res.cloudinary.com/deaejawfj/image/upload/c_scale,e_contrast:-100,q_auto,w_1366/v1670334654/inss-1_zntb10.webp 1440w", "https://res.cloudinary.com/deaejawfj/image/upload/c_scale,e_contrast:-100,q_auto,w_750/v1670334654/inss-1_zntb10.webp 750w", "https://res.cloudinary.com/deaejawfj/image/upload/c_scale,e_contrast:-100,h_768,q_auto,w_626/v1670334654/inss-1_zntb10.webp 340w"],
       alt: "Imagem de benefício Previdenciários",
       texto: "Aposentadoria e Benefícios Previdenciários",
     
