@@ -13,7 +13,7 @@ export default function Blog() {
           <li> </li>
         </ul>
       </aside>
-      <section className=" mr-auto flex flex-wrap max-w-7xl flex-col gap-4">
+      <section className=" mr-auto flex flex-wrap max-w-7xl flex-col gap-4 min-h-screen">
         <h1 className=" mt-4 text-center pt-14  text-4xl text-brown mx-auto">
           Nossos Artigos
         </h1>
