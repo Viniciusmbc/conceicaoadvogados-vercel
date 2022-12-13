@@ -13,6 +13,7 @@ import React from "react";
 import Footer from "./components/Layout/Footer/Footer";
 import WhatsAppPopup from "./components/Popup/WhatsAppPopup";
 import styles from "./styles/app.css";
+import { getSeo } from "~/components/utils/seo";
 
 let isMount = true;
 
@@ -27,8 +28,10 @@ export function links() {
     { rel: "manifest", href: "/resources/manifest.webmanifest" },
   ];
 }
+let [seoMeta, seoLinks] = getSeo();
 
 export const meta: MetaFunction = () => ({
+  ...seoMeta,
   charset: "utf-8",
   title: "Conceição Advogados",
   description:
