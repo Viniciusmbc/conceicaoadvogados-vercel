@@ -33,9 +33,6 @@ let [seoMeta, seoLinks] = getSeo();
 export const meta: MetaFunction = () => ({
   ...seoMeta,
   charset: "utf-8",
-  title: "Conceição Advogados",
-  description:
-    "Somos um escritório de advocacia especializado em Direito do Trabalho, Direito Previdênciário, Direito Penal e Direito Civil.",
   viewport: "width=device-width,initial-scale=1",
 });
 
