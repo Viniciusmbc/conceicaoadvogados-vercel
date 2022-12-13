@@ -7,7 +7,7 @@ import { getSeo, getSeoMeta, getSeoLinks } from "~/components/utils/seo";
 export let [seoMeta, seoLinks] = getSeo({
   title: "Blog do Conceição Advogados",
   description:
-    "Publicações sobre Direito Previdenciário, Direito do Trabalho, Direito Penal e outras áreas d o direito!",
+    "Acompanhe nossas Publicações sobre Direito Previdenciário, Direito do Trabalho, Direito Penal e outras Áreas do Direito!",
 });
 
 export default function Blog() {

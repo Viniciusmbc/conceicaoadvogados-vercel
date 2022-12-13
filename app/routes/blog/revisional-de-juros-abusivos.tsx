@@ -1,4 +1,11 @@
 import { agendaIcon, personIcon } from "~/components/common/Icons";
+import { getSeo } from "~/components/utils/seo";
+
+export let [seoMeta, seoLinks] = getSeo({
+  title: "Blog do Conceição Advogados",
+  description:
+    "O banco está cobrando juros abusivos nas faturas atrasadas do seu cartão de crédito? Você sabia que é direito seu pedir revisão dos juros e,também, o ressarcimento por cobranças indevidas? Confira em nosso Artigo!",
+});
 
 export default function Artigos() {
   return (
