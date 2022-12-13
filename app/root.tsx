@@ -24,7 +24,7 @@ export function links() {
     {
       rel: "canonical",
       href: "https://www.conceicaoadvogados.com.br/",
-      hreflang: "pt-br",
+      hrefLang: "pt-br",
     },
     { rel: "manifest", href: "/resources/manifest.webmanifest" },
   ];

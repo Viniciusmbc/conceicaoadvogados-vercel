@@ -4,9 +4,9 @@ import Navbar from "~/components/Layout/Navbar/Navbar";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
-  title: "Conceição Advogados",
+  title: "Blog do Conceição Advogados",
   description:
-    "Publicações sobre Direito Penal, Previdenciário (INSS), trabalhadores CLT, FGTS, imóveis, contratos entre outros temas.",
+    "Publicações sobre Direito Penal, Previdenciário (INSS), trabalhadores CLT, FGTS, imóveis, contratos, entre outros temas.",
   viewport: "width=device-width,initial-scale=1",
 });
 
