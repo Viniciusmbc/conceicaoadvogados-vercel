@@ -1,6 +1,15 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
+import type { MetaFunction } from "@remix-run/node"; // or cloudflare/deno
+
+export const meta: MetaFunction = () => {
+  return {
+    title: "Blog do Conceição Advogados",
+    description: "Publicações sobre diversas áreas do Direito!",
+  };
+};
+
 export default function Blog() {
   const [isOpen, setIsOpen] = useState(false);
   const [menu, setMenu] = useState("Direito Civil");
