@@ -155,14 +155,14 @@ export default function Blog() {
                     alt="Imagem de Revisional de Juros Abusivos"
                   />
                   <div>
-                    <h1 className=" text-lg font-bold">
+                    <h2 className=" text-lg font-bold">
                       <Link
                         className=" text-lg font-bold mt-2"
                         to="/blog/revisional-de-juros-abusivos"
                       >
                         Revisional de Juros Abusivos
                       </Link>
-                    </h1>
+                    </h2>
                     <p className=" text-sm mb-2 text-grulo">
                       Postado em 12/12/22
                     </p>

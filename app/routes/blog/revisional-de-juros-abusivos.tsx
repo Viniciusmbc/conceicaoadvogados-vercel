@@ -1,21 +1,8 @@
 import { agendaIcon, personIcon } from "~/components/common/Icons";
-import type { MetaFunction } from "@remix-run/node";
-import { Meta } from "@remix-run/react";
-
-export const meta: MetaFunction = () => ({
-  charset: "utf-8",
-  title: "Revisional de Juros Abusivos",
-  description:
-    "Você esta financiando um imóvel ou um veículo e percebeu que o valor dos juros cobrados nas prestações são muito altos? O banco esta cobrando juros abusivos nas faturas atrasadas do seu cartão de crédito? Você sabia que é direito seu pedir revisão dos juros e,  também, o ressarcimento por cobranças indevidas? Nesse artigo, você vai entender o que é a ação revisional, em quais casos ela se aplica e como solicitar.",
-  viewport: "width=device-width,initial-scale=1",
-});
 
 export default function Artigos() {
   return (
     <>
-      <header>
-        <Meta />
-      </header>
       <article className="w-full px-7  max-w-screen-md mx-auto mt-14 md:px-0">
         <h1 className="  text-center text-4xl font-bold text-brown mb-3">
           Revisional de Juros Abusivos

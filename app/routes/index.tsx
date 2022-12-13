@@ -29,7 +29,7 @@ export default function Index() {
 
         <article className=" grid grid-flow-row auto-rows-max items-center    justify-items-center max-w-screen-xl justify-center mx-auto ">
           <div className=" mx-auto px-5 text-lg">
-            <p className=" text-justify  md:pt-5 leading-loose text-white">
+            <p className=" text-justify text-lg  md:pt-5 leading-loose text-white">
               <strong>CONCEIÇÃO ADVOGADOS</strong> é um escritório moderno,
               versátil e dinâmico, cujo objetivo é levar soluções criativas e
               eficazes aos clientes, tendo como sócio fundador{" "}
@@ -43,19 +43,19 @@ export default function Index() {
               srcSet="https://res.cloudinary.com/deaejawfj/image/upload/v1670108037/imagem-socio-fundador-conceica-advogados.webp 1x"
             />
 
-            <p className=" text-justify  leading-loose text-white">
+            <p className=" text-justify text-lg  leading-loose text-white">
               De fato, nossa atuação abarca a experiência adquirida em mais de
               30 anos de advocacia, estando em total sinergia com a
               proatividade, resultando em um serviço diferenciado e
               personalizado ao cliente.
             </p>
-            <p className=" text-justify leading-loose text-white">
+            <p className=" text-justify text-lg leading-loose text-white">
               Somos mais que prestadores de serviços, estamos comprometidos em
               buscar sempre a solução ideal para nosso cliente, trazendo
               resultados objetivos quanto à estratégia traçada.
             </p>
 
-            <p className=" text-justify leading-loose text-white">
+            <p className=" text-justify text-lg leading-loose text-white">
               Sendo assim, disponibilizamos aos nossos clientes uma assessoria
               jurídica focada nos principais objetivos estratégicos projetados,
               tanto na área consultiva quanto na área contenciosa.
@@ -69,7 +69,7 @@ export default function Index() {
           <strong className=" flex mx-auto my-5 text-4xl text-white">
             Equipe
           </strong>
-          <p className="  leading-loose text-white px-5 text-center">
+          <p className=" text-lg  leading-loose text-white px-5 text-center">
             Nossa equipe é formada por profissionais experientes,
             especializados, com formação sólida e em constante aperfeiçoamento,
             capaz de proporcionar todo suporte para o desenvolvimento dos
@@ -129,7 +129,7 @@ export default function Index() {
             </div>
 
             <div className=" flex ">
-              <p className=" my-4 mx-auto flex w-full flex-wrap items-center justify-center text-base md:text-2xl ">
+              <p className=" my-4 mx-auto flex w-full flex-wrap items-center justify-center text-lg md:text-2xl ">
                 {" "}
                 Fale com um de nossos advogados pelo nosso{" "}
                 <a
@@ -224,16 +224,16 @@ export default function Index() {
             </strong>
           </div>
           <div className=" flex flex-col gap-4 text-center">
-            <p>
+            <p className=" text-lg">
               Estamos localizados em <b>dois endereços</b> na cidade de{" "}
               <u>Santa Maria</u>, Rio Grande do Sul.
             </p>
-            <p>
+            <p className=" text-lg">
               Atendemos de Segunda-Feira à Sexta-feira, das 8:30 ao meio-dia e
               das 14 horas às 18 horas.
             </p>
 
-            <address className=" flex flex-wrap justify-around gap-y-4">
+            <address className=" flex flex-wrap justify-around gap-y-4 text-lg">
               <div>
                 <a
                   href="https://goo.gl/maps/iW4J74Rqbn2boJC67"
@@ -263,7 +263,7 @@ export default function Index() {
               </div>
             </address>
           </div>
-          <p className=" text-center mt-6">
+          <p className=" text-center mt-6 text-lg">
             Nossa equipe de advogados também atende via telefone ou e-mail.{" "}
             <br></br> Para nos contatar mais rapidamente, clique no{" "}
             <span className="text-[#25d366] mr-1">botão verde</span>e você será
