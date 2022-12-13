@@ -4,7 +4,7 @@ import Navbar from "~/components/Layout/Navbar/Navbar";
 import { getSeo, getSeoMeta, getSeoLinks } from "~/components/utils/seo";
 
 // No need for route data? Get meta and links in one call.
-export const [seoMeta, seoLinks] = getSeo({
+export let [seoMeta, seoLinks] = getSeo({
   title: "Blog do Conceição Advogados",
   description:
     "Publicações sobre Direito Previdenciário, Direito do Trabalho, Direito Penal e outras áreas d o direito!",
@@ -13,9 +13,6 @@ export const [seoMeta, seoLinks] = getSeo({
 export default function Blog() {
   return (
     <>
-      <head>
-        <Meta />
-      </head>
       <Navbar navbar={false} />
       <>
         <Outlet />
