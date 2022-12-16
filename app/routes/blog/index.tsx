@@ -166,7 +166,7 @@ export default function Blog() {
                   <div>
                     <h2 className=" text-lg font-bold">
                       <Link
-                        className=" text-lg font-bold mt-2"
+                        className=" text-lg font-bold mt-2 hover:underline hover:text-brown"
                         to="/blog/revisional-de-juros-abusivos"
                       >
                         Revisional de Juros Abusivos
