@@ -1,14 +1,19 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
+import { getSeo } from "~/components/utils/seo";
 import type { MetaFunction } from "@remix-run/node"; // or cloudflare/deno
 
-export const meta: MetaFunction = () => {
-  return {
-    title: "Blog do Conceição Advogados",
-    description: "Publicações sobre diversas áreas do Direito!",
-  };
-};
+let [seoMeta, seoLinks] = getSeo({
+  title: "Blog do Conceição Advogados",
+  description:
+    "Aqui você confere as nossas postagens sobre diversas assuntos jurídicos relevantes.",
+});
+
+export const meta: MetaFunction = () => ({
+  ...seoMeta,
+  charset: "utf-8",
+  viewport: "width=device-width,initial-scale=1",
+});
 
 export default function Blog() {
   const [isOpen, setIsOpen] = useState(false);

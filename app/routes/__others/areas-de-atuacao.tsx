@@ -1,5 +1,19 @@
+import type { MetaFunction } from "@remix-run/node";
 import CardsHome from "~/components/Cards/CardsAtuacao";
 import { cards } from "~/components/utils/atuacao";
+import { getSeo } from "~/components/utils/seo";
+
+let [seoMeta, seoLinks] = getSeo({
+  title: "Áreas de Atuação do Conceição Advogados",
+  description:
+    "Atendemos diversas do direito entre elas: Previdênciário, Trabalhista, Criminal",
+});
+
+export const meta: MetaFunction = () => ({
+  ...seoMeta,
+  charset: "utf-8",
+  viewport: "width=device-width,initial-scale=1",
+});
 
 export default function AreasDeAtuacao() {
   return (
