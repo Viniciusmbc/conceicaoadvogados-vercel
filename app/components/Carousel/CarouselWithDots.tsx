@@ -76,16 +76,16 @@ const CarouselWithDots = ({ slides, escritorio }: CarouselWithButtonsProps) => {
                       sizes="100vw"
                       alt={`${alt}`}
                     />
-                    <a
-                      href="#areas-de-atuacao"
-                      className={` border  border-r-black z-50 flex h-full w-full items-center justify-center pb-3 text-4xl md:text-6xl font-extrabold  ${
+
+                    <figcaption
+                      className={` border  border-r-black z-50 flex h-full w-full items-center justify-center pb-3 text-5xl md:text-6xl font-extrabold  ${
                         escritorio
-                          ? " text-white  text-center max-w-[60vw] border-none mx-auto leading-relaxed"
+                          ? " text-white  text-center max-w-[70vw] border-none mx-auto leading-relaxed  textShadow"
                           : "text-white textShadow text-center"
                       } `}
                     >
                       {texto}
-                    </a>
+                    </figcaption>
                   </figure>
                 </div>
               )

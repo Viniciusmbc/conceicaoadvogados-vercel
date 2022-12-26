@@ -86,7 +86,7 @@ export default function Navbar({ navbar }: { navbar: boolean }) {
                 target={"_blank"}
                 rel="noreferrer"
                 aria-label="clique para entrar no instagram do Escritório Conceição Advogados"
-                className=" w-10 h-10 md:w-auto md:h-auto"
+                className=" w-10 h-10 mb-1 ml-3 pt-[10px] md:w-auto md:h-auto md:pt-0 md:ml-0"
               >
                 {InstagramIcon}
               </a>
