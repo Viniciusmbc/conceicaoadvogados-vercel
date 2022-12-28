@@ -34,17 +34,26 @@ export default function CardsArtigos({
           <br></br>
           <time dateTime="2022-03-22 19:00"> {data} </time>
         </p>
-        <div className=" absolute right-3 top-3 max-w-fit border text-sm">
+        <div className=" absolute right-3 top-3 max-w-fit border text-sm invert-[.70]">
           {" "}
           {icone}{" "}
         </div>
       </div>
 
       <div className=" space-y-3 p-5 text-black">
-        <h3 className=" text-lg font-bold text-[#6E452D] ">{titulo}</h3>
+        <Link
+          to={`blog/${titulo
+            .replace(/( )+/g, "-")
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .toLowerCase()}`}
+          className=" text-lg font-bold text-[#6E452D] hover:text-gray hover:underline "
+        >
+          {titulo}
+        </Link>
         <p className=" text-lg leading-relaxed text-[#4F4F4F]">{descricao}</p>
         <Link
-          className=" text-[#22140B] font-bold hover:text-gray"
+          className=" text-[#22140B] font-bold hover:text-brown hover:text-gray hover:underline"
           to={`blog/${titulo
             .replace(/( )+/g, "-")
             .normalize("NFD")
