@@ -7,7 +7,7 @@ import { slideEscritório } from "~/components/utils/slides_escritorio";
 let [seoMeta, seoLinks] = getSeo({
   title: "Escritório de Advocacia em Santa Maria",
   description:
-    "Possuímos duas sedes em Santa Maria - RS localizadas no Centro e no Bairro Patronato.",
+    "Nosso Escritório de Advocacia possuí duas sedes em Santa Maria - RS localizadas no Centro e no Bairro Patronato.",
 });
 
 export const meta: MetaFunction = () => ({

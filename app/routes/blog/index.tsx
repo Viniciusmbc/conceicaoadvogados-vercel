@@ -6,7 +6,7 @@ import type { MetaFunction } from "@remix-run/node"; // or cloudflare/deno
 let [seoMeta, seoLinks] = getSeo({
   title: "Blog do Conceição Advogados",
   description:
-    "Aqui você confere as nossas postagens sobre diversas assuntos jurídicos relevantes.",
+    "Aqui você confere os artigos da nossa equipde de advogados sobre diversas assuntos jurídicos relevantes como auxilio-acidente, revisão de juros abusivos, entre outros.",
 });
 
 export const meta: MetaFunction = () => ({
