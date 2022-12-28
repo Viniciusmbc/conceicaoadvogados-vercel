@@ -139,10 +139,13 @@ export default function RevisionalDeJurosAbusivos() {
           </ul>
         </nav>
       </div>
-      <h2 id="o-que-e-uma-acao-revisional-de-juros" className=" text-4xl my-7">
-        1. O que é uma ação revisional de juros?
-      </h2>
       <section itemProp="articleBody">
+        <h2
+          id="o-que-e-uma-acao-revisional-de-juros"
+          className=" text-4xl my-7"
+        >
+          1. O que é uma ação revisional de juros?
+        </h2>
         <p
           className=" mb-4 mx-auto text-[#4A5659]  leading-relaxed text-lg"
           id="#o-que-é-uma-ação-revisional-de-juros"

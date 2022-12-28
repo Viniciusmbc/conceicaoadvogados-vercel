@@ -6,7 +6,7 @@ import { getSeo } from "~/components/utils/seo";
 let [seoMeta, seoLinks] = getSeo({
   title: "Áreas de Atuação do Conceição Advogados",
   description:
-    "Atendemos diversas do áreas do Direito: Previdênciário (INSS), Trabalhista, Criminal...",
+    "Nosso Escritório de Advocacia atende diversas do áreas do Direito: Previdênciário (INSS), Trabalhista, Criminal...",
 });
 
 export const meta: MetaFunction = () => ({

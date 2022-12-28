@@ -37,7 +37,7 @@ export default function AuxilioAcidenteEstabilidade() {
             <path d="M12.5 27.417h9.875v-1.334H12.5Zm0-6.75h15v-1.334h-15Zm0-6.75h15v-1.375h-15ZM9.125 33.208q-.958 0-1.646-.687-.687-.688-.687-1.646V9.125q0-.958.687-1.646.688-.687 1.646-.687h21.75q.958 0 1.646.687.687.688.687 1.646v21.75q0 .958-.687 1.646-.688.687-1.646.687Zm.042-1.333h21.666q.417 0 .729-.313.313-.312.313-.729V9.167q0-.417-.313-.729-.312-.313-.729-.313H9.167q-.417 0-.729.313-.313.312-.313.729v21.666q0 .417.313.729.312.313.729.313ZM8.125 8.125V31.875 8.125Z" />
           </svg>
         </span>{" "}
-        Direito do Trabalho
+        Direito Previdenciário
       </p>
       <p className=" mb-4 mx-auto text-[#4A5659]  leading-relaxed text-lg">
         A história dos acidentes de trabalho é milenar. Entretanto, foi em
@@ -55,7 +55,7 @@ export default function AuxilioAcidenteEstabilidade() {
         não tenham ocorrido no trabalho, mas que prejudiquem o exercício da
         função. No entanto, ainda não são raros os acidentes e as doenças
         decorrentes da atividade laboral ou que tenham um nexo causal com o
-        exercício da função desempenhada pelo trabalhador
+        exercício da função desempenhada pelo trabalhador.
       </p>
       <p className=" mb-4 mx-auto text-[#4A5659]  leading-relaxed text-lg">
         Se você sofreu um acidente ou ferimento no trabalho, é importante
@@ -68,6 +68,7 @@ export default function AuxilioAcidenteEstabilidade() {
         width={400}
         height={400}
         alt="Imagem de introdução do artigo sobre Auxilio Acidente"
+        className=" mx-auto"
       />
       <p className=" mb-4 mx-auto text-[#4A5659]  leading-relaxed text-lg">
         Siga a leitura deste artigo para compreender o que é o{" "}
@@ -175,10 +176,10 @@ export default function AuxilioAcidenteEstabilidade() {
           </ul>
         </nav>
       </div>
-      <h2 id="o-que-e-auxilio-acidente" className=" text-4xl my-7">
-        1. O que é auxílio-acidente?
-      </h2>
       <section itemProp="articleBody">
+        <h2 id="o-que-e-auxilio-acidente" className=" text-4xl my-7">
+          1. O que é auxílio-acidente?
+        </h2>
         <p
           className=" mb-4 mx-auto text-[#4A5659]  leading-relaxed text-lg"
           id="#o-que-é-uma-ação-revisional-de-juros"
@@ -274,7 +275,10 @@ export default function AuxilioAcidenteEstabilidade() {
           <strong> paraplégica</strong>.
         </p>
         <p className=" text-lg mb-4 mx-auto text-[#4A5659]  leading-relaxed">
-          Neste caso, Marta terá <strong>direito ao auxílio-acidente:</strong>{" "}
+          Neste caso, Marta terá <strong>direito ao auxílio-acidente:</strong>
+        </p>
+        <p className=" text-lg mb-4 mx-auto text-[#4A5659]  leading-relaxed">
+          {" "}
           <br></br> Em primeiro lugar, Marta é empregada de uma empresa privada,
           logo, pode-se presumir que ela seja{" "}
           <strong>segurada do INSS. </strong>
