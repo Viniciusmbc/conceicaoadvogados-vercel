@@ -26,7 +26,7 @@ export default function CardsArtigos({
           src={imagem}
           width={384}
           height={100}
-          alt={`Imagem de um ${alt}`}
+          alt={`${alt}`}
           className="  h-52 max-h-full max-w-full"
         />
         <p className=" absolute top-2 right-0 left-3 mt-2 text-xs">
