@@ -5,7 +5,7 @@ import { getSeo } from "~/components/utils/seo";
 let [seoMeta, seoLinks] = getSeo({
   title: "Auxílio Acidente E Estabilidade",
   description:
-    "Se você sofreu um acidente ou ferimento no trabalho, é importante compreender seus direitos e opções sob auxílio-acidente. Um advogado pode ajudá-lo a apresentar um pedido de benefícios, e pode orientá-lo durante o processo. Confira em nosso Artigo!",
+    "Aqui você a compreenderá seus direitos sob auxílio acidente e estabilidade: como a apresentar um pedido de benefício, requisitos, e muito mais. Confira!",
 });
 
 export const meta: MetaFunction = () => ({
