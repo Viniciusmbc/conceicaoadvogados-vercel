@@ -1721,21 +1721,6 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.invert {
-  --tw-invert: invert(100%);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.invert-\[\.25\] {
-  --tw-invert: invert(.25);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.invert-\[\.50\] {
-  --tw-invert: invert(.50);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
 .invert-\[\.70\] {
   --tw-invert: invert(.70);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -1798,14 +1783,14 @@ video {
   color: rgb(38 34 35 / var(--tw-text-opacity));
 }
 
-.hover\:text-deer:hover {
-  --tw-text-opacity: 1;
-  color: rgb(191 127 90 / var(--tw-text-opacity));
-}
-
 .hover\:text-brown:hover {
   --tw-text-opacity: 1;
   color: rgb(115 72 47 / var(--tw-text-opacity));
+}
+
+.hover\:text-deer:hover {
+  --tw-text-opacity: 1;
+  color: rgb(191 127 90 / var(--tw-text-opacity));
 }
 
 .hover\:text-white:hover {

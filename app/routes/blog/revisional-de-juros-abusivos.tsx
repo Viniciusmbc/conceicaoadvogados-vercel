@@ -5,7 +5,7 @@ import { getSeo } from "~/components/utils/seo";
 let [seoMeta, seoLinks] = getSeo({
   title: "Revisional de Juros Abusivos",
   description:
-    "O banco está cobrando juros abusivos nas faturas atrasadas do seu cartão de crédito? Você sabia que é direito seu pedir revisão dos juros e,também, o ressarcimento por cobranças indevidas? Confira em nosso Artigo!",
+    "Descubra como solicitar revisão de juros abusivos em financiamentos de imóveis e veículos e ressarcimento por cobranças indevidas no cartão de crédito.",
 });
 
 export const meta: MetaFunction = () => ({

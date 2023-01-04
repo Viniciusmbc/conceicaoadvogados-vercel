@@ -3,7 +3,7 @@ import { agendaIcon, personIcon } from "~/components/common/Icons";
 import { getSeo } from "~/components/utils/seo";
 
 let [seoMeta, seoLinks] = getSeo({
-  title: "Auxílio Acidente E Estabilidade",
+  title: "Auxílio Acidente e Estabilidade",
   description:
     "Aqui você a compreenderá seus direitos sob auxílio acidente e estabilidade: como a apresentar um pedido de benefício, requisitos, e muito mais. Confira!",
 });

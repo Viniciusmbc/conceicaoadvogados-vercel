@@ -27,7 +27,7 @@ export const artigos: {
     autor: "Guilherme Batú",
     data: "28 de Dezembro de 2022",
     icone: oldmenIcon,
-    titulo: "Auxilio-Acidente e Estabiidade",
+    titulo: "Auxilio-Acidente e Estabilidade",
     descricao:
       "O auxílio-acidente é um benefício previdenciário, concedido pelo INSS aos trabalhadores que sofrerem acidentes em que as consequências resultem em sequelas permanentes e, ainda, reduzam a capacidade de exercer a função desempenhada. Este artigo explica o que é o auxilio-acidente, casos em que se aplica e como requerer junto ao INSS. Confira!",
   },

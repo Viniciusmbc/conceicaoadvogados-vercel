@@ -1,7 +1,7 @@
+import type { MetaFunction } from "@remix-run/node"; // or cloudflare/deno
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { getSeo } from "~/components/utils/seo";
-import type { MetaFunction } from "@remix-run/node"; // or cloudflare/deno
 
 let [seoMeta, seoLinks] = getSeo({
   title: "Blog do Conceição Advogados",
@@ -34,7 +34,7 @@ export default function Blog() {
           </li>
           <li>
             <Link
-              to={"/blog/auxilio-acidente-estabilidade"}
+              to={"/blog/auxilio-acidente-e-estabilidade"}
               className=" text-lg font-bold mt-2 underline text-brown hover:text-gray hover:no-underline"
             >
               Auxilio-Acidente e Estabilidade{" "}
@@ -224,7 +224,7 @@ export default function Blog() {
                     <h2 className=" text-lg font-bold">
                       <Link
                         className=" text-lg font-bold mt-2 underline text-brown hover:text-gray hover:no-underline"
-                        to="/blog/auxilio-acidente-estabilidade"
+                        to="/blog/auxilio-acidente-e-estabilidade"
                       >
                         Auxílio Acidente E Estabilidade
                       </Link>

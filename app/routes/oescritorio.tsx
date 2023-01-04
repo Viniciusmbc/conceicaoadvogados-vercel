@@ -5,7 +5,7 @@ import { getSeo } from "~/components/utils/seo";
 import { slideEscritório } from "~/components/utils/slides_escritorio";
 
 let [seoMeta, seoLinks] = getSeo({
-  title: "Escritório de Advocacia em Santa Maria",
+  title: "Conceição Advogados",
   description:
     "Nosso Escritório de Advocacia possuí duas sedes em Santa Maria - RS localizadas no Centro e no Bairro Patronato.",
 });
