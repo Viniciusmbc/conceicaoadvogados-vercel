@@ -1,4 +1,4 @@
-import { MetaFunction } from "@remix-run/node";
+import type { MetaFunction } from "@remix-run/node";
 import { useState } from "react";
 import { expandMoreIcon } from "~/components/common/Icons";
 import { getSeo } from "~/components/utils/seo";
@@ -6,7 +6,7 @@ import { getSeo } from "~/components/utils/seo";
 let [seoMeta, seoLinks] = getSeo({
   title: "Consulte seu Processo",
   description:
-    "Consulte seu Processo nos Principais Tribunais do Rio Grande do Sul.",
+    "Consulte seu Processo nos Principais Tribunais do Rio Grande do Sul: TJ/RS, TRT 4 E TRF 4.",
 });
 
 export const meta: MetaFunction = () => ({

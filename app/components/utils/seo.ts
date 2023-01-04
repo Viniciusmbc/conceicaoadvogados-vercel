@@ -7,5 +7,5 @@ export const { getSeo, getSeoMeta, getSeoLinks } = initSeo({
   title: "Conceição Advogados",
   titleTemplate: "%s | Advocacia em Santa Maria",
   description:
-    "Escritório de Advocacia especializado em diversas áreas do direito, oferece assessoria jurídica personalizada e soluções eficientes. Equipe experiente e comprometida!",
+  "Obtenha assessoria jurídica especializada e soluções eficientes em diversas áreas do direito com o nosso escritório de advocacia. Equipe experiente e comprometida.",
 });

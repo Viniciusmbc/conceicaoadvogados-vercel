@@ -6,7 +6,7 @@ import { getSeo } from "~/components/utils/seo";
 let [seoMeta, seoLinks] = getSeo({
   title: "Blog do Conceição Advogados",
   description:
-    "Aqui você confere os artigos da nossa equipde de advogados sobre diversas assuntos jurídicos relevantes como auxilio-acidente, revisão de juros abusivos, entre outros.",
+    "Confira os artigos de nossa equipe de advogados sobre assuntos jurídicos relevantes, como auxílio-acidente e revisão de juros abusivos.",
 });
 
 export const meta: MetaFunction = () => ({
