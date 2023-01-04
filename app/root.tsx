@@ -10,17 +10,19 @@ import {
   useMatches,
 } from "@remix-run/react";
 import React from "react";
+import { getSeo } from "~/components/utils/seo";
 import Footer from "./components/Layout/Footer/Footer";
 import WhatsAppPopup from "./components/Popup/WhatsAppPopup";
 import styles from "./styles/app.css";
-import { getSeo } from "~/components/utils/seo";
 
 let isMount = true;
 
 export const handle = { hydrate: true };
 
+let [seoMeta, seoLinks] = getSeo();
 export function links() {
   return [
+    ...seoLinks,
     { rel: "stylesheet", href: styles },
     {
       hrefLang: "pt-br",
@@ -28,7 +30,6 @@ export function links() {
     { rel: "manifest", href: "/resources/manifest.webmanifest" },
   ];
 }
-let [seoMeta, seoLinks] = getSeo();
 
 export const meta: MetaFunction = () => ({
   ...seoMeta,

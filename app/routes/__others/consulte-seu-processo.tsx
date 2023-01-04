@@ -6,7 +6,7 @@ import { getSeo } from "~/components/utils/seo";
 let [seoMeta, seoLinks] = getSeo({
   title: "Consulte seu Processo",
   description:
-    "Consulte seu Processo nos Principais Tribunais do Rio Grande do Sul: TJ/RS, TRT 4 E TRF 4.",
+    "Consulte seu processo nos principais tribunais do RS: Tribunal de Justiça do Rio Grande do Sul, Justiça do Trabalho (TRT 4) e Justiça Federal (TRF 4).",
 });
 
 export const meta: MetaFunction = () => ({
