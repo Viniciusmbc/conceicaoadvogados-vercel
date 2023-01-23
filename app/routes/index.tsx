@@ -233,32 +233,38 @@ export default function Index() {
               das 14 horas às 18 horas.
             </p>
 
-            <address className=" flex flex-wrap justify-around gap-y-4 text-lg">
+            <address className=" flex flex-wrap justify-around gap-y-4 text-xl">
               <div>
                 <a
+                  target={"_blank"}
                   href="https://goo.gl/maps/iW4J74Rqbn2boJC67"
-                  className=" flex flex-col  items-center justify-center"
+                  className=" flex flex-col  items-center justify-center mb-3 underline decoration-grulo"
+                  rel="noreferrer"
                 >
-                  ​ Rua André Marques, 718, centro. <br></br> Telefone para
-                  Contato:{" "}
+                  ​ Rua André Marques, 718, centro.
                 </a>
-                <a href="tel:+555533175978" target={"_blank"} rel="noreferrer">
-                  {" "}
+                <a
+                  href="tel:+555533175978"
+                  target={"_blank"}
+                  rel="noreferrer"
+                  className=" text-xl"
+                >
+                  Telefone para Contato: <br></br>
                   (55) 3317.5978
                 </a>
               </div>
               <span className=" border border-r-white hidden md:block"></span>
               <div>
                 <a
+                  target={"_blank"}
                   href="https://goo.gl/maps/KhwPt2e9uodKqoNN8"
-                  className=" flex flex-col items-center justify-center"
+                  className=" flex flex-col items-center justify-center mb-3 underline decoration-grulo"
+                  rel="noreferrer"
                 >
-                  Av Walter Jobim, 987, Patronato. <br></br> Telefone para
-                  Contato:{" "}
+                  Av Walter Jobim, 987, Patronato. <br></br>
                 </a>
                 <a href="tel:+555530275978" target={"_blank"} rel="noreferrer">
-                  {" "}
-                  (55) 3027.5978
+                  Telefone para Contato: <br></br> (55) 3027.5978
                 </a>{" "}
               </div>
             </address>
@@ -266,8 +272,10 @@ export default function Index() {
           <p className=" text-center mt-6 text-lg">
             Nossa equipe de advogados também atende via telefone ou e-mail.{" "}
             <br></br> Para nos contatar mais rapidamente, clique no{" "}
-            <span className="text-[#25d366] mr-1">botão verde</span>e você será
-            redirecionado para o whatsapp do escritório.
+            <span className="text-[#F5F5F5] mr-1 underline font-bold decoration-[#25d366]">
+              ícone do WhatsApp
+            </span>
+            e você entrará em contato <i>diretamente</i> com nossos advogados.
           </p>
         </section>{" "}
       </div>
