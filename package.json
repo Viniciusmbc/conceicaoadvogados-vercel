@@ -30,7 +30,7 @@
     "cross-env": "^7.0.3",
     "dotenv": "^16.0.0",
     "embla-carousel-autoplay": "^7.0.5",
-    "embla-carousel-react": "^7.0.5",
+    "embla-carousel-react": "^7.0.8",
     "node-persist": "^3.1.0",
     "npm-run-all": "^4.1.5",
     "react": "^18.2.0",

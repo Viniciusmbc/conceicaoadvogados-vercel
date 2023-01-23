@@ -71,7 +71,7 @@ export default function Navbar({ navbar }: { navbar: boolean }) {
             >
               (55) 3317 5978
             </a>{" "}
-            <div className=" ml-auto flex items-center justify-center pr-4">
+            <div className=" ml-auto flex items-center justify-center md:pr-4">
               <a
                 href="https://www.facebook.com/profile.php?id=773922122693598"
                 target={"_blank"}
