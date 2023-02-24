@@ -40,6 +40,14 @@ export default function Blog() {
               Auxilio-Acidente e Estabilidade{" "}
             </Link>{" "}
           </li>
+          <li>
+            <Link
+              to={"/blog/lei-de-stalking"}
+              className=" text-lg font-bold mt-2 underline text-brown hover:text-gray hover:no-underline"
+            >
+              Lei de stalking
+            </Link>{" "}
+          </li>
         </ul>
       </aside>
       <section className=" mr-auto flex flex-wrap max-w-7xl flex-col gap-4 min-h-screen">
@@ -231,6 +239,41 @@ export default function Blog() {
                     </h2>
                     <p className=" text-sm mb-2 text-grulo">
                       Postado em 28/12/22
+                    </p>
+                    <p className=" max-w-lg">
+                      O auxílio-acidente é um benefício de natureza
+                      indenizatória, concedido pelo INSS aos trabalhadores que
+                      sofrerem acidentes em que as consequências resultem em
+                      sequelas permanentes e, ainda, reduzam a capacidade de
+                      exercer a função desempenhada pelo trabalhador. Nesse
+                      artigo, você vai entender o que é o auxilio-acidente, em
+                      quais casos se aplica e como requerer junto ao INSS.
+                      Confira!
+                    </p>
+                  </div>
+                </div>
+              </article>
+            )}
+            {menu === "Direito Penal" && (
+              <article>
+                <div className=" mb-10 flex flex-wrap gap-x-10 justify-center px-10 md:px-0">
+                  <img
+                    src="https://res.cloudinary.com/deaejawfj/image/upload/c_scale,q_auto:eco,w_440/v1672239768/people-with-home-safety-concept_zhvaj4.webp"
+                    width={300}
+                    height={300}
+                    alt="Imagem de Revisional de Juros Abusivos"
+                  />
+                  <div>
+                    <h2 className=" text-lg font-bold">
+                      <Link
+                        className=" text-lg font-bold mt-2 underline text-brown hover:text-gray hover:no-underline"
+                        to="/blog/auxilio-acidente-e-estabilidade"
+                      >
+                        Lei de stalking
+                      </Link>
+                    </h2>
+                    <p className=" text-sm mb-2 text-grulo">
+                      Postado em 24/02/23
                     </p>
                     <p className=" max-w-lg">
                       O auxílio-acidente é um benefício de natureza
