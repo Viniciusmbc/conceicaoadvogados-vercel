@@ -5,7 +5,7 @@ import { getSeo } from "~/components/utils/seo";
 let [seoMeta, seoLinks] = getSeo({
   title: "Lei de Stalking",
   description:
-    "Aqui você a compreenderá seus direitos sob auxílio acidente e estabilidade: como a apresentar um pedido de benefício, requisitos, e muito mais. Confira!",
+    "Aqui você a compreenderá o que fazer caso  sob auxílio acidente e estabilidade: como a apresentar um pedido de benefício, requisitos, e muito mais. Confira!",
 });
 
 export const meta: MetaFunction = () => ({
@@ -32,7 +32,7 @@ export default function AuxilioAcidenteEstabilidade() {
         <span itemProp="author" itemScope itemType="http://schema.org/Person">
           {personIcon}
         </span>
-        Guilherme Batú <span className=" ml-2">{agendaIcon}</span> Dez 28, 2022{" "}
+        Guilherme Batú <span className=" ml-2">{agendaIcon}</span> Fev 24, 2023{" "}
         <span className=" ml-2">
           <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40">
             <path d="M12.5 27.417h9.875v-1.334H12.5Zm0-6.75h15v-1.334h-15Zm0-6.75h15v-1.375h-15ZM9.125 33.208q-.958 0-1.646-.687-.687-.688-.687-1.646V9.125q0-.958.687-1.646.688-.687 1.646-.687h21.75q.958 0 1.646.687.687.688.687 1.646v21.75q0 .958-.687 1.646-.688.687-1.646.687Zm.042-1.333h21.666q.417 0 .729-.313.313-.312.313-.729V9.167q0-.417-.313-.729-.312-.313-.729-.313H9.167q-.417 0-.729.313-.313.312-.313.729v21.666q0 .417.313.729.312.313.729.313ZM8.125 8.125V31.875 8.125Z" />
@@ -92,6 +92,14 @@ export default function AuxilioAcidenteEstabilidade() {
                 className="hover:underline  hover:underline-offset-2"
               >
                 5. Como proceder se está sendo vítima de stalking?
+              </a>
+            </li>
+            <li className=" text-brown  hover:text-gray">
+              <a
+                href="#conclusao"
+                className="hover:underline  hover:underline-offset-2"
+              >
+                6. Conclusão
               </a>
             </li>
           </ul>
@@ -160,10 +168,10 @@ export default function AuxilioAcidenteEstabilidade() {
         >
           4. Quais são as categorias abrangidas pela lei?
         </h2>
-        <ul>
-          <li>
-            Persiguição online:
-            <p className=" text-lg mb-4 mx-auto text-[#4A5659]  leading-relaxed font-bold">
+        <ul className=" list-disc text-lg">
+          <li className=" ml-6">
+            Perseguição online:
+            <p className=" text-lg mb-4 mx-auto text-[#4A5659]  leading-relaxed">
               Também conhecida como cyberstalking, é uma forma de assédio que
               ocorre por meio da internet e de dispositivos eletrônicos. Ela se
               caracteriza pelo uso repetido de ameaças, assédio ou intimidação
@@ -174,9 +182,9 @@ export default function AuxilioAcidenteEstabilidade() {
               comportamento agressivo.
             </p>{" "}
           </li>
-          <li>
+          <li className=" ml-6">
             Invasão da privacidade:
-            <p className=" text-lg mb-4 mx-auto text-[#4A5659]  leading-relaxed font-bold">
+            <p className=" text-lg mb-4 mx-auto text-[#4A5659]  leading-relaxed">
               É uma preocupação crescente na era digital. Referente à{" "}
               <strong>
                 coleta, armazenamento ou compartilhamento não autorizado de
@@ -193,30 +201,34 @@ export default function AuxilioAcidenteEstabilidade() {
               vida pessoal, financeira e profissional das vítimas.
             </p>
           </li>
-          <li>Vigilância excessiva</li>
-          <p className=" text-lg mb-4 mx-auto text-[#4A5659]  leading-relaxed font-bold">
-            É uma preocupação crescente nas sociedades modernas. Diz respeito ao
-            monitoramento constante das atividades e comportamentos das pessoas
-            por meio de dispositivos eletrônicos ou outras tecnologias. Pode
-            acontecer através do controle de comunicações pessoais, rastreamento
-            de localização e fiscalização de atividades online. A vigilância
-            excessiva pode ser realizada por governos, empresas ou indivíduos, e
-            pode ser motivada por razões de segurança, marketing ou outras
-            finalidades.
-          </p>
-          <li>Comunicação insistentemente indesejada</li>
-          <p className=" text-lg mb-4 mx-auto text-[#4A5659]  leading-relaxed font-bold">
-            Essa forma de assédio envolve o envio repetido de mensagens ou
-            tentativas de contato, mesmo quando a outra parte deixa claro que
-            não está interessada em se comunicar. Em geral, inclui o envio de
-            mensagens de texto, e-mails, mensagens em redes sociais ou outras
-            formas de comunicação. É comportamento extremamente perturbador e
-            invasivo, e pode levar a sentimentos de ansiedade, estresse e
-            desconforto emocional.{" "}
-          </p>
+          <li className=" ml-6">
+            Vigilância excessiva
+            <p className=" text-lg mb-4 mx-auto text-[#4A5659]  leading-relaxed">
+              É uma preocupação crescente nas sociedades modernas. Diz respeito
+              ao monitoramento constante das atividades e comportamentos das
+              pessoas por meio de dispositivos eletrônicos ou outras
+              tecnologias. Pode acontecer através do controle de comunicações
+              pessoais, rastreamento de localização e fiscalização de atividades
+              online. A vigilância excessiva pode ser realizada por governos,
+              empresas ou indivíduos, e pode ser motivada por razões de
+              segurança, marketing ou outras finalidades.
+            </p>
+          </li>
+          <li className=" ml-6">
+            Comunicação insistentemente indesejada
+            <p className=" text-lg mb-4 mx-auto text-[#4A5659]  leading-relaxed">
+              Essa forma de assédio envolve o envio repetido de mensagens ou
+              tentativas de contato, mesmo quando a outra parte deixa claro que
+              não está interessada em se comunicar. Em geral, inclui o envio de
+              mensagens de texto, e-mails, mensagens em redes sociais ou outras
+              formas de comunicação. É comportamento extremamente perturbador e
+              invasivo, e pode levar a sentimentos de ansiedade, estresse e
+              desconforto emocional.{" "}
+            </p>
+          </li>
         </ul>
 
-        <p className=" text-lg mb-4 mx-auto text-[#4A5659]  leading-relaxed">
+        <p className=" underline text-lg mb-4 mx-auto text-[#4A5659]  leading-relaxed">
           Todas essas práticas podem ser consideradas como stalking, e agora são
           puníveis por lei.
         </p>
@@ -249,7 +261,7 @@ export default function AuxilioAcidenteEstabilidade() {
         </p>
 
         <h2 id="conclusao" className=" text-4xl my-7">
-          Conclusão
+          6. Conclusão
         </h2>
         <p className=" text-lg mb-4 mx-auto text-[#4A5659]  leading-relaxed">
           <strong className="mx-1">

@@ -276,14 +276,13 @@ export default function Blog() {
                       Postado em 24/02/23
                     </p>
                     <p className=" max-w-lg">
-                      O auxílio-acidente é um benefício de natureza
-                      indenizatória, concedido pelo INSS aos trabalhadores que
-                      sofrerem acidentes em que as consequências resultem em
-                      sequelas permanentes e, ainda, reduzam a capacidade de
-                      exercer a função desempenhada pelo trabalhador. Nesse
-                      artigo, você vai entender o que é o auxilio-acidente, em
-                      quais casos se aplica e como requerer junto ao INSS.
-                      Confira!
+                      A Lei de Stalking, também conhecida como Lei nº
+                      14.132/2021, é uma legislação brasileira que visa proteger
+                      as vítimas de perseguição obsessiva e intimidatória,
+                      conhecida como stalking. Em detrimento da atualidade do
+                      assunto, ainda existem muitas dúvidas a respeito dessa lei
+                      e de seus desdobramentos. A seguir, apresentamos
+                      detalhadamente os seus principais aspectos.
                     </p>
                   </div>
                 </div>
