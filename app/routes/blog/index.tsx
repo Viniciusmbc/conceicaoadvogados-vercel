@@ -267,7 +267,7 @@ export default function Blog() {
                     <h2 className=" text-lg font-bold">
                       <Link
                         className=" text-lg font-bold mt-2 underline text-brown hover:text-gray hover:no-underline"
-                        to="/blog/auxilio-acidente-e-estabilidade"
+                        to="/blog/lei-de-stalking"
                       >
                         Lei de stalking
                       </Link>
