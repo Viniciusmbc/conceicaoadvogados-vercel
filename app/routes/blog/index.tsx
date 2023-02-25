@@ -226,7 +226,7 @@ export default function Blog() {
                     src="https://res.cloudinary.com/deaejawfj/image/upload/c_scale,q_auto:eco,w_440/v1672239768/people-with-home-safety-concept_zhvaj4.webp"
                     width={300}
                     height={300}
-                    alt="Imagem de Revisional de Juros Abusivos"
+                    alt="Imagem ilustrando um acidente de trabalho"
                   />
                   <div>
                     <h2 className=" text-lg font-bold">
@@ -258,7 +258,7 @@ export default function Blog() {
               <article>
                 <div className=" mb-10 flex flex-wrap gap-x-10 justify-center px-10 md:px-0">
                   <img
-                    src="https://res.cloudinary.com/deaejawfj/image/upload/c_scale,q_auto:eco,w_440/v1672239768/people-with-home-safety-concept_zhvaj4.webp"
+                    src="https://res.cloudinary.com/deaejawfj/image/upload/c_scale,w_440/v1677285480/lei-de-stalking-imagem.webp"
                     width={300}
                     height={300}
                     alt="Imagem de Revisional de Juros Abusivos"
