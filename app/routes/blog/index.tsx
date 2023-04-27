@@ -48,6 +48,14 @@ export default function Blog() {
               Lei de stalking
             </Link>{" "}
           </li>
+          <li>
+            <Link
+              to={"/blog/holding-familiar"}
+              className=" text-lg font-bold mt-2 underline text-brown hover:text-gray hover:no-underline"
+            >
+              Holding familiar
+            </Link>{" "}
+          </li>
         </ul>
       </aside>
       <section className=" mr-auto flex flex-wrap max-w-7xl flex-col gap-4 min-h-screen">
@@ -68,11 +76,11 @@ export default function Blog() {
             </li>
             <li>
               <button
-                onClick={() => setMenu("Direito de Familía")}
+                onClick={() => setMenu("Direito Empresarial")}
                 className="hover:underline hover:underline-offset-2 hover:text-brown hover:bg-gray/10"
-                aria-label="clique para ver assuntos sobre Direito de Familia"
+                aria-label="clique para ver assuntos sobre Direito Empresarial"
               >
-                Direito de Familía
+                Direito Empresarial
               </button>
             </li>
             <li>
@@ -103,7 +111,7 @@ export default function Blog() {
                   menu === "Direito Civil" &&
                   " text-gray underline underline-offset-2 bg-deer"
                 }`}
-                aria-label="clique para ver assuntos sobre Direito Previdenciario"
+                aria-label="clique para ver assuntos sobre Direito Civil"
               >
                 Direito Civil
               </button>
@@ -157,8 +165,9 @@ export default function Blog() {
                   <button
                     className="hover:underline hover:underline-offset-2 hover:text-brown hover:bg-gray/10"
                     aria-label="clique para ver assuntos sobre Direito Consumidor"
+                    onClick={() => setMenu("Direito Empresarial")}
                   >
-                    Direito do Consumidor
+                    Direito Empresarial
                   </button>
                 </li>
                 <li className=" py-2">
@@ -261,7 +270,7 @@ export default function Blog() {
                     src="https://res.cloudinary.com/deaejawfj/image/upload/c_scale,w_440/v1677285480/lei-de-stalking-imagem.webp"
                     width={300}
                     height={300}
-                    alt="Imagem de Revisional de Juros Abusivos"
+                    alt="Imagem Ilustrando a Lei de Stalking"
                   />
                   <div>
                     <h2 className=" text-lg font-bold">
@@ -283,6 +292,40 @@ export default function Blog() {
                       assunto, ainda existem muitas dúvidas a respeito dessa lei
                       e de seus desdobramentos. A seguir, apresentamos
                       detalhadamente os seus principais aspectos.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            )}
+            {menu === "Direito Empresarial" && (
+              <article>
+                <div className=" mb-10 flex flex-wrap gap-x-10 justify-center px-10 md:px-0">
+                  <img
+                    src="https://res.cloudinary.com/deaejawfj/image/upload/c_scale,w_440/v1677285480/lei-de-stalking-imagem.webp"
+                    width={300}
+                    height={300}
+                    alt="Imagem de Revisional de Juros Abusivos"
+                  />
+                  <div>
+                    <h2 className=" text-lg font-bold">
+                      <Link
+                        className=" text-lg font-bold mt-2 underline text-brown hover:text-gray hover:no-underline"
+                        to="/blog/holding-familiar"
+                      >
+                        Holding familiar: planejamento e blindagem do
+                        patrimônio.
+                      </Link>
+                    </h2>
+                    <p className=" text-sm mb-2 text-grulo">
+                      Postado em 26/04/2023
+                    </p>
+                    <p className=" max-w-lg">
+                      A holding familiar é uma estratégia de planejamento e
+                      proteção patrimonial bastante utilizada por famílias
+                      empresárias no Brasil. Para te ajudar a entender melhor o
+                      que é a holding familiar e como ela pode ser utilizada no
+                      planejamento e blindagem do patrimônio, preparamos um
+                      artigo com perguntas e respostas sobre o assunto. Confira!
                     </p>
                   </div>
                 </div>

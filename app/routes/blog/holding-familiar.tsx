@@ -3,9 +3,9 @@ import { agendaIcon, personIcon } from "~/components/common/Icons";
 import { getSeo } from "~/components/utils/seo";
 
 let [seoMeta, seoLinks] = getSeo({
-  title: "Auxílio Acidente e Estabilidade",
+  title: "Holding familiar: planejamento e blindagem do património",
   description:
-    "Aqui você a compreenderá seus direitos sob auxílio acidente e estabilidade: como a apresentar um pedido de benefício, requisitos, e muito mais. Confira!",
+    "A holding familiar é uma estratégia de planejamento e proteção patrimonial bastante utilizada por famílias empresárias no Brasil. Essa estrutura jurídica permite a gestão de um grupo de empresas e a proteção dos bens e recursos financeiros das mesmas contra possíveis riscos.",
 });
 
 export const meta: MetaFunction = () => ({
@@ -32,11 +32,9 @@ export default function HoldingFamiliarPlanejamentoeBlindagemdoPatrimônio() {
           {personIcon}
         </span>
         Guilherme Batú <span className=" ml-2">{agendaIcon}</span> Abr 26, 2023{" "}
-        <span className=" ml-2">
-          <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40">
-            <path d="M12.5 27.417h9.875v-1.334H12.5Zm0-6.75h15v-1.334h-15Zm0-6.75h15v-1.375h-15ZM9.125 33.208q-.958 0-1.646-.687-.687-.688-.687-1.646V9.125q0-.958.687-1.646.688-.687 1.646-.687h21.75q.958 0 1.646.687.687.688.687 1.646v21.75q0 .958-.687 1.646-.688.687-1.646.687Zm.042-1.333h21.666q.417 0 .729-.313.313-.312.313-.729V9.167q0-.417-.313-.729-.312-.313-.729-.313H9.167q-.417 0-.729.313-.313.312-.313.729v21.666q0 .417.313.729.312.313.729.313ZM8.125 8.125V31.875 8.125Z" />
-          </svg>
-        </span>{" "}
+        <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40">
+          <path d="M10.6 35.95V19h3v16.95Zm12.1 0V19h3v16.95Zm-18.7 6v-3h40v3Zm30.4-6V19h3v16.95ZM4 16v-2.65l20-11.4 20 11.4V16Zm6.7-3h26.6Zm0 0h26.6L24 5.4Z" />
+        </svg>
         Direito Empresarial
       </p>
       <p className=" mb-4 mx-auto text-[#4A5659] italic  leading-relaxed text-lg">
@@ -50,19 +48,6 @@ export default function HoldingFamiliarPlanejamentoeBlindagemdoPatrimônio() {
         assunto. Boa leitura!
       </p>
 
-      <img
-        src="https://res.cloudinary.com/deaejawfj/image/upload/v1672233878/imagemIntrodu%C3%A7%C3%A3oAcidente_afrznk.webp"
-        width={400}
-        height={400}
-        alt="Imagem de introdução do artigo sobre Auxilio Acidente"
-        className=" mx-auto"
-      />
-      <p className=" mb-4 mx-auto text-[#4A5659]  leading-relaxed text-lg">
-        Siga a leitura deste artigo para compreender o que é o{" "}
-        <b>auxílio-acidente</b> , quais são os <b>critérios</b> para recebê-lo
-        e, também, entender sobre o
-        <b>direito à estabilidade em casos de acidentes.</b>
-      </p>
       <div className=" max-w-fit p-7 h-auto border border-brown">
         <nav>
           <ul>
@@ -104,54 +89,55 @@ export default function HoldingFamiliarPlanejamentoeBlindagemdoPatrimônio() {
             </li>
             <li className=" text-brown  hover:text-gray">
               <a
-                href="#qual-o-valor-do-auxili-acidente"
+                href="#e-legal-utilizar-a-holding-familiar-para-proteger-o-patrimonio"
                 className="hover:underline  hover:underline-offset-2"
               >
-                5. Qual o valor do auxílio-acidente?
+                5. É legal utilizar a holding familiar para proteger o
+                patrimônio?
               </a>
             </li>
             <li className=" text-brown  hover:text-gray">
               <a
-                href="#a-partir-de-quando-e-devido-o-auxilio"
+                href="#quando-e-vantajoso-criar-uma-holding-familiar"
                 className=" hover:underline  hover:underline-offset-2"
               >
                 {" "}
-                6. A partir de quando é devido o Auxílio?
+                6. Quando é vantajoso criar uma holding familiar
               </a>
             </li>
             <li className=" text-brown  hover:text-gray">
               <a
-                href="#posso-acumular-esse-auxilio-com-outros-beneficios-previdenciarios"
+                href="#como-constituir-uma-holding-familiar"
                 className=" hover:underline  hover:underline-offset-2"
               >
                 {" "}
-                7. Posso acumular esse auxílio com outros benefícios
-                previdenciários?
+                7. Como constituir uma holding familiar?
               </a>
             </li>
             <li className=" text-brown  hover:text-gray">
               <a
-                href="#quem-recebe-auxilio-acidente-tem-direito-a-estabilidade"
+                href="#qual-o-papel-de-um-advogado-na-constituicao-de-um-holding-familiar"
                 className=" hover:underline  hover:underline-offset-2"
               >
                 {" "}
-                8. Quem recebe auxílio-acidente tem direito à estabilidade?
+                8. Qual o papel de um advogado na constituição de um holding
+                familiar?
               </a>
             </li>
             <li className=" text-brown hover:text-gray">
               <a
-                href="#auxilio-acidente-acumula-com-aposentadoria"
+                href="#quem-administra-a-holding-familiar"
                 className=" hover:underline  hover:underline-offset-2"
               >
-                9. Auxílio-Acidente acumula com aposentadoria?
+                9. Quem administra a holding familiar?
               </a>
             </li>
             <li className=" text-brown hover:text-gray">
               <a
-                href="#como-dar-entrada-no-auxilio-acidente"
+                href="#holding-familiar-e-sucessões"
                 className=" hover:underline  hover:underline-offset-2"
               >
-                10. Como dar entrada no Auxílio-Acidente?
+                10. Holding familiar em sucessões
               </a>
             </li>
             <li className=" text-brown hover:text-gray">
@@ -170,21 +156,22 @@ export default function HoldingFamiliarPlanejamentoeBlindagemdoPatrimônio() {
           1. O que é uma holding familiar?
         </h2>
         <p className=" mb-4 mx-auto text-[#4A5659]  leading-relaxed text-lg">
-          Uma holding familiar é uma empresa constituída para controlar um grupo
-          de empresas familiares. Ela pode ser utilizada para facilitar a gestão
-          dos negócios, centralizando as decisões e permitindo a criação de uma
-          estrutura organizacional mais eficiente. Além disso, pode ser
-          utilizada para proteger os bens e recursos financeiros da família
-          empresária
+          Uma <i>holding familiar</i> é uma empresa constituída para controlar
+          um grupo de empresas familiares. Ela pode ser utilizada para facilitar
+          a gestão dos negócios, centralizando as decisões e permitindo a
+          criação de uma estrutura organizacional mais eficiente. Além disso,
+          pode ser utilizada para proteger os bens e recursos financeiros da
+          família empresária
         </p>
         <p className=" text-lg mb-4 mx-auto text-[#4A5659]  leading-relaxed">
-          Um exemplo de holding familiar é a JBS, uma das maiores empresas do
-          mundo no ramo de alimentos. Ela é controlada pela holding J&F
-          Investimentos, que é de propriedade da família Batista
+          Um exemplo de holding familiar é a <b>JBS</b>, uma das maiores
+          empresas do mundo no ramo de alimentos. Ela é controlada pela holding
+          J&F Investimentos, que é de propriedade da família Batista
         </p>
         <p className=" text-lg mb-4 mx-auto text-[#4A5659]  leading-relaxed">
           No Brasil, a legislação que regula a criação e funcionamento de
-          holdings familiares é o Código Civil Brasileiro. A Lei nº 10.406/2002
+          holdings familiares é o Código Civil Brasileiro. A{" "}
+          <b>Lei nº 10.406/2002 </b>
           dispõe sobre a constituição, o funcionamento e as responsabilidades
           das empresas, incluindo as holdings familiares.
         </p>
@@ -208,24 +195,26 @@ export default function HoldingFamiliarPlanejamentoeBlindagemdoPatrimônio() {
           Existem dois tipos de holding familiar: a pura e a mista.
         </p>
         <p className=" text-lg mb-4 mx-auto text-[#4A5659]  leading-relaxed">
-          A holding pura é aquela que tem como objetivo exclusivo o controle de
-          outras empresas, sem ter atividades operacionais próprias além da
-          gestão das empresas controladas. Essa holding tem como função gerir o
-          patrimônio e as atividades das empresas controladas.
+          A holding <b>pura </b> é aquela que tem como objetivo{" "}
+          <b>exclusivo </b> o controle de outras empresas, sem ter atividades
+          operacionais próprias além da gestão das empresas controladas. Essa
+          holding tem como função gerir o patrimônio e as atividades das
+          empresas controladas.
         </p>
         <p className=" text-lg mb-4 mx-auto text-[#4A5659]  leading-relaxed">
-          Já a holding mista, além de controlar outras empresas, também possui
-          atividades empresariais próprias, ou seja, além da gestão das empresas
-          controladas, ela também realiza atividades operacionais.
+          Já a holding <b>mista </b>, além de controlar outras empresas, também
+          possui <b>atividades empresariais próprias</b>, ou seja, além da
+          gestão das empresas controladas, ela também realiza atividades
+          operacionais.
         </p>
         <p className=" text-lg mb-4 mx-auto text-[#4A5659]  leading-relaxed">
-          Um exemplo de holding pura no Brasil é a Itaúsa, que controla o Banco
-          Itaú e outras empresas do grupo.
+          Um exemplo de holding pura no Brasil é a <b>Itaúsa</b>, que controla o
+          Banco Itaú e outras empresas do grupo.
         </p>
         <p className=" text-lg mb-4 mx-auto text-[#4A5659]  leading-relaxed">
-          Já um exemplo de holding mista é a Ultrapar, que controla empresas
-          como a Ipiranga e a Oxiteno, além de possuir atividades operacionais
-          próprias na área de distribuição de combustíveis.
+          Já um exemplo de holding mista é a <b>Ultrapar</b>, que controla
+          empresas como a Ipiranga e a Oxiteno, além de possuir atividades
+          operacionais próprias na área de distribuição de combustíveis.
         </p>
         <p className=" text-lg mb-4 mx-auto text-[#4A5659]  leading-relaxed">
           No Brasil, a Lei nº 6.404/76 (Lei das Sociedades por Ações) é a
@@ -260,14 +249,16 @@ export default function HoldingFamiliarPlanejamentoeBlindagemdoPatrimônio() {
         </p>
         <p className="text-lg mb-4 mx-auto text-[#4A5659]  leading-relaxed">
           Um exemplo de como a holding familiar pode ser utilizada no
-          planejamento patrimonial é o seguinte: suponha que uma família tenha
-          uma empresa que fabrica e vende produtos. Para proteger o patrimônio,
-          a família decide criar uma holding familiar, que se tornará a
-          proprietária das ações da empresa. A família, por sua vez, será
-          acionista da holding familiar, que passará a controlar a gestão dos
-          negócios
+          planejamento patrimonial é o seguinte:{" "}
+          <i>
+            suponha que uma família tenha uma empresa que fabrica e vende
+            produtos. Para proteger o patrimônio, a família decide criar uma
+            holding familiar, que se tornará a proprietária das ações da
+            empresa. A família, por sua vez, será acionista da holding familiar,
+            que passará a controlar a gestão dos negócios
+          </i>
         </p>
-        <p>
+        <p className="text-lg mb-4 mx-auto text-[#4A5659]  leading-relaxed">
           Dessa forma, a empresa fica protegida de eventuais riscos e, ao mesmo
           tempo, a gestão dos negócios é facilitada pela centralização das
           decisões na holding familiar.
@@ -279,7 +270,7 @@ export default function HoldingFamiliarPlanejamentoeBlindagemdoPatrimônio() {
           4. Como a holding familiar pode ser utilizada na blindagem do
           patrimônio?
         </h2>
-        <p className=" text-lg mb-4 mx-auto text-[#4A5659]  leading-relaxed font-bold">
+        <p className=" text-lg mb-4 mx-auto text-[#4A5659]  leading-relaxed ">
           A holding familiar pode ser utilizada na blindagem do patrimônio, uma
           vez que sua estruturação permite a separação entre o patrimônio
           pessoal dos sócios e o patrimônio empresarial, além de proporcionar
@@ -287,18 +278,18 @@ export default function HoldingFamiliarPlanejamentoeBlindagemdoPatrimônio() {
           tópicos que exemplificam como a holding familiar pode ser utilizada na
           blindagem do patrimônio:
         </p>{" "}
-        <ul>
-          <ol>
-            Separação de patrimônio:
+        <ol className=" list-decimal list-inside text-lg mb-4 mx-auto text-[#4A5659]  leading-relaxed space-y-4">
+          <li>
+            <b> Separação de patrimônio:</b>
             <p>
               a criação da holding familiar permite a separação entre o
               patrimônio pessoal dos sócios e o patrimônio empresarial. Dessa
               forma, em caso de dívidas ou processos judiciais envolvendo os
               sócios, o patrimônio empresarial fica protegido e não é afetado.
             </p>
-          </ol>
-          <ol>
-            Proteção contra credores:{" "}
+          </li>
+          <li>
+            <b> Proteção contra credores: </b>
             <p>
               a estruturação da holding familiar também permite a proteção do
               patrimônio empresarial contra credores, uma vez que a holding se
@@ -306,9 +297,9 @@ export default function HoldingFamiliarPlanejamentoeBlindagemdoPatrimônio() {
               dificulta o acesso dos credores aos ativos das empresas, pois a
               holding se torna uma barreira jurídica.
             </p>
-          </ol>
-          <ol>
-            Gestão centralizada:
+          </li>
+          <li>
+            <b>Gestão centralizada:</b>
             <p>
               a holding familiar também permite uma gestão mais centralizada dos
               negócios, uma vez que é responsável pela administração das
@@ -316,9 +307,9 @@ export default function HoldingFamiliarPlanejamentoeBlindagemdoPatrimônio() {
               otimização dos recursos, além de diminuir a exposição ao risco por
               parte dos sócios.
             </p>
-          </ol>
-          <ol>
-            Planejamento sucessório:
+          </li>
+          <li>
+            <b>Planejamento sucessório:</b>
             <p>
               a holding familiar pode ser utilizada como uma ferramenta de
               planejamento sucessório, permitindo que os sócios estabeleçam
@@ -326,8 +317,8 @@ export default function HoldingFamiliarPlanejamentoeBlindagemdoPatrimônio() {
               Dessa forma, é possível evitar conflitos familiares e garantir a
               continuidade dos negócios.
             </p>
-          </ol>
-        </ul>
+          </li>
+        </ol>
         <h2
           id="e-legal-utilizar-a-holding-familiar-para-proteger-o-patrimonio"
           className=" text-4xl my-7"
@@ -356,33 +347,33 @@ export default function HoldingFamiliarPlanejamentoeBlindagemdoPatrimônio() {
           Entre as principais situações em que vale a pena considerar a criação
           de uma holding familiar, podemos destacar:
         </p>
-        <ul>
-          <ol>
+        <ol className=" list-decimal list-inside text-lg mb-4 mx-auto text-[#4A5659]  leading-relaxed space-y-4 ml-4">
+          <li>
             Quando se busca proteger o patrimônio dos sócios e suas famílias de
             eventuais riscos, como processos judiciais, dívidas e outras
             situações que possam afetar os bens e direitos.
-          </ol>
-          <ol>
+          </li>
+          <li>
             Quando se almeja garantir a transmissão dos bens de forma adequada,
             evitando conflitos entre herdeiros e minimizando o impacto
             tributário
-          </ol>
-          <ol>
+          </li>
+          <li>
             Quando se necessita organizar a gestão das empresas familiares,
             visando aprofundar a separação entre o patrimônio pessoal e
             empresarial, reduzir riscos e maximizar a rentabilidade.
-          </ol>
-          <ol>
+          </li>
+          <li>
             Quando se deseja realizar investimentos em novos negócios, visando a
             diversificação de investimentos e a criação de novas fontes de
             renda.
-          </ol>
-          <ol>
+          </li>
+          <li>
             Quando se pretende reduzir a carga tributária sobre os rendimentos,
             patrimônio e investimentos dos sócios, aproveitando os benefícios
             fiscais e a estruturação adequada da holding familiar.
-          </ol>
-        </ul>
+          </li>
+        </ol>
         <h2
           id="como-constituir-uma-holding-familiar"
           className=" text-4xl my-7"
@@ -394,48 +385,48 @@ export default function HoldingFamiliarPlanejamentoeBlindagemdoPatrimônio() {
           passos e considerar questões legais e tributárias. Abaixo, listamos
           alguns tópicos que podem ajudar na constituição da holding familiar:
         </p>
-        <ul>
-          <ol>
-            Defina os objetivos: antes de constituir a holding familiar, é
-            importante definir quais são os objetivos a serem alcançados, como
+        <ol className=" list-decimal list-inside text-lg mb-4 mx-auto text-[#4A5659]  leading-relaxed space-y-4 ml-4">
+          <li>
+            <b>Defina os objetivos: </b> antes de constituir a holding familiar,
+            é importante definir quais são os objetivos a serem alcançados, como
             proteção patrimonial, gestão centralizada, planejamento sucessório,
             entre outros.
-          </ol>
-          <ol>
-            Escolha do tipo de holding: existem dois tipos de holding familiar:
-            a pura, que possui apenas a função de controlar outras empresas, e a
-            mista, que além de controlar outras empresas, também atua na
-            prestação de serviços.
-          </ol>
-          <ol>
-            Crie a empresa: é necessário criar a empresa, registrando-a na Junta
-            Comercial do estado em que ela será instalada. Além disso, é preciso
-            definir o capital social e a estrutura societária da holding
-            familiar.
-          </ol>
-          <ol>
-            Faça a transferência de ações: a transferência das ações das
+          </li>
+          <li>
+            <b>Escolha do tipo de holding: </b> existem dois tipos de holding
+            familiar: a pura, que possui apenas a função de controlar outras
+            empresas, e a mista, que além de controlar outras empresas, também
+            atua na prestação de serviços.
+          </li>
+          <li>
+            <b>Crie a empresa: </b>é necessário criar a empresa, registrando-a
+            na Junta Comercial do estado em que ela será instalada. Além disso,
+            é preciso definir o capital social e a estrutura societária da
+            holding familiar.
+          </li>
+          <li>
+            <b>Faça a transferência de ações: </b> a transferência das ações das
             empresas controladas para a holding familiar é um processo
             importante na constituição da holding. É necessário avaliar o valor
             das empresas controladas e definir a participação de cada sócio na
             holding.
-          </ol>
-          <ol>
-            Elaboração do contrato social: o contrato social da holding familiar
-            deve conter informações sobre a gestão da empresa, distribuição de
-            lucros, sucessão empresarial, entre outros.
-          </ol>
-          <ol>
-            Planejamento tributário: é fundamental fazer um planejamento
+          </li>
+          <li>
+            <b>Elaboração do contrato social: </b>o contrato social da holding
+            familiar deve conter informações sobre a gestão da empresa,
+            distribuição de lucros, sucessão empresarial, entre outros.
+          </li>
+          <li>
+            <b>Planejamento tributário: </b>é fundamental fazer um planejamento
             tributário para a holding familiar, visando a redução de impostos e
             a utilização de benefícios fiscais.
-          </ol>
-          <ol>
-            Registro na Receita Federal: é necessário fazer o registro da
+          </li>
+          <li>
+            <b>Registro na Receita Federal: </b>é necessário fazer o registro da
             holding familiar na Receita Federal, obtendo o CNPJ e cumprindo as
             obrigações fiscais.
-          </ol>
-        </ul>
+          </li>
+        </ol>
         <h2
           id="qual-o-papel-do-advogado-na-constituição-de-um-holding-familiar"
           className=" text-4xl my-7"
@@ -443,48 +434,49 @@ export default function HoldingFamiliarPlanejamentoeBlindagemdoPatrimônio() {
           8. Qual o papel de um advogado na constituição de um holding familiar?
         </h2>
         <p className=" text-lg mb-4 mx-auto text-[#4A5659]  leading-relaxed">
-          O advogado especializado em direito empresarial tem um papel
+          O <u>advogado especializado em direito empresarial</u> tem um papel
           fundamental na estruturação da holding familiar, uma vez que ele é
           responsável por orientar e auxiliar na elaboração dos documentos
           necessários para a constituição da empresa. Entre as principais
           atividades que podem ser desempenhadas por um advogado especializado
           em holding familiar, destacam-se:
         </p>
-        <ul>
-          <ol>
-            Análise da viabilidade jurídica: o advogado especializado irá
-            analisar se a estruturação da holding familiar é viável do ponto de
-            vista jurídico, avaliando as normas legais e tributárias que podem
-            afetar a empresa.
-          </ol>
-          <ol>
-            Elaboração do contrato social: o advogado especializado irá elaborar
-            o contrato social da holding familiar, contendo informações sobre a
-            gestão da empresa, a distribuição de lucros, o planejamento
+        <ol className=" list-decimal list-inside text-lg mb-4 mx-auto text-[#4A5659]  leading-relaxed space-y-4 ml-4">
+          <li>
+            <b>Análise da viabilidade jurídica: </b> o advogado especializado
+            irá analisar se a estruturação da holding familiar é viável do ponto
+            de vista jurídico, avaliando as normas legais e tributárias que
+            podem afetar a empresa.
+          </li>
+          <li>
+            <b>Elaboração do contrato social: </b> o advogado especializado irá
+            elaborar o contrato social da holding familiar, contendo informações
+            sobre a gestão da empresa, a distribuição de lucros, o planejamento
             sucessório, entre outros.
-          </ol>
-          <ol>
-            Transferência de ações: o advogado irá orientar na transferência das
-            ações das empresas controladas para a holding familiar, avaliando o
-            valor das empresas e a participação dos sócios na holding.
-          </ol>
-          <ol>
-            Planejamento tributário: o advogado especializado irá realizar o
-            planejamento tributário da holding familiar, visando a redução de
-            impostos e a utilização de benefícios fiscais.
-          </ol>
-          <ol>
-            Proteção patrimonial: o advogado irá auxiliar na implementação de
-            medidas de proteção patrimonial para os sócios da holding familiar,
-            visando a segurança dos seus bens e direitos.
-          </ol>
-          <ol>
-            Sucessão empresarial: o advogado irá orientar na estruturação do
-            planejamento sucessório da holding familiar, visando a transmissão
-            dos bens de forma adequada e a minimização de conflitos entre os
-            herdeiros.
-          </ol>
-        </ul>
+          </li>
+          <li>
+            <b>Transferência de ações: </b>o advogado irá orientar na
+            transferência das ações das empresas controladas para a holding
+            familiar, avaliando o valor das empresas e a participação dos sócios
+            na holding.
+          </li>
+          <li>
+            <b>Planejamento tributário: </b>o advogado especializado irá
+            realizar o planejamento tributário da holding familiar, visando a
+            redução de impostos e a utilização de benefícios fiscais.
+          </li>
+          <li>
+            <b>Proteção patrimonial: </b>o advogado irá auxiliar na
+            implementação de medidas de proteção patrimonial para os sócios da
+            holding familiar, visando a segurança dos seus bens e direitos.
+          </li>
+          <li>
+            <b>Sucessão empresarial: </b>o advogado irá orientar na estruturação
+            do planejamento sucessório da holding familiar, visando a
+            transmissão dos bens de forma adequada e a minimização de conflitos
+            entre os herdeiros.
+          </li>
+        </ol>
         <h2 id="quem-administra-a-holding-familiar" className=" text-4xl my-7">
           9. Quem administra a holding familiar?
         </h2>
@@ -539,9 +531,12 @@ export default function HoldingFamiliarPlanejamentoeBlindagemdoPatrimônio() {
         </p>
         <p className=" text-lg mb-4 mx-auto text-[#4A5659]  leading-relaxed">
           Vale ressaltar que o planejamento sucessório deve ser elaborado com a
-          ajuda de um advogado especializado em direito sucessório e em holding
-          familiar, para garantir que a transferência dos bens ocorra de forma
-          segura e de acordo com a legislação aplicável
+          ajuda de um{" "}
+          <b>
+            advogado especializado em direito sucessório e em holding familiar
+          </b>
+          , para garantir que a transferência dos bens ocorra de forma segura e
+          de acordo com a legislação aplicável
         </p>
         <p
           id="conclusao"
@@ -559,10 +554,22 @@ export default function HoldingFamiliarPlanejamentoeBlindagemdoPatrimônio() {
       </section>
 
       <article className="mb-8 mx-auto text-black  leading-relaxed text-center text-2xl">
-        Se você tem interesse em constituir uma holding familiar ou quer saber
-        mais sobre como a holding pode ajudar no seu planejamento patrimonial e
-        sucessório, entre em contato com nossos advogados especializados em
-        direito empresarial e sucessório. Estamos à disposição para ajudá-lo!
+        Se você tem interesse em constituir uma <b> holding familiar</b> ou quer
+        saber mais sobre como a holding pode ajudar no seu planejamento
+        patrimonial e sucessório, entre em contato com nossos advogados
+        especializados em direito empresarial e sucessório. Estamos à disposição
+        para ajudá-lo! <br></br>
+        <a
+          href={
+            "https://wa.me/5555992560707?text=Ol%C3%A1%2C+gostaria+de+falar+com+um+advogado"
+          }
+          target="_blank"
+          rel="noopener noreferrer"
+          className=" font-bold text-[#006804] hover:underline mr-2"
+        >
+          Clique aqui
+        </a>
+        para nos enviar uma mensagem no WhatsApp.
       </article>
     </article>
   );
