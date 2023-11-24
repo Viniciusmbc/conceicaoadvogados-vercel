@@ -251,7 +251,7 @@ export default function Index() {
                   className=" flex flex-col  items-center justify-center mb-3 underline decoration-grulo"
                   rel="noreferrer"
                 >
-                  ​ Rua André Marques, 718, centro.
+                  Rua André Marques, 718, centro.
                 </a>
                 <a
                   href="tel:+555533175978"
