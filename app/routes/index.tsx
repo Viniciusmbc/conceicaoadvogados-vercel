@@ -5,7 +5,7 @@ import CardsArtigos from "~/components/Cards/CardsArtigos";
 import CarouselWithDots from "~/components/Carousel/CarouselWithDots";
 
 // Typewriter Effect
-import type { Key } from "react";
+import { useState, type Key } from "react";
 import Typewriter from "typewriter-effect";
 import { whatsappIcon } from "~/components/common/Icons";
 import Navbar from "~/components/Layout/Navbar/Navbar";
@@ -13,8 +13,17 @@ import { artigos } from "~/components/utils/artigos";
 
 import { cards } from "~/components/utils/atuacao";
 import { slide } from "~/components/utils/slide";
+import AlertPopup from "~/components/Popup/AlertPopup";
 
 export default function Index() {
+
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const images = ["https://res.cloudinary.com/deaejawfj/image/upload/v1700852438/vtxr1qvb0wbebs1fxhr2.jpg", "https://res.cloudinary.com/deaejawfj/image/upload/v1700852438/kca3dxggceejtlfohmmr.jpg"];
+
+  const handleClosePopup = () => {
+    setIsPopupOpen(false);
+  };
+
   return (
     <>
       <Navbar navbar={true} />
@@ -22,6 +31,7 @@ export default function Index() {
       <section className=" h-[100vh] overflow-x-hidden overflow-y-hidden">
         <CarouselWithDots slides={slide} texto={""} escritorio={false} />
       </section>
+      <AlertPopup isOpen={isPopupOpen} images={images} onClose={handleClosePopup} />
       <section className="backgroundImage m-auto min-h-screen items-center justify-center bg-cover bg-fixed bg-center py-10">
         <strong className=" flex mx-auto py-10 text-2xl text-center font-extrabold text-white md:text-center md:text-4xl justify-center items-center ">
           QUEM SOMOS

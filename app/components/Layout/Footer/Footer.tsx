@@ -23,6 +23,14 @@ export default function Footer() {
         </address>
       </div>
       <div className=" mx-auto flex w-full flex-col items-center justify-center gap-x-2 text-sm  text-[#EB9C6E]">
+      <a
+        className="hover:text-deer "
+        href={
+          "https://wa.me/53981132509?text=Ol%C3%A1%2C+vi+o+site+que+você+fez+para+o+conceicao+advogados"
+        }
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <p>
           Desenvolvido por Vinicius Cáceres{" "}
           <i>
@@ -30,6 +38,7 @@ export default function Footer() {
             Web Developer <br></br>{" "}
           </i>
         </p>
+        </a>
         <p>Copyright © 2022. Todos os direitos reservados.</p>
       </div>
     </footer>
