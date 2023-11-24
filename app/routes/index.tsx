@@ -17,11 +17,11 @@ import AlertPopup from "~/components/Popup/AlertPopup";
 
 export default function Index() {
 
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [isPopupOpen, setIsPopupOpen] = useState(true);
   const images = ["https://res.cloudinary.com/deaejawfj/image/upload/v1700852438/vtxr1qvb0wbebs1fxhr2.jpg", "https://res.cloudinary.com/deaejawfj/image/upload/v1700852438/kca3dxggceejtlfohmmr.jpg"];
 
   const handleClosePopup = () => {
-    setIsPopupOpen(true);
+    setIsPopupOpen(false);
   };
 
   return (
