@@ -12,9 +12,10 @@ const AlertPopup: FC<AlertPopupProps> = ({ isOpen, images, onClose }) => {
 
 
   return (
-    <div  className="rounded-md p-5 bg-white shadow-xl">
+    <div className="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full flex justify-center items-center">
+    <div className="bg-white rounded-lg shadow-xl md:w-1/3">
       <div className="flex justify-between items-center p-5 rounded-t border-b">
-        {exclamationIcon}
+       {exclamationIcon}
         <h3 className="text-xl font-medium text-gray-900">
           Atenção: WhatsApp Clonado!
         </h3>
@@ -23,9 +24,10 @@ const AlertPopup: FC<AlertPopupProps> = ({ isOpen, images, onClose }) => {
         <p>Recebemos informações de que nosso WhatsApp foi clonado. Por favor, esteja ciente de que nosso escritório de advocacia possui apenas um número oficial de WhatsApp. Não realizamos pedidos de dinheiro ou cobranças fora dos canais oficiais de comunicação.</p>
         {images && images.length > 0 && (
           <div className="mt-4">
-            <p>Fotos do número clonado:</p>
+            <p>Fotos do número que está se passando pelo escritório:</p>
+            {/* Renderizar as imagens */}
             {images.map((img, index) => (
-              <img key={index} src={img} alt="WhatsApp clonado" className="mt-2" />
+              <img key={index} src={img} alt="WhatsApp clonado" className="mt-2 flex" />
             ))}
           </div>
         )}
@@ -38,6 +40,7 @@ const AlertPopup: FC<AlertPopupProps> = ({ isOpen, images, onClose }) => {
         </button>
       </div>
     </div>
+  </div>
   );
 };
 
