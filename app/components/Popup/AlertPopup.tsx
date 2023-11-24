@@ -9,18 +9,10 @@ interface AlertPopupProps {
 }
 
 const AlertPopup: FC<AlertPopupProps> = ({ isOpen, images, onClose }) => {
-  const dialogRef = useRef<HTMLDialogElement>(null);
 
-  useEffect(() => {
-    if (isOpen) {
-      dialogRef.current?.showModal();
-    } else {
-      dialogRef.current?.close();
-    }
-  }, [isOpen]);
 
   return (
-    <dialog ref={dialogRef} className="rounded-md p-5 bg-white shadow-xl">
+    <div  className="rounded-md p-5 bg-white shadow-xl">
       <div className="flex justify-between items-center p-5 rounded-t border-b">
         {exclamationIcon}
         <h3 className="text-xl font-medium text-gray-900">
@@ -45,7 +37,7 @@ const AlertPopup: FC<AlertPopupProps> = ({ isOpen, images, onClose }) => {
           Fechar
         </button>
       </div>
-    </dialog>
+    </div>
   );
 };
 
