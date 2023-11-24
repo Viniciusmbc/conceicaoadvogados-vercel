@@ -13,7 +13,7 @@ const AlertPopup: FC<AlertPopupProps> = ({ isOpen, images, onClose }) => {
 
   return (
     <div className="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full flex justify-center items-center">
-    <div className="bg-white rounded-lg shadow-xl md:w-1/3">
+    <div className="bg-white rounded-lg shadow-xl md:w-[80%]">
       <div className="flex justify-between items-center p-5 rounded-t border-b">
        {exclamationIcon}
         <h3 className="text-xl font-medium text-gray-900">
@@ -27,7 +27,7 @@ const AlertPopup: FC<AlertPopupProps> = ({ isOpen, images, onClose }) => {
             <p>Fotos do número de WhatsApp que está se passando por nosso Escritório:</p>
             {/* Renderizar as imagens */}
             {images.map((img, index) => (
-              <img key={index} src={img} alt="WhatsApp clonado" className="mt-2 flex justify-center items-center" />
+              <img key={index} src={img} alt="WhatsApp clonado" className="mt-2 flex justify-center items-center  w-[30%] max-w-full" />
             ))}
           </div>
         )}
