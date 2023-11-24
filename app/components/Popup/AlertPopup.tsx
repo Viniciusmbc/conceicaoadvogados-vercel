@@ -22,7 +22,7 @@ const AlertPopup: FC<AlertPopupProps> = ({ isOpen, images, onClose }) => {
       </div>
       <div className="p-5">
         <p>Recebemos informações de que nosso <b>WhatsApp foi clonado</b>. Por favor, esteja ciente de que nosso escritório de advocacia possui apenas um número oficial de WhatsApp. Não realizamos pedidos de dinheiro ou cobranças fora dos canais oficiais de comunicação.</p>
-        <b>Fotos do número de WhatsApp que está se passando por nosso Escritório:</p>
+        <b>Fotos do número de WhatsApp que está se passando por nosso Escritório:</b>
         {images && images.length > 0 && (
           <div className="mt-4 flex  justify-center items-center">
            
